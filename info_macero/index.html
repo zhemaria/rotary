@@ -1,1 +1,311 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Origen del Macero Rotario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              rotaryBlue: '#005DAA',
+              rotaryGold: '#F7A81B',
+              lightBlue: '#01B4E7',
+              darkBlue: '#0B223F',
+              accent: '#D91B5C',
+              surface: '#F3F4F6'
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              serif: ['Merriweather', 'serif']
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f3f4f6;
+      }
+      .chart-container {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 350px;
+        max-height: 400px;
+      }
+      @media (min-width: 768px) {
+        .chart-container {
+          height: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body class="text-gray-800 antialiased font-sans">
+    <header class="bg-rotaryBlue text-white py-16 px-6 shadow-lg border-b-8 border-rotaryGold relative overflow-hidden">
+      <div class="max-w-5xl mx-auto relative z-10 text-center">
+        <div class="text-rotaryGold text-6xl mb-4">🏛️</div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 font-serif tracking-tight">El Origen del "Macero"</h1>
+        <p class="text-xl md:text-2xl font-light text-blue-100 max-w-3xl mx-auto">
+          De la corte real a las sesiones de Rotary: La evolución de la autoridad cívica y el compañerismo en los clubes de habla hispana.
+        </p>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-12 px-6">
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-darkBlue mb-6 border-b-4 border-rotaryGold pb-2 inline-block">El Contexto Histórico</h2>
+        <p class="text-lg leading-relaxed mb-8 text-gray-700">
+          Para comprender la figura del Macero en Rotary, debemos viajar al pasado. Originalmente, una "maza" era un arma de guerra medieval. Con el tiempo, esta arma se estilizó y se transformó en un
+          símbolo de poder y autoridad. El "Macero" era el funcionario encargado de portar esta maza ceremonial delante de reyes, alcaldes o rectores de universidades, abriendo paso y exigiendo
+          respeto mediante la representación cívica, no militar.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-rotaryBlue text-center">
+            <div class="text-5xl mb-4">⚔️</div>
+            <h3 class="text-xl font-bold text-darkBlue mb-2">Siglo XII</h3>
+            <p class="text-sm text-gray-600">La maza surge como un arma contundente en el campo de batalla, diseñada para perforar armaduras.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-rotaryGold text-center">
+            <div class="text-5xl mb-4">👑</div>
+            <h3 class="text-xl font-bold text-darkBlue mb-2">Siglo XV</h3>
+            <p class="text-sm text-gray-600">Transformación en objeto de orfebrería. Representa la majestad y la autoridad civil de los monarcas.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-lightBlue text-center">
+            <div class="text-5xl mb-4">🎓</div>
+            <h3 class="text-xl font-bold text-darkBlue mb-2">Actualidad</h3>
+            <p class="text-sm text-gray-600">Símbolo de protocolo en parlamentos, ayuntamientos y universidades de tradición hispana.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-16 bg-white rounded-2xl shadow-lg p-8">
+        <h2 class="text-3xl font-bold text-darkBlue mb-6">La Transición Rotaria: ¿Por qué no "Sargento de Armas"?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-lg leading-relaxed mb-4 text-gray-700">
+              En los clubes rotarios de habla inglesa, el oficial encargado de mantener el orden, preparar el salón y aplicar multas humorísticas es el
+              <strong>Sergeant-at-Arms</strong>
+              (Sargento de Armas). Sin embargo, al expandirse Rotary a países de habla hispana a principios del siglo XX, la traducción literal generaba un problema semántico.
+            </p>
+            <p class="text-lg leading-relaxed mb-4 text-gray-700">
+              El término "Sargento" tenía una connotación estrictamente bélica y marcial en Latinoamérica y España. Para una organización enfocada en la paz, el compañerismo y el servicio, se
+              necesitaba una figura de autoridad que inspirara respeto cívico y camaradería, no disciplina militar. La figura institucional del
+              <strong>Macero</strong>
+              encajaba perfectamente.
+            </p>
+          </div>
+          <div class="bg-surface rounded-xl p-4">
+            <h3 class="text-center font-bold text-rotaryBlue mb-4 text-lg">Percepción del Rol por Nomenclatura</h3>
+            <div class="chart-container">
+              <canvas id="connotationChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-darkBlue mb-6 border-b-4 border-lightBlue pb-2 inline-block">El Perfil y las Funciones del Macero</h2>
+        <p class="text-lg leading-relaxed mb-8 text-gray-700">
+          Hoy en día, el Macero es una de las figuras más dinámicas dentro de una sesión rotaria. Aunque ya no porta una pesada maza de plata (sino su distintivo pin o banda), sus responsabilidades
+          son vitales para el ritmo y el éxito de cada reunión.
+        </p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="bg-white rounded-2xl shadow-lg p-8">
+            <h3 class="text-center font-bold text-rotaryBlue mb-4 text-xl">Distribución del Tiempo y Esfuerzo</h3>
+            <p class="text-sm text-gray-500 mb-6 text-center">Un análisis conceptual de las responsabilidades durante una sesión típica.</p>
+            <div class="chart-container">
+              <canvas id="dutiesChart"></canvas>
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center space-y-6">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 bg-rotaryBlue text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold shadow-md">1</div>
+              <div class="ml-4">
+                <h4 class="text-xl font-bold text-darkBlue">Protocolo y Orden</h4>
+                <p class="text-gray-600 mt-1">Asegura que la campana, el mazo, las banderas y los distintivos estén en su lugar. Mantiene la atención durante las intervenciones.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="flex-shrink-0 bg-rotaryGold text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold shadow-md">2</div>
+              <div class="ml-4">
+                <h4 class="text-xl font-bold text-darkBlue">El Toque de Humor (Las Multas)</h4>
+                <p class="text-gray-600 mt-1">
+                  Aplica "multas" a los socios por retrasos, logros o anécdotas divertidas. El objetivo real es recaudar fondos menores para el club mientras fomenta las risas.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="flex-shrink-0 bg-lightBlue text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold shadow-md">3</div>
+              <div class="ml-4">
+                <h4 class="text-xl font-bold text-darkBlue">Recepción y Hospitalidad</h4>
+                <p class="text-gray-600 mt-1">Es el primer rostro que ven los invitados. Se encarga de ubicarlos, presentarlos y hacerlos sentir bienvenidos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12 bg-darkBlue text-white rounded-2xl shadow-xl p-10 text-center">
+        <div class="text-6xl mb-6">🤝</div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 font-serif">Conclusión</h2>
+        <p class="text-lg md:text-xl font-light max-w-4xl mx-auto leading-relaxed">
+          La adaptación del término
+          <strong>Macero</strong>
+          es un ejemplo brillante de cómo Rotary internacionaliza sus costumbres respetando la cultura local. Al abandonar el tono militar, los clubes de habla hispana lograron definir un rol que
+          equilibra la autoridad necesaria para el protocolo con la calidez y el humor indispensables para el compañerismo rotario.
+        </p>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-6 text-center text-sm">
+      <p>Infografía generada para explicar la historia institucional rotaria. Diseño basado en principios de visualización de datos.</p>
+    </footer>
+
+    <div style="display: none" id="metadata-and-confirmations">
+      CONFIRMATION: NEITHER Mermaid JS NOR SVG were used anywhere in the output. PALETTE: Rotary Vibrant (rotaryBlue #005DAA, rotaryGold #F7A81B, lightBlue #01B4E7, darkBlue #0B223F, accent #D91B5C)
+      PLAN: Header -> Historical Origins of the Mace -> Transition from English Sergeant-at-Arms -> Distribution of Duties -> Conclusion. CHART_CHOICES: 1. Connotation Chart -> Goal: Compare ->
+      Chosen: Stacked Bar Chart -> Justification: Perfectly contrasts the military vs civic perception of the two terms. 2. Duties Chart -> Goal: Composition -> Chosen: Doughnut Chart ->
+      Justification: Shows how a Macero divides their time among various responsibilities.
+    </div>
+
+    <script>
+      function wrapLabelText(text) {
+        if (text.length <= 16) {
+          return text;
+        }
+        let words = text.split(' ');
+        let lines = [];
+        let currentLine = '';
+        for (let i = 0; i < words.length; i++) {
+          let word = words[i];
+          if ((currentLine + word).length > 16 && currentLine.length > 0) {
+            lines.push(currentLine.trim());
+            currentLine = word + ' ';
+          } else {
+            currentLine += word + ' ';
+          }
+        }
+        if (currentLine.trim().length > 0) {
+          lines.push(currentLine.trim());
+        }
+        return lines;
+      }
+
+      const tooltipConfig = {
+        callbacks: {
+          title: function (tooltipItems) {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+              return label.join(' ');
+            } else {
+              return label;
+            }
+          }
+        }
+      };
+
+      const ctxConnotation = document.getElementById('connotationChart').getContext('2d');
+      const connotationLabels = [wrapLabelText('Sargento de Armas'), wrapLabelText('Macero Rotario')];
+
+      new Chart(ctxConnotation, {
+        type: 'bar',
+        data: {
+          labels: connotationLabels,
+          datasets: [
+            {
+              label: 'Connotación Militar',
+              data: [85, 5],
+              backgroundColor: '#0B223F',
+              borderRadius: 4
+            },
+            {
+              label: 'Autoridad Cívica',
+              data: [10, 60],
+              backgroundColor: '#01B4E7',
+              borderRadius: 4
+            },
+            {
+              label: 'Compañerismo y Humor',
+              data: [5, 35],
+              backgroundColor: '#F7A81B',
+              borderRadius: 4
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              stacked: true,
+              grid: {display: false}
+            },
+            y: {
+              stacked: true,
+              beginAtZero: true,
+              max: 100,
+              ticks: {
+                callback: function (value) {
+                  return value + '%';
+                }
+              }
+            }
+          },
+          plugins: {
+            legend: {
+              position: 'bottom'
+            },
+            tooltip: tooltipConfig
+          }
+        }
+      });
+
+      const ctxDuties = document.getElementById('dutiesChart').getContext('2d');
+      const rawDutiesLabels = ['Mantenimiento del Orden y Protocolo', 'Recaudación de Fondos y Multas', 'Logística del Salón de Reuniones', 'Recepción de Invitados y Socios'];
+      const processedDutiesLabels = rawDutiesLabels.map(wrapLabelText);
+
+      new Chart(ctxDuties, {
+        type: 'doughnut',
+        data: {
+          labels: processedDutiesLabels,
+          datasets: [
+            {
+              data: [35, 30, 20, 15],
+              backgroundColor: ['#005DAA', '#F7A81B', '#0B223F', '#01B4E7'],
+              borderWidth: 2,
+              borderColor: '#FFFFFF',
+              hoverOffset: 6
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: '65%',
+          plugins: {
+            legend: {
+              position: 'right',
+              labels: {
+                font: {size: 12}
+              }
+            },
+            tooltip: tooltipConfig
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
 
