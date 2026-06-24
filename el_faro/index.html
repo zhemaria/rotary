@@ -1,1 +1,433 @@
+<!DOCTYPE html>
+<!--
+  El Faro y el Jardín — Una fábula
+  Licencia: CC BY-NC-SA 4.0
+  Autor: José M. Fernández, ABE/ASE Math Master Teacher, Harry S. Truman College — City Colleges of Chicago
+-->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Faro y el Jardín</title>
+<meta name="author" content="José M. Fernández, ABE/ASE Math Master Teacher, Harry S. Truman College — City Colleges of Chicago">
+<meta name="description" content="El Faro y el Jardín: una fábula sobre la memoria, la experiencia y el valor de quienes encendieron la luz.">
+<meta name="license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<style>
+  :root{
+    --noche:#0a1a30;
+    --mar-prof:#0c2241;
+    --bruma:#eaf2f8;
+    --luz:#ffd486;
+    --luz-fuerte:#ffe6b0;
+    --coral:#d96c4a;
+    --pergamino:#f4e9cf;
+    --crema:#f8f1e2;
+    --crema-2:#fbf6ec;
+    --tinta:#2c2a26;
+    --tinta-suave:#5d5950;
+    --linea:#e3d9c3;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--crema);
+    color:var(--tinta);
+    font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+    -webkit-font-smoothing:antialiased;
+  }
 
+  /* ===================== HERO ===================== */
+  .hero{
+    position:relative;
+    min-height:78vh;
+    display:flex;align-items:flex-end;justify-content:center;
+    overflow:hidden;
+    background:var(--noche);
+  }
+  .escena{position:absolute;inset:0;width:100%;height:100%;}
+  .escena svg{width:100%;height:100%;display:block;}
+  .hero-scrim{
+    position:absolute;inset:0;
+    background:linear-gradient(to bottom,rgba(10,26,48,0) 38%,rgba(8,20,38,.35) 66%,rgba(7,16,30,.85) 100%);
+  }
+  .hero-texto{
+    position:relative;
+    text-align:center;
+    padding:0 24px 8vh;
+    color:var(--bruma);
+    max-width:760px;
+  }
+  .eyebrow{
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.42em;
+    font-size:.72rem;
+    color:var(--luz);
+    margin:0 0 18px;
+    padding-left:.42em;
+  }
+  .hero-texto h1{
+    font-size:clamp(2.7rem,8vw,5rem);
+    line-height:1.02;
+    margin:0;
+    font-weight:400;
+    letter-spacing:.5px;
+    text-shadow:0 2px 30px rgba(0,0,0,.5);
+  }
+  .hero-texto h1 em{
+    font-style:italic;
+    color:var(--luz-fuerte);
+  }
+  .dedic{
+    margin:22px 0 0;
+    font-style:italic;
+    font-size:1.05rem;
+    color:#cdd9e6;
+    letter-spacing:.3px;
+  }
+  .rayita{
+    width:54px;height:2px;margin:26px auto 0;
+    background:linear-gradient(90deg,transparent,var(--luz),transparent);
+  }
+
+  /* faro: haz que barre + brillo de la lámpara */
+  .haz{transform-box:fill-box;transform-origin:center center;animation:barrer 9s ease-in-out infinite;}
+  @keyframes barrer{
+    0%{transform:rotate(-15deg);}
+    50%{transform:rotate(15deg);}
+    100%{transform:rotate(-15deg);}
+  }
+  .lampara{animation:latido 4s ease-in-out infinite;transform-origin:center;}
+  @keyframes latido{0%,100%{opacity:.85;}50%{opacity:1;}}
+  .estrella{animation:titilar 5s ease-in-out infinite;}
+  .estrella.b{animation-delay:1.4s;}
+  .estrella.c{animation-delay:2.7s;}
+  .estrella.d{animation-delay:3.6s;}
+  @keyframes titilar{0%,100%{opacity:.25;}50%{opacity:.95;}}
+
+  /* ===================== LECTURA ===================== */
+  .lectura{
+    max-width:40rem;
+    margin:0 auto;
+    padding:64px 26px 30px;
+    font-size:1.2rem;
+    line-height:1.92;
+  }
+  .lectura p{margin:0 0 1.55em;}
+
+  .lectura > p:first-of-type::first-letter{
+    font-size:4.1rem;
+    line-height:.82;
+    float:left;
+    padding:6px 12px 0 0;
+    color:var(--coral);
+    font-weight:700;
+  }
+
+  .susurro{
+    text-align:center;
+    font-style:italic;
+    color:var(--tinta-suave);
+    margin:2em 0 2em!important;
+  }
+
+  .dialogo{
+    margin-left:1.4em;
+    border-left:2px solid var(--linea);
+    padding-left:1.1em;
+    color:#3b3833;
+  }
+
+  /* nota del cuaderno */
+  .cuaderno{
+    position:relative;
+    background:
+      repeating-linear-gradient(transparent,transparent 31px,rgba(120,100,60,.18) 32px),
+      var(--pergamino);
+    border:1px solid #e0cfa6;
+    border-radius:4px;
+    padding:26px 30px 28px;
+    margin:2.4em auto;
+    max-width:34rem;
+    box-shadow:0 14px 30px rgba(60,45,20,.16),0 2px 0 #e8dab4 inset;
+    transform:rotate(-1.3deg);
+    font-family:"Segoe Script","Snell Roundhand","Bradley Hand","Brush Script MT",cursive;
+    font-size:1.32rem;
+    line-height:1.7;
+    color:#46371f;
+  }
+  .cuaderno::before{
+    content:"";position:absolute;top:14px;left:18px;
+    width:14px;height:14px;border-radius:50%;
+    background:#c9a24a;box-shadow:0 0 0 3px rgba(201,162,74,.25);
+  }
+  .cuaderno .pin{
+    position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+    font-size:1.4rem;
+  }
+
+  /* cita central */
+  .cita{
+    margin:2.6em 0;
+    text-align:center;
+  }
+  .cita blockquote{
+    margin:0;
+    font-size:clamp(1.5rem,4.6vw,2.15rem);
+    font-style:italic;
+    line-height:1.4;
+    color:var(--noche);
+    position:relative;
+    padding:18px 0;
+  }
+  .cita blockquote::before,
+  .cita blockquote::after{
+    content:"";display:block;height:2px;width:60px;margin:0 auto;
+    background:linear-gradient(90deg,transparent,var(--coral),transparent);
+  }
+  .cita blockquote::before{margin-bottom:22px;}
+  .cita blockquote::after{margin-top:22px;}
+
+  .clave{color:var(--coral);font-style:italic;}
+
+  /* coda: el jardín que crece */
+  .coda{
+    background:linear-gradient(180deg,var(--crema) 0%,#f0e8d3 100%);
+    padding:56px 26px 70px;
+    text-align:center;
+  }
+  .coda .intro-coda{
+    max-width:40rem;margin:0 auto 30px;
+    font-size:1.2rem;color:var(--tinta-suave);font-style:italic;
+  }
+  .estrofa{
+    list-style:none;margin:0 auto;padding:0;max-width:30rem;
+  }
+  .estrofa li{
+    font-size:clamp(1.25rem,4vw,1.55rem);
+    line-height:1.6;
+    padding:10px 0;
+    color:var(--tinta);
+  }
+  .estrofa li::before{
+    content:"✦";
+    color:var(--luz);
+    margin-right:.55em;
+    text-shadow:0 0 8px rgba(255,212,134,.8);
+  }
+  .estrofa li.final{
+    margin-top:8px;
+    color:var(--noche);
+    font-style:italic;
+    font-size:clamp(1.45rem,4.6vw,1.85rem);
+  }
+  .brote{margin:30px auto 0;display:block;width:74px;height:auto;opacity:.85;}
+
+  .firma{
+    margin:42px auto 0;
+    font-family:"Segoe Script","Snell Roundhand","Bradley Hand",cursive;
+    font-size:1.5rem;color:var(--coral);
+  }
+
+  /* ===================== PIE ===================== */
+  footer.pie{
+    background:var(--noche);
+    color:#9fb1c4;
+    text-align:center;
+    padding:30px 24px 34px;
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:.82rem;line-height:1.7;
+  }
+  footer.pie a{color:var(--luz);text-decoration:none;}
+  footer.pie a:hover{text-decoration:underline;}
+  footer.pie .sep{opacity:.4;margin:0 8px;}
+
+  @media (max-width:520px){
+    .lectura{font-size:1.12rem;padding-top:48px;}
+    .dialogo{margin-left:.6em;}
+    .cuaderno{padding:22px 20px;font-size:1.18rem;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .haz,.lampara,.estrella{animation:none!important;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- ================= HERO: el faro ================= -->
+  <header class="hero">
+    <div class="escena" aria-hidden="true">
+      <svg viewBox="0 0 1200 680" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0"    stop-color="#08152a"/>
+            <stop offset="0.45" stop-color="#10294b"/>
+            <stop offset="0.74" stop-color="#2a4467"/>
+            <stop offset="0.86" stop-color="#b9663f"/>
+            <stop offset="1"    stop-color="#7a4030"/>
+          </linearGradient>
+          <linearGradient id="mar" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0"   stop-color="#23415f"/>
+            <stop offset="0.5" stop-color="#13314f"/>
+            <stop offset="1"   stop-color="#0a1d36"/>
+          </linearGradient>
+          <radialGradient id="resplandor" cx="0.62" cy="0.62" r="0.5">
+            <stop offset="0" stop-color="#f2a463" stop-opacity="0.55"/>
+            <stop offset="1" stop-color="#f2a463" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="luna" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0" stop-color="#fdf6e3"/>
+            <stop offset="0.7" stop-color="#f3e7c4"/>
+            <stop offset="1" stop-color="#f3e7c4" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="haz-grad" cx="843" cy="250" r="640" gradientUnits="userSpaceOnUse">
+            <stop offset="0"    stop-color="#ffe6ad" stop-opacity="0.62"/>
+            <stop offset="0.28" stop-color="#ffd486" stop-opacity="0.30"/>
+            <stop offset="1"    stop-color="#ffd486" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="brillo-lamp" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0" stop-color="#fff3cf"/>
+            <stop offset="0.55" stop-color="#ffd486"/>
+            <stop offset="1" stop-color="#ffd486" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+
+        <!-- cielo y horizonte -->
+        <rect x="0" y="0" width="1200" height="470" fill="url(#cielo)"/>
+        <ellipse cx="760" cy="430" rx="640" ry="180" fill="url(#resplandor)"/>
+        <circle cx="210" cy="135" r="56" fill="url(#luna)"/>
+
+        <!-- estrellas -->
+        <g fill="#fbf4dd">
+          <circle class="estrella"   cx="150" cy="80"  r="2.2"/>
+          <circle class="estrella b" cx="430" cy="60"  r="1.8"/>
+          <circle class="estrella c" cx="560" cy="120" r="2.4"/>
+          <circle class="estrella d" cx="980" cy="70"  r="2"/>
+          <circle class="estrella b" cx="1080" cy="150" r="1.7"/>
+          <circle class="estrella"   cx="330" cy="160" r="1.6"/>
+          <circle class="estrella c" cx="700" cy="60"  r="1.9"/>
+          <circle class="estrella d" cx="1140" cy="60" r="2.1"/>
+        </g>
+
+        <!-- haz de luz que barre -->
+        <g class="haz">
+          <polygon points="843,250 220,150 250,470" fill="url(#haz-grad)"/>
+          <polygon points="843,250 1460,150 1430,470" fill="url(#haz-grad)"/>
+        </g>
+
+        <!-- mar -->
+        <rect x="0" y="430" width="1200" height="250" fill="url(#mar)"/>
+        <!-- reflejo de la luz sobre el agua -->
+        <polygon points="843,432 805,680 905,680" fill="#ffd486" opacity="0.18"/>
+        <g stroke="#cfe0ef" stroke-opacity="0.15" stroke-width="2" fill="none">
+          <path d="M0,505 q60,-10 120,0 t240,0 t240,0 t240,0 t240,0"/>
+          <path d="M0,560 q70,-12 140,0 t280,0 t280,0 t280,0"/>
+        </g>
+
+        <!-- roca -->
+        <path d="M690,470 Q760,452 843,456 Q930,452 1000,476 L1010,680 L685,680 Z" fill="#14253a"/>
+        <path d="M690,470 Q760,452 843,456 Q930,452 1000,476 L998,500 Q900,484 843,486 Q770,484 700,502 Z" fill="#1b3550" opacity="0.7"/>
+
+        <!-- faro -->
+        <g>
+          <!-- cuerpo con franjas -->
+          <path d="M820,300 L866,300 L884,470 L802,470 Z" fill="#f3ede1"/>
+          <path d="M820,300 L866,300 L869,328 L817,328 Z" fill="#c9402f"/>
+          <path d="M814,356 L872,356 L875,384 L811,384 Z" fill="#c9402f"/>
+          <path d="M808,412 L878,412 L881,440 L805,440 Z" fill="#c9402f"/>
+          <!-- galería -->
+          <rect x="812" y="288" width="62" height="14" rx="2" fill="#2b3a4d"/>
+          <!-- sala de la lámpara -->
+          <rect x="824" y="250" width="38" height="40" rx="3" fill="#3a4a5e"/>
+          <rect x="830" y="256" width="26" height="30" rx="2" fill="#ffe6ad"/>
+          <!-- brillo de la lámpara -->
+          <circle class="lampara" cx="843" cy="270" r="40" fill="url(#brillo-lamp)"/>
+          <circle cx="843" cy="270" r="9" fill="#fff6da"/>
+          <!-- cúpula -->
+          <path d="M820,250 Q843,224 866,250 Z" fill="#2b3a4d"/>
+          <rect x="840" y="214" width="6" height="14" rx="2" fill="#2b3a4d"/>
+          <circle cx="843" cy="212" r="4" fill="#c9402f"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="hero-scrim" aria-hidden="true"></div>
+
+    <div class="hero-texto">
+      <p class="eyebrow">Una fábula</p>
+      <h1>El Faro y el Jardín</h1>
+      <p class="dedic">Para quien encendió la luz cuando todos dudaban.</p>
+      <div class="rayita" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- ================= EL CUENTO ================= -->
+  <main>
+    <article class="lectura">
+      <p>En un pequeño pueblo junto al mar había un faro. No era el más alto ni el más moderno, pero había sido construido con enorme esfuerzo por un hombre que, cuando todos dudaban, insistió en que el pueblo necesitaba luz para no estrellarse contra las rocas.</p>
+
+      <p>Durante años, aquel hombre cuidó del faro. Sabía cuándo limpiar los cristales antes de la temporada de tormentas, conocía el sonido que hacía el generador cuando algo empezaba a fallar y tenía anotado, en un cuaderno viejo, cada tornillo cambiado y cada cable reparado. Gracias a él, los barcos entraban seguros al puerto.</p>
+
+      <p>Con el tiempo, una nueva generación llegó con entusiasmo y energía. Uno de ellos fue elegido para dirigir el cuidado del faro. Tenía buenas intenciones y muchas ideas frescas. En su primera reunión, decidió que el sistema podía simplificarse. Pensó que era innecesario que el viejo guardián siguiera allí; después de todo, el faro ya estaba construido.</p>
+
+      <p class="dialogo">—Ahora somos nosotros —dijo—. Podemos organizarnos mejor.</p>
+
+      <p class="susurro">El viejo guardián se retiró en silencio.</p>
+
+      <p>Durante las primeras semanas, todo parecía funcionar. La luz seguía encendiéndose cada noche. Pero llegó la temporada de lluvias. Una noche, el generador comenzó a emitir un sonido extraño. Nadie supo reconocerlo. No parecía grave… hasta que la luz parpadeó.</p>
+
+      <p>Fue entonces cuando alguien recordó el cuaderno viejo. Lo buscaron y encontraron notas escritas con paciencia:</p>
+
+      <div class="cuaderno">
+        <span class="pin" aria-hidden="true">📌</span>
+        Cuando el viento sopla del noreste y el generador vibra así, revisa primero el filtro oculto bajo la base.
+      </div>
+
+      <p>Lo revisaron. Tenía sal acumulada. Lo limpiaron. La luz volvió a brillar firme.</p>
+
+      <div class="cita">
+        <blockquote>El faro no solo estaba hecho de piedra y cables. Estaba hecho de&nbsp;memoria.</blockquote>
+      </div>
+
+      <p>Al día siguiente, el joven líder visitó al viejo guardián.</p>
+
+      <p class="dialogo">—El faro funciona gracias a lo que hiciste —le dijo—. Queremos aprender lo que sabes, antes de cambiar lo que aún no entendemos.</p>
+
+      <p>El anciano sonrió.</p>
+
+      <p class="dialogo">—Cambiar es necesario —respondió—. <span class="clave">Pero antes de mover una piedra, hay que saber cuál sostiene el arco.</span></p>
+    </article>
+  </main>
+
+  <!-- ================= CODA: el jardín ================= -->
+  <section class="coda">
+    <p class="intro-coda">Desde entonces, el pueblo hizo algo sabio:</p>
+    <ul class="estrofa">
+      <li>Los jóvenes traían ideas nuevas.</li>
+      <li>Los mayores compartían experiencia.</li>
+      <li class="final">Y el faro no volvió a apagarse.</li>
+    </ul>
+
+    <svg class="brote" viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M40,88 L40,40" stroke="#7a6a3a" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M40,58 C22,56 14,42 16,30 C32,32 42,44 40,58 Z" fill="#7fae6a"/>
+      <path d="M40,50 C58,48 66,34 64,22 C48,24 38,36 40,50 Z" fill="#9cc77f"/>
+      <circle cx="40" cy="30" r="6" fill="#ffd486"/>
+    </svg>
+
+    <p class="firma">Un cuento de José M. Fernández</p>
+  </section>
+
+  <footer class="pie">
+    <p>
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC&nbsp;BY-NC-SA&nbsp;4.0</a>
+      <span class="sep" aria-hidden="true">·</span>
+      José M. Fernández — Harry S. Truman College, City Colleges of Chicago
+    </p>
+  </footer>
+
+</body>
+</html>
