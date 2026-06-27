@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!--
+  ¿Qué es Rotary? — Guía divulgativa para socios que se inician.
+  Autor: José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas.
+  Año: 2026. Licencia: Creative Commons CC BY-NC-SA 4.0.
+  Resumen: presentación del Objetivo de Rotary, la Prueba Cuádruple de Herbert J. Taylor,
+  las cinco Avenidas de Servicio y la estructura de Rotary International,
+  con material contrastado en Rotary International y la Rotary Global History Fellowship (RGHF).
+-->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Qué es Rotary?</title>
+<meta name="description" content="Qué es Rotary: su objetivo, la Prueba Cuádruple, las cinco Avenidas de Servicio y la estructura que conecta a los clubes con el mundo.">
+<meta name="author" content="José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas">
+<meta name="license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --azul:#17458F;
+    --azul-osc:#0F2E5E;
+    --azul-link:#1A5FA0;
+    --oro:#F7A81B;
+    --oro-osc:#8A5A00;
+    --crema:#FBFAF7;
+    --superficie:#FFFFFF;
+    --tinta:#20242B;
+    --tinta-sec:#4F5A6B;
+    --borde:#E4E0D6;
+    --borde-frio:#D7DEE8;
+    --azul-suave:#EEF3FA;
+    --sombra:0 1px 3px rgba(15,46,94,.06), 0 6px 22px rgba(15,46,94,.07);
+    --radio:14px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--crema); color:var(--tinta);
+    font-family:"Open Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:1.075rem; line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:.001ms !important; transition-duration:.001ms !important;}
+  }
+
+  .envoltorio{max-width:920px; margin:0 auto; padding:0 22px;}
+
+  a{color:var(--azul-link);}
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:3px solid var(--oro); outline-offset:2px; border-radius:4px;
+  }
+
+  /* HERO */
+  header.hero{
+    background:
+      radial-gradient(120% 140% at 85% -20%, rgba(247,168,27,.16), transparent 55%),
+      linear-gradient(160deg, var(--azul-osc), var(--azul) 78%);
+    color:#fff; border-bottom:5px solid var(--oro);
+  }
+  .hero .envoltorio{padding-top:46px; padding-bottom:42px;}
+  .eyebrow{font-size:.8rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#F4C778; margin:0 0 14px;}
+  .hero h1{font-family:"Zilla Slab",Georgia,serif; font-weight:700; font-size:clamp(2rem,5.2vw,3.05rem); line-height:1.1; margin:0 0 14px; letter-spacing:-.01em;}
+  .hero .dek{font-size:clamp(1.05rem,2.4vw,1.28rem); max-width:48ch; color:#E7EEF7; margin:0 0 28px;}
+
+  .ciclo{display:flex; align-items:center; gap:14px; flex-wrap:wrap; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.22); border-radius:999px; padding:10px 18px; width:fit-content;}
+  .ciclo svg{flex:0 0 auto;}
+  .ciclo .ciclo-txt{font-size:.95rem; line-height:1.3;}
+  .ciclo b{font-weight:700; color:#fff;}
+  .ciclo span{color:#D7E2F1;}
+  .ciclo .fecha{font-family:"Zilla Slab",serif; font-weight:600; color:#FBD68B; white-space:nowrap;}
+
+  /* INTRO / ÍNDICE */
+  main{padding:40px 0 10px;}
+  .lede{font-size:1.16rem; color:var(--tinta); border-left:4px solid var(--oro); padding:2px 0 2px 18px; margin:0 0 34px;}
+
+  .indice{background:var(--superficie); border:1px solid var(--borde); border-radius:var(--radio); box-shadow:var(--sombra); padding:24px 26px 26px; margin-bottom:18px;}
+  .indice h2{font-family:"Zilla Slab",serif; font-size:1.05rem; text-transform:uppercase; letter-spacing:.08em; color:var(--azul-osc); margin:0 0 16px;}
+  .indice ol{list-style:none; counter-reset:idx; margin:0; padding:0;}
+  .indice li{counter-increment:idx; margin:0;}
+  .indice a.idx-link{display:flex; align-items:center; gap:14px; padding:9px 10px; border-radius:9px; text-decoration:none; color:var(--tinta); border:1px solid transparent; transition:background .15s, border-color .15s;}
+  .indice a.idx-link:hover{background:var(--azul-suave); border-color:var(--borde-frio);}
+  .indice a.idx-link.activo{background:var(--azul-suave); border-color:var(--azul);}
+  .indice a.idx-link::before{content:counter(idx); flex:0 0 auto; width:30px; height:30px; border-radius:50%; display:grid; place-items:center; background:var(--azul); color:#fff; font-weight:700; font-size:.95rem; font-family:"Zilla Slab",serif;}
+  .indice a.idx-link.activo::before{background:var(--oro-osc);}
+
+  .controles{display:flex; gap:10px; margin:14px 0 26px; flex-wrap:wrap;}
+  .btn{font-family:"Open Sans",sans-serif; font-size:.95rem; font-weight:600; cursor:pointer; border-radius:9px; padding:9px 16px; border:1px solid var(--azul); background:var(--superficie); color:var(--azul); transition:background .15s,color .15s;}
+  .btn:hover{background:var(--azul); color:#fff;}
+
+  /* SECCIONES */
+  details.seccion{background:var(--superficie); border:1px solid var(--borde); border-radius:var(--radio); box-shadow:var(--sombra); margin:16px 0; overflow:hidden; scroll-margin-top:18px;}
+  details.seccion[open]{border-color:var(--borde-frio);}
+  summary.cab{list-style:none; cursor:pointer; user-select:none; display:flex; align-items:center; gap:16px; padding:18px 22px;}
+  summary.cab::-webkit-details-marker{display:none;}
+  .num{flex:0 0 auto; width:42px; height:42px; border-radius:50%; display:grid; place-items:center; background:linear-gradient(150deg,var(--azul),var(--azul-osc)); color:#fff; font-family:"Zilla Slab",serif; font-weight:700; font-size:1.25rem;}
+  summary.cab h2{font-family:"Zilla Slab",serif; font-weight:600; color:var(--azul-osc); font-size:clamp(1.18rem,2.6vw,1.42rem); line-height:1.25; margin:0; flex:1;}
+  .chevron{flex:0 0 auto; color:var(--azul); transition:transform .2s ease;}
+  details[open] summary.cab .chevron{transform:rotate(180deg);}
+  summary.cab:hover h2{color:var(--azul);}
+  details[open] summary.cab{border-bottom:1px solid var(--borde);}
+
+  .cuerpo{padding:6px 26px 26px;}
+  .cuerpo h3{font-family:"Zilla Slab",serif; color:var(--azul); font-weight:600; font-size:1.16rem; margin:26px 0 8px;}
+  .cuerpo h3:first-child{margin-top:14px;}
+  .cuerpo p{margin:0 0 14px;}
+  .cuerpo ul{margin:0 0 16px; padding-left:0; list-style:none;}
+  .cuerpo ul li{position:relative; padding-left:30px; margin:0 0 12px;}
+  .cuerpo ul li::before{content:""; position:absolute; left:6px; top:.62em; width:9px; height:9px; border-radius:50%; background:var(--oro); box-shadow:0 0 0 3px rgba(247,168,27,.2);}
+  .cuerpo strong{color:var(--azul-osc);}
+
+  .nota{background:var(--azul-suave); border:1px solid var(--borde-frio); border-left:4px solid var(--azul); border-radius:10px; padding:14px 18px; margin:18px 0; font-size:1rem;}
+  .nota .et{display:inline-block; font-weight:700; color:var(--azul-osc); text-transform:uppercase; letter-spacing:.06em; font-size:.78rem; margin-right:6px;}
+  .destacado{background:#FFF8EC; border:1px solid #F2D79A; border-left:4px solid var(--oro); border-radius:10px; padding:14px 18px; margin:18px 0;}
+  .destacado .et{display:inline-block; font-weight:700; color:var(--oro-osc); text-transform:uppercase; letter-spacing:.06em; font-size:.78rem; margin-right:6px;}
+
+  blockquote.cita{margin:20px 0; padding:16px 22px; background:var(--azul-suave); border-left:4px solid var(--oro); border-radius:0 12px 12px 0; font-size:1.06rem; color:var(--tinta);}
+  blockquote.cita p{margin:0 0 8px; font-style:italic;}
+  blockquote.cita p:last-of-type{margin-bottom:0;}
+  blockquote.cita cite{display:block; margin-top:8px; font-style:normal; font-weight:700; color:var(--azul-osc); font-size:.9rem;}
+
+  /* FIGURAS */
+  figure.figura{margin:22px 0; background:var(--superficie); border:1px solid var(--borde); border-radius:14px; box-shadow:var(--sombra); overflow:hidden;}
+  figure.figura img{display:block; width:100%; height:auto; background:var(--azul-suave);}
+  figure.figura figcaption{padding:12px 18px; font-size:.93rem; color:var(--tinta-sec); border-top:1px solid var(--borde);}
+  figure.figura figcaption .fig-num{font-family:"Zilla Slab",serif; font-weight:700; color:var(--azul-osc); margin-right:7px;}
+  figure.figura figcaption .credito{display:block; margin-top:3px; font-size:.8rem; font-style:italic; color:var(--tinta-sec);}
+  figure.figura.estrecha{max-width:420px; margin-left:auto; margin-right:auto;}
+
+  /* VIDEO (FACHADA) */
+  .video-bloque{margin:24px 0;}
+  .video-bloque .v-titulo{font-family:"Zilla Slab",serif; color:var(--azul); font-weight:600; font-size:1.12rem; margin:0 0 10px;}
+  .video-facade{position:relative; display:block; width:100%; aspect-ratio:16/9; border:1px solid var(--borde-frio); border-radius:14px; overflow:hidden; background:linear-gradient(150deg,var(--azul-osc),var(--azul)); cursor:pointer; box-shadow:var(--sombra); padding:0;}
+  .video-facade::after{content:""; position:absolute; inset:0; background:rgba(15,46,94,.22);}
+  .video-facade .play{position:absolute; z-index:2; top:50%; left:50%; transform:translate(-50%,-50%); width:74px; height:74px; border-radius:50%; background:rgba(255,255,255,.95); display:grid; place-items:center; box-shadow:0 6px 20px rgba(0,0,0,.3); transition:transform .15s, background .15s;}
+  .video-facade:hover .play{transform:translate(-50%,-50%) scale(1.07); background:#fff;}
+  .video-facade .v-label{position:absolute; z-index:2; left:16px; right:16px; bottom:14px; color:#fff; font-weight:600; font-size:.98rem; text-align:left; text-shadow:0 1px 5px rgba(0,0,0,.55);}
+  .video-facade iframe{position:absolute; inset:0; width:100%; height:100%; border:0;}
+  .video-pendiente{margin:24px 0; border:1.6px dashed var(--borde-frio); border-radius:14px; background:var(--azul-suave); padding:22px 20px; text-align:center; color:var(--tinta-sec);}
+  .video-pendiente .vp-ic{font-size:1.8rem; display:block; margin-bottom:6px;}
+  .video-pendiente b{color:var(--azul-osc);}
+
+  /* PRUEBA CUÁDRUPLE */
+  .prueba-canon{
+    background:linear-gradient(160deg,var(--azul-osc),var(--azul));
+    color:#fff; border-radius:16px; padding:26px 28px; margin:20px 0 8px;
+    box-shadow:var(--sombra); border:1px solid var(--borde-frio);
+  }
+  .prueba-canon .intro{color:#E7EEF7; font-size:1rem; margin:0 0 14px; font-style:italic;}
+  .prueba-canon ol{counter-reset:pq; list-style:none; margin:0; padding:0;}
+  .prueba-canon li{counter-increment:pq; display:flex; gap:14px; align-items:flex-start; padding:10px 0; border-top:1px solid rgba(255,255,255,.16);}
+  .prueba-canon li:first-child{border-top:none;}
+  .prueba-canon li::before{content:counter(pq); flex:0 0 auto; width:34px; height:34px; border-radius:50%; background:var(--oro); color:#3a2400; font-family:"Zilla Slab",serif; font-weight:700; display:grid; place-items:center; font-size:1.15rem;}
+  .prueba-canon li b{font-size:1.12rem; font-family:"Zilla Slab",serif; font-weight:600;}
+
+  .pregunta{background:var(--superficie); border:1px solid var(--borde); border-left:4px solid var(--oro); border-radius:12px; padding:18px 20px; margin:18px 0;}
+  .pregunta .titulo-p{font-family:"Zilla Slab",serif; color:var(--azul-osc); font-weight:700; font-size:1.12rem; margin:0 0 8px; display:flex; align-items:center; gap:10px;}
+  .pregunta .titulo-p .marca{flex:0 0 auto; width:26px; height:26px; border-radius:50%; background:var(--azul); color:#fff; display:grid; place-items:center; font-size:.9rem; font-weight:700;}
+  .pregunta p{margin:0 0 10px;}
+  .pregunta .ejemplo{background:var(--azul-suave); border:1px solid var(--borde-frio); border-radius:9px; padding:11px 14px; font-size:.97rem; margin:8px 0 0;}
+  .pregunta .ejemplo .et{display:inline-block; font-weight:700; color:var(--azul-osc); text-transform:uppercase; letter-spacing:.05em; font-size:.74rem; margin-right:6px;}
+
+  /* AVENIDAS */
+  .avenidas{display:grid; gap:14px; margin:18px 0 6px;}
+  .avenida{background:var(--superficie); border:1px solid var(--borde); border-radius:12px; padding:16px 18px; box-shadow:var(--sombra);}
+  .avenida h3{font-family:"Zilla Slab",serif; color:var(--azul); font-weight:600; font-size:1.1rem; margin:0 0 6px; display:flex; align-items:center; gap:10px;}
+  .avenida h3 .ico{flex:0 0 auto; width:30px; height:30px; border-radius:8px; background:var(--azul-suave); border:1px solid var(--borde-frio); display:grid; place-items:center; color:var(--azul); font-weight:700;}
+  .avenida p{margin:0 0 8px;}
+  .avenida .obj{font-size:.97rem; color:var(--tinta);}
+  .avenida .obj .et{font-weight:700; color:var(--oro-osc); text-transform:uppercase; letter-spacing:.05em; font-size:.74rem; margin-right:6px;}
+
+  /* TABLA */
+  .tabla-scroll{overflow-x:auto; margin:14px 0 6px; border-radius:12px;}
+  .hint-desliza{display:none; font-size:.85rem; color:var(--tinta-sec); margin:0 0 8px;}
+  table.comparativa{width:100%; min-width:580px; border-collapse:collapse; background:var(--superficie); border:1px solid var(--borde-frio); border-radius:12px; overflow:hidden; font-size:.98rem;}
+  table.comparativa caption{text-align:left; font-size:.9rem; color:var(--tinta-sec); padding:0 0 10px; caption-side:top;}
+  table.comparativa th[scope="col"]{background:var(--azul); color:#fff; font-family:"Zilla Slab",serif; font-weight:600; text-align:left; padding:13px 16px; vertical-align:middle;}
+  table.comparativa th[scope="row"]{background:var(--azul-suave); color:var(--azul-osc); font-weight:700; text-align:left; padding:13px 16px; vertical-align:top; width:20%; border-top:1px solid var(--borde-frio);}
+  table.comparativa td{padding:13px 16px; vertical-align:top; border-top:1px solid var(--borde-frio);}
+  table.comparativa tbody tr:nth-child(even) td{background:#FAFBFD;}
+
+  /* FUENTES */
+  .fuentes{background:var(--superficie); border:1px solid var(--borde); border-radius:var(--radio); box-shadow:var(--sombra); padding:24px 26px; margin:30px 0 10px;}
+  .fuentes h2{font-family:"Zilla Slab",serif; color:var(--azul-osc); font-size:1.35rem; margin:0 0 6px; display:flex; align-items:center; gap:12px;}
+  .fuentes h2 .pico{width:30px; height:4px; background:var(--oro); border-radius:3px;}
+  .fuentes p.intro{color:var(--tinta-sec); margin:0 0 16px; font-size:1rem;}
+  .fuentes ol{margin:0; padding-left:22px;}
+  .fuentes li{margin:0 0 9px;}
+  .fuentes li .titulo{color:var(--tinta);}
+  .fuentes li a{word-break:break-word; font-size:.92rem;}
+
+  /* PIE */
+  footer.pie{margin-top:30px; border-top:1px solid var(--borde); background:#fff;}
+  footer.pie .envoltorio{padding:26px 22px 40px; color:var(--tinta-sec); font-size:.9rem;}
+  footer.pie .lic{display:flex; align-items:flex-start; gap:12px; flex-wrap:wrap;}
+  footer.pie a{color:var(--azul-link);}
+  footer.pie .cc-badge{flex:0 0 auto; font-weight:700; color:var(--azul-osc); border:1px solid var(--borde-frio); border-radius:7px; padding:3px 9px; font-size:.82rem;}
+
+  /* BOTÓN ARRIBA */
+  #arriba{position:fixed; right:18px; bottom:18px; z-index:30; width:48px; height:48px; border-radius:50%; border:none; background:var(--azul); color:#fff; cursor:pointer; box-shadow:0 6px 18px rgba(15,46,94,.28); display:grid; place-items:center; opacity:0; pointer-events:none; transition:opacity .2s, background .15s, transform .15s;}
+  #arriba.visible{opacity:1; pointer-events:auto;}
+  #arriba:hover{background:var(--azul-osc); transform:translateY(-2px);}
+
+  @media (max-width:640px){
+    body{font-size:1.02rem;}
+    .hero .envoltorio{padding-top:34px; padding-bottom:32px;}
+    .cuerpo{padding:6px 18px 22px;}
+    summary.cab{padding:15px 16px; gap:12px;}
+    .num{width:36px; height:36px; font-size:1.1rem;}
+    .indice{padding:20px 18px;}
+    .hint-desliza{display:block;}
+    .prueba-canon{padding:20px 18px;}
+  }
+
+  @media print{
+    body{background:#fff; color:#000; font-size:11pt;}
+    header.hero{background:#fff !important; color:#000; border-bottom:2px solid #000;}
+    .eyebrow{color:#000;} .hero h1{color:#000;} .hero .dek{color:#000;} .ciclo{display:none;}
+    #arriba,.controles{display:none;}
+    .prueba-canon{background:#fff !important; color:#000; border:1px solid #999;}
+    .prueba-canon .intro{color:#000;} .prueba-canon li b{color:#000;}
+    details.seccion .cuerpo{display:block !important;}
+    details.seccion,.indice,.fuentes,figure.figura,.pregunta,.avenida{box-shadow:none; border:1px solid #999; break-inside:avoid;}
+    .chevron{display:none;}
+    a{color:#000; text-decoration:underline;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="envoltorio">
+    <p class="eyebrow">Conoce Rotary · Entrega II</p>
+    <h1>¿Qué es Rotary?</h1>
+    <p class="dek">Una red mundial de gente de acción que une el compañerismo con el servicio para mejorar el mundo, comunidad por comunidad.</p>
+    <div class="ciclo">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+        <circle cx="17" cy="17" r="13" fill="none" stroke="#F7A81B" stroke-width="2.4" stroke-dasharray="62 20" stroke-linecap="round"/>
+        <path d="M27 9 l1.8 5.4 -5.6 -.9 z" fill="#F7A81B"/>
+      </svg>
+      <span class="ciclo-txt"><b>Más de 1,2 millones de socios</b><br>
+        <span>en miles de clubes,</span> <span class="fecha">en todo el mundo</span></span>
+    </div>
+  </div>
+</header>
+
+<main class="envoltorio">
+
+  <p class="lede">Tras conocer cómo nació Rotary, esta segunda entrega responde a una pregunta esencial para el nuevo socio: ¿qué es Rotary hoy y qué nos pide? Veremos su objetivo, su guía ética, sus campos de acción y la estructura que lo sostiene.</p>
+
+  <nav class="indice" aria-label="Índice de la entrega">
+    <h2>En esta entrega</h2>
+    <ol>
+      <li><a class="idx-link" href="#s1">Una red mundial de gente de acción</a></li>
+      <li><a class="idx-link" href="#s2">El objetivo de Rotary</a></li>
+      <li><a class="idx-link" href="#s3">La Prueba Cuádruple</a></li>
+      <li><a class="idx-link" href="#s4">Las Avenidas de Servicio</a></li>
+      <li><a class="idx-link" href="#s5">La estructura de Rotary</a></li>
+    </ol>
+  </nav>
+
+  <div class="controles">
+    <button class="btn" id="abrir-todo" type="button">Abrir todo</button>
+    <button class="btn" id="cerrar-todo" type="button">Cerrar todo</button>
+  </div>
+
+  <!-- ============ SECCIÓN 1 ============ -->
+  <details class="seccion" id="s1" open>
+    <summary class="cab">
+      <span class="num" aria-hidden="true">1</span>
+      <h2>Una red mundial de gente de acción</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <blockquote class="cita">
+        <p>«Rotary es una red mundial de más de 1,2 millones de personas, todas ellas gente de acción, que abordan los problemas más persistentes en nuestras comunidades, a la vez que desarrollan habilidades profesionales y de liderazgo mediante el establecimiento de conexiones significativas.»</p>
+        <cite>— Rotary International</cite>
+      </blockquote>
+
+      <p>Conviene imaginar Rotary como una gran red que conecta a millones de personas en todos los continentes, uniendo a gente de culturas y orígenes muy diversos. Quienes pertenecen a Rotary no son solo miembros: son <strong>personas que hacen cosas</strong>. No se quedan de brazos cruzados, sino que toman la iniciativa para mejorar sus comunidades.</p>
+
+      <p>El propósito principal de Rotary es encontrar soluciones a los problemas más grandes y difíciles que enfrentan nuestras comunidades —pobreza, salud, educación, medio ambiente— y, al hacerlo, sus socios también aprenden nuevas habilidades y se forman como líderes. Rotary fomenta relaciones sólidas y duraderas que permiten trabajar juntos de manera más eficaz.</p>
+
+      <div class="video-bloque">
+        <p class="v-titulo">Video · Los muchachos de 1905</p>
+        <button class="video-facade" type="button"
+                data-yt="yn0AsnYPyqk"
+                aria-label="Reproducir el video: Los muchachos de 1905">
+          <span class="play" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#17458F"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+          <span class="v-label">Los muchachos de 1905 — el origen de Rotary</span>
+        </button>
+      </div>
+
+      <div class="nota">
+        <span class="et">Para el nuevo socio</span>
+        Pertenecer a Rotary combina tres cosas: <strong>amistad</strong> (compañerismo entre personas de distintas profesiones), <strong>servicio</strong> (proyectos que mejoran la vida de los demás) y <strong>desarrollo personal</strong> (crecer como profesional y como líder).
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 2 ============ -->
+  <details class="seccion" id="s2">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">2</span>
+      <h2>El objetivo de Rotary</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>El <strong>Objetivo de Rotary</strong> es estimular y fomentar el ideal de servicio como base de toda empresa digna y, en particular, estimular y fomentar:</p>
+
+      <ul>
+        <li><strong>Primero.</strong> El desarrollo del conocimiento mutuo como ocasión de servir.</li>
+        <li><strong>Segundo.</strong> La observancia de elevadas normas de ética en las actividades profesionales y empresariales; el reconocimiento del valor de toda ocupación útil y la dignificación de la propia en beneficio de la sociedad.</li>
+        <li><strong>Tercero.</strong> La puesta en práctica del ideal de servicio por todos los rotarios en su vida privada, profesional y pública.</li>
+        <li><strong>Cuarto.</strong> La comprensión, la buena voluntad y la paz entre las naciones, a través del compañerismo de las personas que en ellas ejercen actividades profesionales y empresariales, unidas en torno al ideal de servicio.</li>
+      </ul>
+
+      <h3>Qué significa, en palabras sencillas</h3>
+      <p>Aunque se enuncia como un solo principio, el Objetivo puede leerse en cuatro claves complementarias:</p>
+      <ul>
+        <li><strong>El servicio como base:</strong> servir a los demás es el pilar de cualquier actividad, personal o profesional.</li>
+        <li><strong>Empresa digna:</strong> todo trabajo honrado puede y debe contribuir al bien común.</li>
+        <li><strong>Conocimiento mutuo:</strong> conocer y comprender a personas de distintos orígenes, culturas y profesiones.</li>
+        <li><strong>Ocasión de servir:</strong> al conocer a otros surgen oportunidades de servir de forma más eficaz.</li>
+        <li><strong>Ética profesional:</strong> honestidad e integridad en todos los aspectos del trabajo.</li>
+        <li><strong>Valor de toda ocupación:</strong> reconocer la importancia de cada profesión y dignificar la propia.</li>
+        <li><strong>Servicio en todas las áreas:</strong> aplicar el ideal de servicio en el trabajo, el hogar y la comunidad.</li>
+        <li><strong>Paz mundial y compañerismo:</strong> tender puentes entre culturas y naciones para fomentar la paz.</li>
+      </ul>
+
+      <div class="destacado">
+        <span class="et">En una frase</span>
+        El objetivo de Rotary es construir un mundo mejor a través del servicio: ayudar a los demás, cultivar la amistad, promover la ética y trabajar por la paz.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 3 ============ -->
+  <details class="seccion" id="s3">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">3</span>
+      <h2>La Prueba Cuádruple</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>La <strong>Prueba Cuádruple</strong> es una guía ética sencilla que los rotarios aplican a lo que piensan, dicen y hacen. La creó el empresario <strong>Herbert J. Taylor</strong> a comienzos de la década de 1930, cuando se propuso salvar de la quiebra a la distribuidora Club Aluminum Products. Su plan de recuperación comenzó, precisamente, por mejorar el clima ético de la empresa.</p>
+
+      <figure class="figura estrecha">
+        <img src="https://zhemaria.github.io/rotary/image/Cap1_taylor.jpg" alt="Retrato de Herbert J. Taylor, presidente de Rotary International entre 1954 y 1955.">
+        <figcaption><span class="fig-num">Figura 1.</span>Herbert J. Taylor, presidente de Rotary International (1954-1955) y autor de la Prueba Cuádruple.<span class="credito">Fuente: The Illinois Business Hall of Fame.</span></figcaption>
+      </figure>
+
+      <p>En la década de 1940, siendo director de Rotary International, Taylor ofreció la Prueba Cuádruple a la organización, que la <strong>adoptó oficialmente en 1943</strong>. Desde entonces se ha convertido en uno de los pilares de la ética rotaria y ha sido traducida a más de cien idiomas. Hoy se aplica no solo en los negocios, sino también en la vida personal y en cualquier decisión que requiera una brújula ética.</p>
+
+      <div class="prueba-canon">
+        <p class="intro">De lo que se piensa, se dice o se hace:</p>
+        <ol>
+          <li><b>¿Es la verdad?</b></li>
+          <li><b>¿Es equitativo para todos los interesados?</b></li>
+          <li><b>¿Creará buena voluntad y mejores amistades?</b></li>
+          <li><b>¿Será beneficioso para todos los interesados?</b></li>
+        </ol>
+      </div>
+
+      <div class="video-bloque">
+        <p class="v-titulo">Video · La Prueba Cuádruple</p>
+        <button class="video-facade" type="button"
+                data-yt="QHit-UUQf1Y"
+                aria-label="Reproducir el video: La Prueba Cuádruple">
+          <span class="play" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#17458F"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+          <span class="v-label">La Prueba Cuádruple — la guía ética de los rotarios</span>
+        </button>
+      </div>
+
+      <h3>Pregunta por pregunta</h3>
+
+      <div class="pregunta">
+        <p class="titulo-p"><span class="marca" aria-hidden="true">1</span>¿Es la verdad?</p>
+        <p>Nos invita a ser honestos y transparentes en nuestras palabras y acciones. La verdad es el fundamento de toda relación sólida y nos recuerda la importancia de la integridad. Al ser honestos construimos confianza, aunque la verdad no siempre sea fácil de decir: el reto está en unir honestidad y compasión.</p>
+        <p class="ejemplo"><span class="et">Ejemplo</span>Eres empleado y descubres un error en un informe importante. Esta pregunta te lleva a decidir si callas o lo informas a tu superior, aun cuando hacerlo pueda tener consecuencias para ti.</p>
+      </div>
+
+      <div class="pregunta">
+        <p class="titulo-p"><span class="marca" aria-hidden="true">2</span>¿Es equitativo para todos los interesados?</p>
+        <p>Nos pide considerar el impacto de nuestras decisiones en todas las personas involucradas. A veces, lo que nos beneficia puede perjudicar a otros; la equidad implica tratar a todos con respeto y consideración, sea cual sea su circunstancia.</p>
+        <p class="ejemplo"><span class="et">Ejemplo</span>Organizas una reunión de equipo y debes fijar la hora. La equidad te lleva a considerar las agendas de todos y buscar un horario conveniente para la mayoría.</p>
+      </div>
+
+      <div class="pregunta">
+        <p class="titulo-p"><span class="marca" aria-hidden="true">3</span>¿Creará buena voluntad y mejores amistades?</p>
+        <p>Nos hace reflexionar sobre las consecuencias sociales de nuestros actos. Al actuar con buena voluntad fomentamos la cooperación y el entendimiento; eso sí, buena voluntad no significa complacer a todos a cualquier precio.</p>
+        <p class="ejemplo"><span class="et">Ejemplo</span>Tienes una discusión con un amigo. La pregunta te ayuda a evaluar si tu respuesta será constructiva o si empeorará la situación.</p>
+      </div>
+
+      <div class="pregunta">
+        <p class="titulo-p"><span class="marca" aria-hidden="true">4</span>¿Será beneficioso para todos los interesados?</p>
+        <p>Nos lleva a sopesar las consecuencias a largo plazo y a pensar en el bien común. A veces las decisiones más difíciles son las que exigen renunciar a un beneficio inmediato en favor de un bien mayor.</p>
+        <p class="ejemplo"><span class="et">Ejemplo</span>Consideras comprar un producto poco sostenible. La pregunta te invita a reflexionar sobre el impacto ambiental y social de tu decisión.</p>
+      </div>
+
+      <h3>Herbert J. Taylor, el autor</h3>
+      <p><strong>Herbert J. Taylor</strong> (18 de abril de 1893 — 1 de mayo de 1978) fue presidente de Rotary International entre 1954 y 1955, además de autor de la Prueba Cuádruple. Ejecutivo de negocios y líder cívico, fue cofundador de la Christian Workers Foundation (1939) e integró las juntas de numerosas instituciones. Durante la Segunda Guerra Mundial fue vicepresidente de la Junta de Ajuste de Precios del Departamento de Guerra. Apareció en la portada de <em>Newsweek</em> del 28 de febrero de 1955 y fue incluido en el Salón Nacional de la Fama de los Negocios de Estados Unidos.</p>
+
+      <figure class="figura estrecha">
+        <img src="https://zhemaria.github.io/rotary/image/hebert_taylor.jpg" alt="Segundo retrato de Herbert J. Taylor, líder cívico estadounidense y autor de la Prueba Cuádruple.">
+        <figcaption><span class="fig-num">Figura 2.</span>Herbert J. Taylor, autor de la Prueba Cuádruple y formador de líderes.</figcaption>
+      </figure>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 4 ============ -->
+  <details class="seccion" id="s4">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">4</span>
+      <h2>Las Avenidas de Servicio</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>Las <strong>cinco Avenidas de Servicio</strong>, basadas en el Objetivo de Rotary, constituyen la piedra angular de la filosofía rotaria y el fundamento sobre el cual se desarrolla la labor de los clubes. Al participar en ellas, los rotarios no solo contribuyen a mejorar el mundo, sino que también cultivan relaciones duraderas y enriquecedoras.</p>
+
+      <div class="avenidas">
+        <div class="avenida">
+          <h3><span class="ico" aria-hidden="true">1</span>Servicio en el Club</h3>
+          <p>Nace de la necesidad de fortalecer los clubes como entidades sólidas y cohesionadas. Un club fuerte es la base para llevar a cabo proyectos de servicio significativos.</p>
+          <p class="obj"><span class="et">Objetivo</span>Fomentar el compañerismo, la colaboración y el desarrollo personal de los socios, creando un ambiente que motive a participar activamente.</p>
+        </div>
+        <div class="avenida">
+          <h3><span class="ico" aria-hidden="true">2</span>Servicio a través de la ocupación</h3>
+          <p>Reconoce que los rotarios son profesionales en áreas diversas y los anima a aplicar sus habilidades y conocimientos en beneficio de la comunidad.</p>
+          <p class="obj"><span class="et">Objetivo</span>Promover la ética profesional y emplear la propia ocupación como herramienta para mejorar la calidad de vida de los demás.</p>
+        </div>
+        <div class="avenida">
+          <h3><span class="ico" aria-hidden="true">3</span>Servicio en la Comunidad</h3>
+          <p>Surge del deseo de marcar una diferencia positiva en el entorno local, atendiendo necesidades diversas con soluciones prácticas.</p>
+          <p class="obj"><span class="et">Objetivo</span>Atender las necesidades más urgentes de la comunidad: salud, educación, desarrollo económico y medio ambiente, entre otras.</p>
+        </div>
+        <div class="avenida">
+          <h3><span class="ico" aria-hidden="true">4</span>Servicio Internacional</h3>
+          <p>La visión de Rotary siempre fue global. Esta avenida promueve la cooperación internacional y aborda los desafíos del mundo.</p>
+          <p class="obj"><span class="et">Objetivo</span>Fortalecer los lazos entre culturas y naciones, promover la paz y enfrentar problemas globales como la pobreza y las enfermedades.</p>
+        </div>
+        <div class="avenida">
+          <h3><span class="ico" aria-hidden="true">5</span>Servicio a las Nuevas Generaciones</h3>
+          <p>Reconoce el papel fundamental de los jóvenes en el futuro e invierte en su desarrollo.</p>
+          <p class="obj"><span class="et">Objetivo</span>Fomentar el liderazgo, el servicio y la ciudadanía global en jóvenes y adultos jóvenes, preparándolos como líderes del mañana.</p>
+        </div>
+      </div>
+
+      <div class="nota">
+        <span class="et">Programas para jóvenes</span>
+        Entre las iniciativas de la quinta avenida destacan <strong>Interact</strong>, los <strong>Seminarios de Rotary para Líderes Jóvenes (RYLA)</strong> y el <strong>Intercambio de Jóvenes de Rotary</strong>.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 5 ============ -->
+  <details class="seccion" id="s5">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">5</span>
+      <h2>La estructura de Rotary</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>Rotary se distingue por su fuerte arraigo comunitario: los <strong>clubes</strong> son la base operativa donde se implementa la mayoría de los proyectos de servicio. La estructura distrital e internacional complementa y fortalece esa labor, ampliando su capacidad de acción a escala local y global.</p>
+
+      <h3>El corazón de Rotary: los clubes</h3>
+      <p>Los clubes son entidades autónomas que, en conjunto, conforman la asociación mundial <strong>Rotary International (RI)</strong>. Cada club elige a sus propios directivos y goza de considerable independencia, siempre dentro del marco de los Estatutos y el Reglamento de RI. Esa autonomía le permite adaptarse a las necesidades concretas de su comunidad.</p>
+
+      <h3>El enlace y apoyo: los distritos</h3>
+      <p>Los <strong>distritos</strong> agrupan a los clubes; existen 534 en todo el mundo. Cada distrito está liderado por un <strong>gobernador</strong>, funcionario de RI que actúa como enlace entre los clubes y la organización internacional. Con el apoyo de asistentes y comités distritales, el gobernador ofrece guía, recursos y respaldo para optimizar el desempeño de los clubes.</p>
+
+      <h3>Liderazgo global: la Junta Directiva</h3>
+      <p>La conducción estratégica de RI recae en la <strong>Junta Directiva</strong>, compuesta por 19 miembros, entre ellos el presidente y el presidente electo. Se reúne trimestralmente para definir políticas y prioridades. El presidente de RI, cuyo mandato dura un año, fija el lema anual y las iniciativas que inspirarán a los rotarios de todo el mundo.</p>
+
+      <h3>El centro administrativo: la Secretaría de RI</h3>
+      <p>La <strong>Secretaría de Rotary International</strong>, con sede en Evanston (Illinois), coordina las operaciones globales. Cuenta con siete oficinas regionales (Argentina, Australia, Brasil, Corea, India, Japón y Suiza) y la Oficina de RI en Gran Bretaña e Irlanda (RIBI). Al frente está el <strong>secretario general</strong>, máximo responsable de la gestión, que dirige a un equipo de unos 650 profesionales.</p>
+
+      <div class="tabla-scroll">
+        <p class="hint-desliza">Desliza horizontalmente para ver toda la tabla →</p>
+        <table class="comparativa">
+          <caption>Niveles de la estructura de Rotary International.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Nivel</th>
+              <th scope="col">En qué consiste</th>
+              <th scope="col">Quién lo dirige</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Club</th>
+              <td>Unidad base y autónoma donde se realizan los proyectos de servicio.</td>
+              <td>Presidente del club y su junta directiva.</td>
+            </tr>
+            <tr>
+              <th scope="row">Distrito</th>
+              <td>Agrupación de clubes de una zona; brinda guía y recursos. Hay 534 en el mundo.</td>
+              <td>Gobernador del distrito, con asistentes y comités.</td>
+            </tr>
+            <tr>
+              <th scope="row">Junta Directiva de RI</th>
+              <td>Define políticas y prioridades de toda la organización; se reúne cada trimestre.</td>
+              <td>19 miembros, incluidos el presidente y el presidente electo de RI.</td>
+            </tr>
+            <tr>
+              <th scope="row">Secretaría de RI</th>
+              <td>Centro administrativo global, en Evanston (Illinois), con siete oficinas regionales.</td>
+              <td>Secretario general y un equipo de unos 650 profesionales.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="destacado">
+        <span class="et">Los lemas de Rotary</span>
+        De aquellos primeros años proceden dos lemas que aún hoy guían a los rotarios: <strong>«Dar de sí antes de pensar en sí»</strong> y <strong>«Se beneficia más el que mejor sirve»</strong>.
+      </div>
+
+      <div class="nota">
+        <span class="et">Continuará</span>
+        En próximas entregas podremos profundizar en cada nivel —el club, el distrito, la Junta Directiva y la Secretaría— tal como se anuncia en los capítulos siguientes de esta serie.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ FUENTES ============ -->
+  <section class="fuentes" aria-labelledby="fuentes-titulo">
+    <h2 id="fuentes-titulo"><span class="pico" aria-hidden="true"></span>Fuentes y para saber más</h2>
+    <p class="intro">Adaptación divulgativa elaborada a partir de documentos oficiales de Rotary y fuentes históricas reconocidas.</p>
+    <ol>
+      <li><span class="titulo">Rotary International — Objetivo de Rotary, Prueba Cuádruple y Avenidas de Servicio.</span> <a href="https://www.rotary.org/es" target="_blank" rel="noopener">rotary.org/es</a></li>
+      <li><span class="titulo">Manual de Procedimiento de Rotary International.</span> Documento oficial sobre estructura, distritos y gobernanza.</li>
+      <li><span class="titulo">Rotary Global History Fellowship (RGHF).</span> <a href="https://rghf.org/" target="_blank" rel="noopener">rghf.org</a></li>
+      <li><span class="titulo">The Illinois Business Hall of Fame — Herbert J. Taylor.</span> Reseña biográfica del autor de la Prueba Cuádruple.</li>
+    </ol>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="envoltorio">
+    <div class="lic">
+      <span class="cc-badge">CC BY-NC-SA 4.0</span>
+      <p style="margin:0;">
+        <strong>¿Qué es Rotary?</strong> Obra de José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas. 2026.
+        Distribuida bajo licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener license">Creative Commons Atribución-NoComercial-CompartirIgual 4.0</a>.
+        Las marcas de Rotary pertenecen a Rotary International; este material es una adaptación divulgativa sin fines comerciales para uso de los socios.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<button id="arriba" type="button" aria-label="Volver al inicio de la página">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+  var secciones = Array.prototype.slice.call(document.querySelectorAll("details.seccion"));
+  var enlaces  = Array.prototype.slice.call(document.querySelectorAll(".indice .idx-link"));
+
+  var abrir = document.getElementById("abrir-todo");
+  var cerrar = document.getElementById("cerrar-todo");
+  if(abrir) abrir.addEventListener("click", function(){ secciones.forEach(function(d){ d.open = true; }); });
+  if(cerrar) cerrar.addEventListener("click", function(){ secciones.forEach(function(d){ d.open = false; }); });
+
+  enlaces.forEach(function(a){
+    a.addEventListener("click", function(e){
+      var id = a.getAttribute("href").slice(1);
+      var destino = document.getElementById(id);
+      if(destino){
+        e.preventDefault();
+        destino.open = true;
+        destino.scrollIntoView({behavior:"smooth", block:"start"});
+        history.replaceState(null, "", "#"+id);
+        marcarActivo(id);
+      }
+    });
+  });
+
+  if(location.hash){
+    var ini = document.getElementById(location.hash.slice(1));
+    if(ini && ini.matches("details.seccion")){ ini.open = true; }
+  }
+
+  function marcarActivo(id){
+    enlaces.forEach(function(a){ a.classList.toggle("activo", a.getAttribute("href") === "#"+id); });
+  }
+  if("IntersectionObserver" in window){
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(en){ if(en.isIntersecting){ marcarActivo(en.target.id); } });
+    }, {rootMargin:"-45% 0px -50% 0px", threshold:0});
+    secciones.forEach(function(s){ obs.observe(s); });
+  }
+
+  /* Fachada de video: carga el iframe solo al hacer clic (privacidad y rendimiento) */
+  document.querySelectorAll(".video-facade").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var id = btn.getAttribute("data-yt");
+      var ifr = document.createElement("iframe");
+      ifr.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0";
+      ifr.title = btn.getAttribute("aria-label") || "Video de YouTube";
+      ifr.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      ifr.allowFullscreen = true;
+      btn.innerHTML = "";
+      btn.appendChild(ifr);
+    });
+  });
+
+  var arriba = document.getElementById("arriba");
+  function alScroll(){
+    if(window.pageYOffset > 560){ arriba.classList.add("visible"); }
+    else { arriba.classList.remove("visible"); }
+  }
+  window.addEventListener("scroll", alScroll, {passive:true});
+  arriba.addEventListener("click", function(){ window.scrollTo({top:0, behavior:"smooth"}); });
+  alScroll();
+})();
+</script>
+
+</body>
+</html>
