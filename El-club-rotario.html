@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<!--
+  El club rotario — Guía divulgativa para socios que se inician (Tercera entrega).
+  Autor: José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas.
+  Año: 2026. Licencia: Creative Commons CC BY-NC-SA 4.0.
+  Resumen: qué es un club rotario, el principio de clasificaciones, los socios, las autoridades,
+  las cinco Avenidas de Servicio, el Plan de Liderazgo del Club, los clubes eficaces, los ciberclubes
+  y clubes satélite, las responsabilidades de la afiliación, la asistencia y la Prueba Cuádruple.
+  Fuentes: Manual de Procedimiento 2016, Estatutos y Reglamento de RI, y el Manual Rotario para Nuevos Socios.
+-->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El club rotario</title>
+<meta name="description" content="Qué es un club rotario y cómo funciona: clasificaciones, socios, autoridades, las cinco Avenidas de Servicio, el Plan de Liderazgo del Club, la afiliación, la asistencia y la Prueba Cuádruple.">
+<meta name="author" content="José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas">
+<meta name="license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --azul:#17458F;            /* Rotary royal blue */
+    --azul-osc:#0F2E5E;        /* deep navy — headings */
+    --azul-link:#1A5FA0;       /* links (AA on white) */
+    --oro:#F7A81B;             /* Rotary gold — accents only, never bg for white text */
+    --oro-osc:#8A5A00;         /* gold-ish text on light (AA) */
+    --crema:#FBFAF7;           /* page background */
+    --superficie:#FFFFFF;      /* cards */
+    --tinta:#20242B;           /* body text */
+    --tinta-sec:#4F5A6B;       /* secondary text (AA on light) */
+    --borde:#E4E0D6;           /* warm hairline */
+    --borde-frio:#D7DEE8;      /* cool hairline */
+    --azul-suave:#EEF3FA;      /* tinted surface */
+    --sombra:0 1px 3px rgba(15,46,94,.06), 0 6px 22px rgba(15,46,94,.07);
+    --radio:14px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--crema);
+    color:var(--tinta);
+    font-family:"Open Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:1.075rem;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:.001ms !important; transition-duration:.001ms !important;}
+  }
+
+  .envoltorio{max-width:920px; margin:0 auto; padding:0 22px;}
+
+  a{color:var(--azul-link);}
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:3px solid var(--oro);
+    outline-offset:2px;
+    border-radius:4px;
+  }
+
+  /* ---------- HERO ---------- */
+  header.hero{
+    background:
+      radial-gradient(120% 140% at 85% -20%, rgba(247,168,27,.16), transparent 55%),
+      linear-gradient(160deg, var(--azul-osc), var(--azul) 78%);
+    color:#fff;
+    border-bottom:5px solid var(--oro);
+  }
+  .hero .envoltorio{padding-top:46px; padding-bottom:42px;}
+  .eyebrow{
+    font-size:.8rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:#F4C778; margin:0 0 14px;
+  }
+  .hero h1{
+    font-family:"Zilla Slab",Georgia,serif;
+    font-weight:700; font-size:clamp(2rem,5.2vw,3.05rem); line-height:1.1;
+    margin:0 0 14px; letter-spacing:-.01em;
+  }
+  .hero .dek{
+    font-size:clamp(1.05rem,2.4vw,1.28rem); max-width:48ch;
+    color:#E7EEF7; margin:0 0 28px;
+  }
+
+  /* Signature: the rotary ribbon */
+  .ciclo{
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.22);
+    border-radius:999px;
+    padding:10px 18px; width:fit-content;
+  }
+  .ciclo svg{flex:0 0 auto;}
+  .ciclo .ciclo-txt{font-size:.95rem; line-height:1.3;}
+  .ciclo b{font-weight:700; color:#fff;}
+  .ciclo span{color:#D7E2F1;}
+  .ciclo .fecha{
+    font-family:"Zilla Slab",serif; font-weight:600; color:#FBD68B;
+    white-space:nowrap;
+  }
+
+  /* ---------- INTRO / ÍNDICE ---------- */
+  main{padding:40px 0 10px;}
+  .lede{
+    font-size:1.16rem; color:var(--tinta);
+    border-left:4px solid var(--oro); padding:2px 0 2px 18px; margin:0 0 34px;
+  }
+
+  .indice{
+    background:var(--superficie); border:1px solid var(--borde);
+    border-radius:var(--radio); box-shadow:var(--sombra);
+    padding:24px 26px 26px; margin-bottom:18px;
+  }
+  .indice h2{
+    font-family:"Zilla Slab",serif; font-size:1.05rem; text-transform:uppercase;
+    letter-spacing:.08em; color:var(--azul-osc); margin:0 0 16px;
+  }
+  .indice ol{list-style:none; counter-reset:idx; margin:0; padding:0;}
+  .indice li{counter-increment:idx; margin:0;}
+  .indice a.idx-link{
+    display:flex; align-items:center; gap:14px;
+    padding:9px 10px; border-radius:9px; text-decoration:none;
+    color:var(--tinta); border:1px solid transparent; transition:background .15s, border-color .15s;
+  }
+  .indice a.idx-link:hover{background:var(--azul-suave); border-color:var(--borde-frio);}
+  .indice a.idx-link.activo{background:var(--azul-suave); border-color:var(--azul);}
+  .indice a.idx-link::before{
+    content:counter(idx);
+    flex:0 0 auto;
+    width:30px; height:30px; border-radius:50%;
+    display:grid; place-items:center;
+    background:var(--azul); color:#fff; font-weight:700; font-size:.95rem;
+    font-family:"Zilla Slab",serif;
+  }
+  .indice a.idx-link.activo::before{background:var(--oro-osc);}
+
+  .controles{display:flex; gap:10px; margin:14px 0 26px; flex-wrap:wrap;}
+  .btn{
+    font-family:"Open Sans",sans-serif; font-size:.95rem; font-weight:600;
+    cursor:pointer; border-radius:9px; padding:9px 16px;
+    border:1px solid var(--azul); background:var(--superficie); color:var(--azul);
+    transition:background .15s,color .15s;
+  }
+  .btn:hover{background:var(--azul); color:#fff;}
+
+  /* ---------- SECCIONES (ACORDEÓN) ---------- */
+  details.seccion{
+    background:var(--superficie); border:1px solid var(--borde);
+    border-radius:var(--radio); box-shadow:var(--sombra);
+    margin:16px 0; overflow:hidden; scroll-margin-top:18px;
+  }
+  details.seccion[open]{border-color:var(--borde-frio);}
+  summary.cab{
+    list-style:none; cursor:pointer; user-select:none;
+    display:flex; align-items:center; gap:16px;
+    padding:18px 22px;
+  }
+  summary.cab::-webkit-details-marker{display:none;}
+  .num{
+    flex:0 0 auto; width:42px; height:42px; border-radius:50%;
+    display:grid; place-items:center;
+    background:linear-gradient(150deg,var(--azul),var(--azul-osc));
+    color:#fff; font-family:"Zilla Slab",serif; font-weight:700; font-size:1.25rem;
+  }
+  summary.cab h2{
+    font-family:"Zilla Slab",serif; font-weight:600; color:var(--azul-osc);
+    font-size:clamp(1.18rem,2.6vw,1.42rem); line-height:1.25; margin:0; flex:1;
+  }
+  .chevron{
+    flex:0 0 auto; color:var(--azul); transition:transform .2s ease;
+  }
+  details[open] summary.cab .chevron{transform:rotate(180deg);}
+  summary.cab:hover h2{color:var(--azul);}
+  details[open] summary.cab{border-bottom:1px solid var(--borde);}
+
+  .cuerpo{padding:6px 26px 26px;}
+  .cuerpo h3{
+    font-family:"Zilla Slab",serif; color:var(--azul); font-weight:600;
+    font-size:1.16rem; margin:26px 0 8px;
+  }
+  .cuerpo h3:first-child{margin-top:14px;}
+  .cuerpo p{margin:0 0 14px;}
+  .cuerpo ul{margin:0 0 16px; padding-left:0; list-style:none;}
+  .cuerpo ul li{
+    position:relative; padding-left:30px; margin:0 0 12px;
+  }
+  .cuerpo ul li::before{
+    content:""; position:absolute; left:6px; top:.62em;
+    width:9px; height:9px; border-radius:50%;
+    background:var(--oro); box-shadow:0 0 0 3px rgba(247,168,27,.2);
+  }
+  .cuerpo strong{color:var(--azul-osc);}
+
+  .nota{
+    background:var(--azul-suave); border:1px solid var(--borde-frio);
+    border-left:4px solid var(--azul);
+    border-radius:10px; padding:14px 18px; margin:18px 0;
+    font-size:1rem;
+  }
+  .nota .et{
+    display:inline-block; font-weight:700; color:var(--azul-osc);
+    text-transform:uppercase; letter-spacing:.06em; font-size:.78rem; margin-right:6px;
+  }
+  .destacado{
+    background:#FFF8EC; border:1px solid #F2D79A; border-left:4px solid var(--oro);
+    border-radius:10px; padding:14px 18px; margin:18px 0;
+  }
+  .destacado .et{
+    display:inline-block; font-weight:700; color:var(--oro-osc);
+    text-transform:uppercase; letter-spacing:.06em; font-size:.78rem; margin-right:6px;
+  }
+
+  /* ---------- CITAS ---------- */
+  blockquote.cita{
+    margin:20px 0; padding:16px 22px; background:var(--azul-suave);
+    border-left:4px solid var(--oro); border-radius:0 12px 12px 0;
+    font-size:1.06rem; color:var(--tinta);
+  }
+  blockquote.cita p{margin:0 0 8px; font-style:italic;}
+  blockquote.cita p:last-of-type{margin-bottom:0;}
+  blockquote.cita cite{
+    display:block; margin-top:8px; font-style:normal; font-weight:700;
+    color:var(--azul-osc); font-size:.9rem;
+  }
+
+  /* ---------- FIGURAS ---------- */
+  figure.figura{
+    margin:22px 0; background:var(--superficie);
+    border:1px solid var(--borde); border-radius:14px;
+    box-shadow:var(--sombra); overflow:hidden;
+  }
+  figure.figura img{
+    display:block; width:100%; height:auto; background:var(--azul-suave);
+  }
+  figure.figura figcaption{
+    padding:12px 18px; font-size:.93rem; color:var(--tinta-sec);
+    border-top:1px solid var(--borde);
+  }
+  figure.figura figcaption .fig-num{
+    font-family:"Zilla Slab",serif; font-weight:700; color:var(--azul-osc); margin-right:7px;
+  }
+  figure.figura figcaption .credito{
+    display:block; margin-top:3px; font-size:.8rem; font-style:italic; color:var(--tinta-sec);
+  }
+  .dos-figuras{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  .dos-figuras figure.figura{margin:22px 0 0;}
+  @media (max-width:560px){.dos-figuras{grid-template-columns:1fr;}}
+
+  /* ---------- VIDEO (FACHADA) ---------- */
+  .video-bloque{margin:24px 0;}
+  .video-bloque .v-titulo{
+    font-family:"Zilla Slab",serif; color:var(--azul); font-weight:600;
+    font-size:1.12rem; margin:0 0 10px;
+  }
+  .video-facade{
+    position:relative; display:block; width:100%; aspect-ratio:16/9;
+    border:1px solid var(--borde-frio); border-radius:14px; overflow:hidden;
+    background:linear-gradient(150deg,var(--azul-osc),var(--azul));
+    cursor:pointer; box-shadow:var(--sombra); padding:0;
+  }
+  .video-facade::after{content:""; position:absolute; inset:0; background:rgba(15,46,94,.22);}
+  .video-facade .play{
+    position:absolute; z-index:2; top:50%; left:50%; transform:translate(-50%,-50%);
+    width:74px; height:74px; border-radius:50%; background:rgba(255,255,255,.95);
+    display:grid; place-items:center; box-shadow:0 6px 20px rgba(0,0,0,.3);
+    transition:transform .15s, background .15s;
+  }
+  .video-facade:hover .play{transform:translate(-50%,-50%) scale(1.07); background:#fff;}
+  .video-facade .v-label{
+    position:absolute; z-index:2; left:16px; right:16px; bottom:14px;
+    color:#fff; font-weight:600; font-size:.98rem; text-align:left;
+    text-shadow:0 1px 5px rgba(0,0,0,.55);
+  }
+  .video-facade iframe{position:absolute; inset:0; width:100%; height:100%; border:0;}
+
+  .video-pendiente{
+    margin:24px 0; border:1.6px dashed var(--borde-frio); border-radius:14px;
+    background:var(--azul-suave); padding:22px 20px; text-align:center; color:var(--tinta-sec);
+  }
+  .video-pendiente .vp-ic{font-size:1.8rem; display:block; margin-bottom:6px;}
+  .video-pendiente b{color:var(--azul-osc);}
+
+  /* ---------- LÍNEA DE TIEMPO ---------- */
+  .linea-tiempo{list-style:none; margin:18px 0 6px; padding:0; position:relative;}
+  .linea-tiempo::before{
+    content:""; position:absolute; left:14px; top:6px; bottom:6px;
+    width:2px; background:var(--borde-frio);
+  }
+  .linea-tiempo li{position:relative; padding:0 0 18px 46px;}
+  .linea-tiempo li::before{
+    content:""; position:absolute; left:8px; top:3px;
+    width:14px; height:14px; border-radius:50%;
+    background:var(--oro); border:3px solid var(--superficie);
+    box-shadow:0 0 0 2px var(--oro);
+  }
+  .linea-tiempo .anio{
+    font-family:"Zilla Slab",serif; font-weight:700; color:var(--azul-osc);
+    font-size:1.05rem; margin-right:8px;
+  }
+
+  /* ---------- TABLA COMPARATIVA ---------- */
+  .tabla-scroll{overflow-x:auto; margin:14px 0 6px; border-radius:12px;}
+  .hint-desliza{display:none; font-size:.85rem; color:var(--tinta-sec); margin:0 0 8px;}
+  table.comparativa{
+    width:100%; min-width:560px; border-collapse:collapse;
+    background:var(--superficie); border:1px solid var(--borde-frio);
+    border-radius:12px; overflow:hidden; font-size:.98rem;
+  }
+  table.comparativa caption{
+    text-align:left; font-size:.9rem; color:var(--tinta-sec);
+    padding:0 0 10px; caption-side:top;
+  }
+  table.comparativa th[scope="col"]{
+    background:var(--azul); color:#fff; font-family:"Zilla Slab",serif;
+    font-weight:600; text-align:left; padding:13px 16px; vertical-align:middle;
+  }
+  table.comparativa th[scope="row"]{
+    background:var(--azul-suave); color:var(--azul-osc); font-weight:700;
+    text-align:left; padding:13px 16px; vertical-align:top;
+    width:24%; border-top:1px solid var(--borde-frio);
+  }
+  table.comparativa td{padding:13px 16px; vertical-align:top; border-top:1px solid var(--borde-frio);}
+  table.comparativa tbody tr:nth-child(even) td{background:#FAFBFD;}
+
+  /* ---------- FUENTES ---------- */
+  .fuentes{
+    background:var(--superficie); border:1px solid var(--borde);
+    border-radius:var(--radio); box-shadow:var(--sombra);
+    padding:24px 26px; margin:30px 0 10px;
+  }
+  .fuentes h2{
+    font-family:"Zilla Slab",serif; color:var(--azul-osc); font-size:1.35rem;
+    margin:0 0 6px; display:flex; align-items:center; gap:12px;
+  }
+  .fuentes h2 .pico{width:30px; height:4px; background:var(--oro); border-radius:3px;}
+  .fuentes p.intro{color:var(--tinta-sec); margin:0 0 16px; font-size:1rem;}
+  .fuentes ol{margin:0; padding-left:22px;}
+  .fuentes li{margin:0 0 9px;}
+  .fuentes li .titulo{color:var(--tinta);}
+  .fuentes li a{word-break:break-word; font-size:.92rem;}
+
+  /* ---------- PIE ---------- */
+  footer.pie{margin-top:30px; border-top:1px solid var(--borde); background:#fff;}
+  footer.pie .envoltorio{padding:26px 22px 40px; color:var(--tinta-sec); font-size:.9rem;}
+  footer.pie .lic{display:flex; align-items:flex-start; gap:12px; flex-wrap:wrap;}
+  footer.pie a{color:var(--azul-link);}
+  footer.pie .cc-badge{
+    flex:0 0 auto; font-weight:700; color:var(--azul-osc);
+    border:1px solid var(--borde-frio); border-radius:7px; padding:3px 9px; font-size:.82rem;
+  }
+
+  /* ---------- BOTÓN ARRIBA ---------- */
+  #arriba{
+    position:fixed; right:18px; bottom:18px; z-index:30;
+    width:48px; height:48px; border-radius:50%; border:none;
+    background:var(--azul); color:#fff; cursor:pointer;
+    box-shadow:0 6px 18px rgba(15,46,94,.28);
+    display:grid; place-items:center; opacity:0; pointer-events:none;
+    transition:opacity .2s, background .15s, transform .15s;
+  }
+  #arriba.visible{opacity:1; pointer-events:auto;}
+  #arriba:hover{background:var(--azul-osc); transform:translateY(-2px);}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:640px){
+    body{font-size:1.02rem;}
+    .hero .envoltorio{padding-top:34px; padding-bottom:32px;}
+    .cuerpo{padding:6px 18px 22px;}
+    summary.cab{padding:15px 16px; gap:12px;}
+    .num{width:36px; height:36px; font-size:1.1rem;}
+    .indice{padding:20px 18px;}
+    .hint-desliza{display:block;}
+  }
+
+  /* ---------- IMPRESIÓN ---------- */
+  @media print{
+    body{background:#fff; color:#000; font-size:11pt;}
+    header.hero{background:#fff !important; color:#000; border-bottom:2px solid #000;}
+    .eyebrow{color:#000;} .hero h1{color:#000;} .hero .dek{color:#000;} .ciclo{display:none;}
+    #arriba,.controles{display:none;}
+    details.seccion .cuerpo{display:block !important;}
+    details.seccion,.indice,.fuentes,figure.figura{box-shadow:none; border:1px solid #999; break-inside:avoid;}
+    .chevron{display:none;}
+    a{color:#000; text-decoration:underline;}
+  }
+
+  /* ---------- IMAGEN PENDIENTE (marcador para el editor) ---------- */
+  .figura-pendiente{
+    margin:22px 0; border:1.6px dashed var(--borde-frio); border-radius:14px;
+    background:var(--azul-suave); padding:22px 20px; text-align:center; color:var(--tinta-sec);
+  }
+  .figura-pendiente .fp-ic{font-size:1.7rem; display:block; margin-bottom:6px;}
+  .figura-pendiente b{color:var(--azul-osc);}
+  .figura-pendiente .fp-ruta{
+    display:inline-block; margin-top:6px; font-family:"Zilla Slab",serif;
+    font-size:.85rem; color:var(--oro-osc); word-break:break-all;
+  }
+</style>
+
+</head>
+<body>
+
+<header class="hero">
+  <div class="envoltorio">
+    <p class="eyebrow">Conoce Rotary · Tercera entrega</p>
+    <h1>El club rotario</h1>
+    <p class="dek">El corazón de Rotary. Qué es un club, cómo se organiza, quiénes lo integran y qué se espera de cada socio.</p>
+    <div class="ciclo">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+        <circle cx="17" cy="17" r="13" fill="none" stroke="#F7A81B" stroke-width="2.4" stroke-dasharray="62 20" stroke-linecap="round"/>
+        <path d="M27 9 l1.8 5.4 -5.6 -.9 z" fill="#F7A81B"/>
+      </svg>
+      <span class="ciclo-txt"><b>Si Rotary es el cuerpo y los socios las células,</b><br>
+        <span>el club es</span> <span class="fecha">el órgano que da vida al servicio</span></span>
+    </div>
+  </div>
+</header>
+
+<main class="envoltorio">
+
+  <p class="lede">Tras conocer los orígenes de Rotary y a sus fundadores, esta tercera entrega se adentra en la unidad fundamental del movimiento: el club rotario. Comprender cómo funciona un club, qué papeles lo sostienen y qué compromisos asume cada socio es el primer paso para vivir plenamente la experiencia rotaria.</p>
+
+  <nav class="indice" aria-label="Índice de la entrega">
+    <h2>En esta entrega</h2>
+    <ol>
+      <li><a class="idx-link" href="#s1">¿Qué es un club rotario?</a></li>
+      <li><a class="idx-link" href="#s2">El principio de las clasificaciones</a></li>
+      <li><a class="idx-link" href="#s3">Los socios: requisitos, clases e incorporación</a></li>
+      <li><a class="idx-link" href="#s4">Las autoridades del club</a></li>
+      <li><a class="idx-link" href="#s5">Las cinco Avenidas de Servicio</a></li>
+      <li><a class="idx-link" href="#s6">El Plan de Liderazgo del Club</a></li>
+      <li><a class="idx-link" href="#s7">Características de un club eficaz</a></li>
+      <li><a class="idx-link" href="#s8">Modalidades de club: ciberclubes y clubes satélite</a></li>
+      <li><a class="idx-link" href="#s9">Responsabilidades que conlleva la afiliación</a></li>
+      <li><a class="idx-link" href="#s10">La reunión y la asistencia</a></li>
+      <li><a class="idx-link" href="#s11">La Prueba Cuádruple y la conducta rotaria</a></li>
+      <li><a class="idx-link" href="#s12">Los comités de cónyuges y familiares</a></li>
+    </ol>
+  </nav>
+
+  <div class="controles">
+    <button class="btn" id="abrir-todo" type="button">Abrir todo</button>
+    <button class="btn" id="cerrar-todo" type="button">Cerrar todo</button>
+  </div>
+
+  <!-- ============ SECCIÓN 1 ============ -->
+  <details class="seccion" id="s1" open>
+    <summary class="cab">
+      <span class="num" aria-hidden="true">1</span>
+      <h2>¿Qué es un club rotario?</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>Existe una imagen sencilla que ayuda a situar al club dentro de la organización mundial. Si se considera que <strong>Rotary International es el cuerpo</strong> y que <strong>los socios son las células</strong>, entonces el <strong>club rotario es el órgano</strong>: la estructura viva a través de la cual se promueve el programa rotario y se alcanza el Objetivo de Rotary.</p>
+
+      <p>Un club rotario es una <strong>organización de líderes profesionales y empresariales</strong> que ejercen sus actividades en una comunidad determinada, con el doble propósito de fomentar el compañerismo y prestar servicio. Cada club cuenta con un presidente y una junta directiva, elegidos anualmente, y goza de amplia autonomía para organizarse conforme a sus propios estatutos y reglamento, siempre dentro del marco de los documentos estatutarios de Rotary International.</p>
+
+      <figure class="figura">
+        <img src="https://zhemaria.github.io/rotary/image/GustavusLoehr_SilvesterSchiele_HiramShorey_PaulHarris.jpg" alt="Retratos en hilera de los cuatro fundadores de Rotary: un ingeniero de minas, un comerciante de carbón, un sastre y un abogado.">
+        <figcaption><span class="fig-num">Figura 1.</span>Desde su primera reunión, el club reunió a personas de oficios distintos: un ingeniero de minas, un comerciante de carbón, un sastre y un abogado.<span class="credito">Fuente: RGHF.</span></figcaption>
+      </figure>
+
+      <h3>La finalidad de los clubes rotarios</h3>
+      <p>El Manual de Procedimiento establece con claridad qué se espera de todo club rotario. Sus propósitos son cinco:</p>
+      <ul>
+        <li><strong>Impulsar el Objetivo de Rotary</strong> como base de toda su labor.</li>
+        <li><strong>Desarrollar proyectos de servicio exitosos</strong> sobre la base de las Cinco Avenidas de Servicio.</li>
+        <li><strong>Contribuir al avance de Rotary</strong> mediante el fortalecimiento de la membresía.</li>
+        <li><strong>Apoyar a La Fundación Rotaria</strong> con contribuciones económicas y participación en sus programas.</li>
+        <li><strong>Formar líderes</strong> capaces de servir a Rotary más allá del ámbito del club.</li>
+      </ul>
+
+      <div class="nota">
+        <span class="et">Para el nuevo socio</span>
+        El club es el lugar donde ocurre lo esencial de Rotary. Todo lo demás —el distrito, la organización mundial, La Fundación— existe para sostener y potenciar la labor que cada club realiza en su comunidad.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 2 ============ -->
+  <details class="seccion" id="s2">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">2</span>
+      <h2>El principio de las clasificaciones</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>El principio de las clasificaciones <strong>nace con Rotary</strong> y lo distingue de otras organizaciones similares. Consiste en agrupar a los socios en función de su profesión, ocupación o servicio a la comunidad, de modo que el club constituya —en su composición social— un verdadero corte transversal de la sociedad en la que se desenvuelve. Fue un pilar de la estructura rotaria desde la primera reunión y sigue siendo la base de las normas de afiliación.</p>
+
+      <p>Una <strong>clasificación describe la actividad principal y reconocida</strong> de la firma, empresa o institución del socio, su ocupación empresarial o profesional, o la índole del servicio cívico que presta a la comunidad. Un detalle importante: la clasificación <strong>pertenece al club, y el socio la recibe en préstamo</strong>. Por eso se denomina según la actividad o el servicio, y no según el cargo de la persona (por ejemplo: <em>Medicina</em>, no «médico»; <em>Abogacía</em>, no «abogado»; <em>Banca</em>, no «bancario»).</p>
+
+      <blockquote class="cita">
+        <p>«A todo socio activo se le clasificará de acuerdo con su negocio, profesión, ocupación o servicio cívico a la comunidad.»</p>
+        <cite>— Estatutos prescritos a los clubes rotarios, Artículo 9</cite>
+      </blockquote>
+
+      <h3>Los límites de una clasificación</h3>
+      <p>En sus orígenes, dentro de un club solo podía existir <strong>un representante por cada clasificación</strong>. Con el tiempo, la norma se flexibilizó. Hoy pueden coexistir hasta <strong>cinco socios de una misma clasificación</strong>; y en los clubes con más de cincuenta socios, los socios de una misma clasificación pueden llegar hasta el <strong>10 % de los socios activos</strong>. Los socios jubilados no se computan en esa cifra, y la clasificación de un ex socio, de un rotaractiano o de un ex becario no se considera impedimento para incorporarlo, aun cuando en ese momento se superen los límites establecidos.</p>
+
+      <h3>Membresía diversa</h3>
+      <p>El propio Artículo 9 subraya que los socios deben ser <strong>representativos de las empresas, profesiones, ocupaciones y organizaciones cívicas de la comunidad</strong>, tanto en términos de edad como de género y diversidad étnica. La clasificación, así entendida, no es un mero requisito administrativo: es la garantía de que el club refleje la riqueza de su entorno.</p>
+
+      <div class="figura-pendiente">
+        <span class="fp-ic" aria-hidden="true">🖼️</span>
+        <b>Imagen pendiente:</b> El club como reflejo diverso de la sociedad (composición equilibrada por profesión, edad, género y origen).
+        <span class="fp-ruta">https://zhemaria.github.io/rotary/image/club-diverso.jpg</span>
+      </div>
+
+      <h3>Ventajas del sistema de clasificaciones</h3>
+      <p>La clasificación de los socios reporta beneficios concretos a la vida del club:</p>
+      <ul>
+        <li><strong>Diversidad y representación.</strong> Un amplio espectro de oficios enriquece las discusiones y aporta variedad de perspectivas a los proyectos.</li>
+        <li><strong>Enfoque en el servicio.</strong> Vincula a cada socio con su área de conocimiento y con las necesidades de la comunidad, lo que facilita identificar proyectos que aprovechen sus habilidades y contactos.</li>
+        <li><strong>Fortalecimiento de las relaciones profesionales.</strong> Propicia la creación de redes y el intercambio de conocimientos entre los socios.</li>
+        <li><strong>Planificación estratégica de proyectos.</strong> Conocer las clasificaciones permite asignar tareas a quienes poseen las destrezas adecuadas y lograr un mayor impacto.</li>
+        <li><strong>Identidad del club.</strong> Una membresía diversa y orientada al servicio define la identidad del club y lo hace más atractivo para nuevos socios.</li>
+        <li><strong>Prevención de conflictos de intereses.</strong> El equilibrio entre sectores reduce el riesgo de que uno solo domine las decisiones del club.</li>
+      </ul>
+
+      <div class="dos-figuras">
+        <figure class="figura">
+        <img src="https://zhemaria.github.io/rotary/image/clasif-diversidad.jpg" alt="Socios de un club rotario de diversas profesiones colaborando en una actividad.">
+        <figcaption><span class="fig-num">Figura 2.</span>Diversidad de profesiones y perspectivas en la mesa de trabajo.<span class="credito">Fuente: Rotary International.</span></figcaption>
+      </figure>
+        <figure class="figura">
+        <img src="https://zhemaria.github.io/rotary/image/clasif-servicio.jpg" alt="Rotarios aplicando sus competencias profesionales en un proyecto de servicio comunitario.">
+        <figcaption><span class="fig-num">Figura 3.</span>El conocimiento profesional de cada socio, puesto al servicio de la comunidad.<span class="credito">Fuente: Rotary International.</span></figcaption>
+      </figure>
+      </div>
+      <div class="dos-figuras">
+        <figure class="figura">
+        <img src="https://zhemaria.github.io/rotary/image/clasif-companerismo.jpg" alt="Socios de Rotary conversando y creando vínculos profesionales.">
+        <figcaption><span class="fig-num">Figura 4.</span>El compañerismo profesional que nace del intercambio entre oficios.<span class="credito">Fuente: Rotary International.</span></figcaption>
+      </figure>
+        <figure class="figura">
+        <img src="https://zhemaria.github.io/rotary/image/clasif-planificacion.jpg" alt="Equipo rotario planificando un proyecto de servicio de manera estratégica.">
+        <figcaption><span class="fig-num">Figura 5.</span>Planificación estratégica de proyectos según las clasificaciones del club.<span class="credito">Fuente: Rotary International.</span></figcaption>
+      </figure>
+      </div>
+
+      <div class="destacado">
+        <span class="et">En síntesis</span>
+        El sistema de clasificaciones no solo asegura diversidad y representación: fortalece la capacidad del club para servir a su comunidad y lograr sus objetivos, y convierte a Rotary en una fuerza positiva y transformadora.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 3 ============ -->
+  <details class="seccion" id="s3">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">3</span>
+      <h2>Los socios: requisitos, clases e incorporación</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>Los socios son el <strong>activo más importante de un club rotario</strong>. Por ello Rotary dedica especial cuidado a la calidad de las personas que nutren sus filas: es imprescindible crecer y retener socios, pero siempre con responsabilidad, sin sacrificar la calidad de los verdaderos rotarios.</p>
+
+      <h3>Requisitos de admisión</h3>
+      <p>Para ser socio de un club rotario se requiere tratarse de una <strong>persona adulta</strong> que goce de buena reputación, posea integridad y condiciones de liderazgo, tenga buena reputación en sus negocios, profesión o comunidad, y esté dispuesta a servir en su localidad o en el mundo entero. Asimismo, debe tener su lugar de trabajo o residencia en la localidad del club o en el área circundante. Un socio que se mude fuera de esos límites podrá conservar su afiliación, con autorización de la junta directiva, siempre que siga cumpliendo todos los requisitos.</p>
+
+      <h3>Las dos clases de socio</h3>
+      <p>Los estatutos contemplan dos categorías de socio:</p>
+      <ul>
+        <li><strong>Socio activo.</strong> Es quien ocupa una clasificación en el club de acuerdo con su negocio o profesión, y asume todos los deberes, responsabilidades y privilegios que disponen las normas rotarias. Los socios activos se denominan <em>rotarios</em> y tienen derecho a usar el emblema de Rotary.</li>
+        <li><strong>Socio honorario.</strong> Es la más alta distinción que un club otorga a una persona. Se concede en casos excepcionales, por servicios meritorios en la promoción de los ideales de Rotary. La decisión corresponde a la junta directiva y su duración es de un año. El socio honorario no paga cuotas ni tiene obligación de asistencia, y no ocupa clasificación.</li>
+      </ul>
+
+      <div class="figura-pendiente">
+        <span class="fp-ic" aria-hidden="true">🖼️</span>
+        <b>Imagen pendiente:</b> Ceremonia de incorporación de un nuevo socio (entrega del distintivo rotario / apadrinamiento).
+        <span class="fp-ruta">https://zhemaria.github.io/rotary/image/nuevo-socio.jpg</span>
+      </div>
+
+      <h3>Procedimiento recomendado para incorporar a un nuevo socio</h3>
+      <p>La captación de socios es responsabilidad de todos. El procedimiento recomendado sigue estos pasos:</p>
+      <ul>
+        <li>Mantener al día un <strong>estudio de clasificaciones ocupadas y vacantes</strong>.</li>
+        <li>Pensar en una persona que pueda llenar una clasificación vacante —un amigo, familiar o relacionado— de buena reputación y con vocación de servicio.</li>
+        <li>Presentar su nombre al club a través del <strong>Comité de Desarrollo del Cuadro Social</strong>, que lo hará circular para verificar que no exista objeción, conforme al reglamento del club.</li>
+        <li>Si no hay objeciones, invitar a la persona a las reuniones, explicarle sus deberes y obligaciones, involucrar a su cónyuge e invitarla a conocer los proyectos de servicio, brindándole suficiente instrucción rotaria.</li>
+        <li>Si se siente a gusto, invitarla a formar parte del club y celebrar una <strong>ceremonia especial</strong> de ingreso, en la que el proponente actúa como padrino.</li>
+        <li>Es responsabilidad de todo el club <strong>inducir al nuevo socio</strong>, dándole participación inmediata en las actividades.</li>
+      </ul>
+
+      <div class="destacado">
+        <span class="et">Un nuevo rotario cada año</span>
+        Una buena costumbre rotaria invita a que cada socio proponga, cada año, al menos a una persona calificada para ingresar a su club. Así se asegura la vitalidad y el crecimiento responsable de la membresía.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 4 ============ -->
+  <details class="seccion" id="s4">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">4</span>
+      <h2>Las autoridades del club</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>El organismo rector y administrativo de un club rotario es su <strong>junta directiva</strong>. En los clubes que poseen personería jurídica, la autoridad máxima es la <strong>Asamblea del Club</strong>: en la primera quincena de diciembre se convoca una asamblea eleccionaria para elegir a los futuros funcionarios.</p>
+
+      <h3>La junta directiva</h3>
+      <p>Las autoridades que componen la directiva varían según los estatutos y el reglamento que cada club adopte, pero obligatoriamente deben incluir a los siguientes funcionarios:</p>
+      <ul>
+        <li><strong>Presidente.</strong> Preside todas las reuniones del club y de la directiva.</li>
+        <li><strong>Ex presidente inmediato.</strong> Actúa como miembro de la junta directiva.</li>
+        <li><strong>Presidente electo.</strong> Se prepara para asumir su mandato futuro y funciona como miembro activo de la directiva.</li>
+        <li><strong>Secretario.</strong> Mantiene al día los registros de membresía y de asistencia de los socios.</li>
+        <li><strong>Tesorero.</strong> Supervisa los fondos del club y rinde cuentas anualmente sobre su uso.</li>
+      </ul>
+
+      <p>Además de estos cargos mínimos, la estructura del club puede integrar otros funcionarios que la complementan:</p>
+      <ul>
+        <li><strong>Vicepresidente (o vicepresidentes).</strong> Presiden las reuniones del club y de la directiva en ausencia del presidente.</li>
+        <li><strong>Macero (maestro de ceremonias).</strong> Responsable de mantener el orden durante las reuniones. Según el reglamento, puede o no ser miembro de la directiva.</li>
+        <li><strong>Directores.</strong> Forman parte del cuerpo administrativo; su deber principal es asistir a las reuniones del club y de la directiva.</li>
+        <li><strong>Presidente propuesto.</strong> A discreción del club, también puede integrarse a la directiva.</li>
+        <li><strong>Director de comunicaciones.</strong> Cargo propio de los modelos digitales —como el Rotary e-Club de Puerto Rico y Las Américas—, encargado de preparar el salón virtual para las reuniones.</li>
+      </ul>
+
+      <div class="nota">
+        <span class="et">Nuevo Plan de Liderazgo</span>
+        Si el club ha adoptado el Plan de Liderazgo del Club, su directiva puede estar compuesta por los presidentes de los cinco comités permanentes. En cualquier caso, la junta directiva estará integrada por quienes establezca el reglamento específico de cada club (véase la sección 6).
+      </div>
+
+      <h3>Atribuciones de la directiva</h3>
+      <p>Al actuar de forma conjunta como junta directiva, sus integrantes asumen responsabilidades administrativas y de liderazgo:</p>
+      <ul>
+        <li>Ejercer la <strong>autoridad general sobre todos los funcionarios y comités</strong> del club.</li>
+        <li>Tomar <strong>decisiones definitivas sobre los asuntos del club</strong>, las cuales rigen a menos que se apele ante la totalidad de los socios.</li>
+        <li>Declarar vacante cualquier puesto directivo o de comité cuando exista causa justificada.</li>
+        <li>Mantener su condición de <strong>socios activos</strong> y estar al día en todas sus obligaciones con el club.</li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 5 ============ -->
+  <details class="seccion" id="s5">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">5</span>
+      <h2>Las cinco Avenidas de Servicio</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>Las <strong>Cinco Avenidas de Servicio</strong> constituyen el marco de referencia filosófico y práctico de la labor de todo club rotario. Están basadas en el Objetivo de Rotary y representan la piedra angular sobre la cual se desarrolla el trabajo de los clubes.</p>
+
+      <table class="comparativa">
+        <caption>Las cinco Avenidas de Servicio y el alcance de cada una.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Avenida</th>
+            <th scope="col">Qué abarca</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Servicio en el Club</th>
+            <td>La acción que realiza cada socio en el seno del club para afianzar el compañerismo y asegurar su funcionamiento eficiente.</td>
+          </tr>
+          <tr>
+            <th scope="row">Servicio a través de la Ocupación</th>
+            <td>Promueve la práctica de elevadas normas de ética profesional y empresarial, reconoce el valor de toda ocupación digna e invita a poner las competencias profesionales al servicio de la comunidad.</td>
+          </tr>
+          <tr>
+            <th scope="row">Servicio en la Comunidad</th>
+            <td>Los esfuerzos de los socios para mejorar la calidad de vida de quienes residen en la localidad donde opera el club.</td>
+          </tr>
+          <tr>
+            <th scope="row">Servicio Internacional</th>
+            <td>Las acciones que promueven la paz, la buena voluntad y la comprensión entre los pueblos mediante el conocimiento de otras culturas y la cooperación en proyectos que ayudan a personas de otras tierras.</td>
+          </tr>
+          <tr>
+            <th scope="row">Servicio a la Juventud</th>
+            <td>Reconoce el potencial de los jóvenes y adultos jóvenes mediante el desarrollo del liderazgo, la participación en proyectos y los programas de intercambio (Interact, Rotaract, RYLA e Intercambio de Jóvenes).</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="nota">
+        <span class="et">Un dato</span>
+        El <strong>Servicio a la Juventud</strong> es la más reciente de las avenidas: fue aprobada por el Consejo de Legislación de 2010 y entró en vigor en julio de ese mismo año en todo el mundo rotario.
+      </div>
+
+      <h3>¿Quién lidera las Avenidas de Servicio?</h3>
+      <p>Los estatutos no establecen la figura de un «presidente de avenida» como cargo directivo. El trabajo práctico se canaliza a través de los comités del club —en especial el Comité de Proyectos de Servicio— y recae en las siguientes figuras:</p>
+      <ul>
+        <li><strong>Presidente del comité.</strong> Responsable de conducir las reuniones del comité, coordinar la labor de sus miembros y rendir informes ante la junta directiva.</li>
+        <li><strong>Directores de proyecto.</strong> Encargados de proponer cada iniciativa por escrito, definiendo qué se hará, cómo, dónde, cuándo y con qué recursos. Quien desee sumarse a una iniciativa debe coordinarse con su director.</li>
+        <li><strong>Presidente del club.</strong> Miembro <em>ex oficio</em> de todos los comités, con los mismos privilegios que los demás para participar y apoyar la labor del club.</li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 6 ============ -->
+  <details class="seccion" id="s6">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">6</span>
+      <h2>El Plan de Liderazgo del Club</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>La Directiva de Rotary International recomienda a los clubes la implementación del <strong>Plan de Liderazgo del Club</strong>, un andamiaje administrativo inspirado en las mejores prácticas para acrecentar la eficacia de los clubes rotarios. Su objetivo es <strong>simplificar la estructura administrativa</strong> y dar continuidad a la gestión de un año al siguiente.</p>
+
+      <h3>Los cinco comités permanentes</h3>
+      <p>El plan recomienda el nombramiento de cinco comités permanentes, orientados a cumplir las metas anuales del club:</p>
+      <ul>
+        <li><strong>Cuadro Social.</strong> Desarrolla e implementa un plan para la captación y la retención de socios.</li>
+        <li><strong>Relaciones Públicas.</strong> Da a conocer las actividades del club y proyecta una imagen pública positiva de Rotary.</li>
+        <li><strong>Administración del Club.</strong> Atiende las actividades vinculadas al funcionamiento eficaz del club. El secretario, el tesorero y el macero son parte integrante de este comité.</li>
+        <li><strong>Proyectos de Servicio.</strong> Planifica y ejecuta los proyectos —locales e internacionales— sobre la base de las Avenidas de Servicio.</li>
+        <li><strong>La Fundación Rotaria.</strong> Promueve la participación en los programas y las contribuciones a La Fundación Rotaria.</li>
+      </ul>
+
+      <div class="nota">
+        <span class="et">Cada club, su propio plan</span>
+        Cada club debe elaborar <strong>su propio plan de liderazgo</strong>. Los dirigentes en ejercicio, los entrantes y los ex dirigentes trabajan juntos para incorporar las fortalezas y las mejores prácticas del club, y revisan el plan cada año para que refleje su identidad y sus metas.
+      </div>
+
+      <h3>No confundir con otros planes</h3>
+      <p>Conviene distinguir el Plan de Liderazgo del Club de otros instrumentos afines dentro de la estructura de Rotary:</p>
+      <ul>
+        <li><strong>Plan de Liderazgo Distrital.</strong> Instrumento del ámbito del distrito; entre otras cosas, dio origen a la figura de los asistentes del gobernador.</li>
+        <li><strong>Plan Estratégico de Rotary International.</strong> A escala global, la organización se rige por un plan estratégico que la Directiva de RI adopta y supervisa.</li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 7 ============ -->
+  <details class="seccion" id="s7">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">7</span>
+      <h2>Características de un club eficaz</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>Los clubes constituyen la piedra angular de Rotary, pues es en su seno donde se efectúa la labor más significativa. Para considerarse eficaz, un club debe trabajar en las Avenidas de Servicio, implementar el Plan de Liderazgo del Club y, en particular, cumplir con cuatro premisas fundamentales:</p>
+      <ul>
+        <li><strong>Mantener y aumentar su cuadro social.</strong></li>
+        <li><strong>Implementar proyectos de servicio eficaces</strong> que beneficien a su comunidad y a comunidades de otros países.</li>
+        <li><strong>Apoyar a La Fundación Rotaria</strong> mediante contribuciones y participación en sus programas.</li>
+        <li><strong>Capacitar a sus líderes</strong> para servir a Rotary más allá del ámbito del club.</li>
+      </ul>
+
+      <h3>Mejores prácticas para los clubes dinámicos</h3>
+      <p>La experiencia rotaria ha decantado un conjunto de prácticas que dinamizan la vida del club:</p>
+      <ul>
+        <li>Trazar un plan a largo plazo que propicie la participación dinámica en el club.</li>
+        <li>Fijar metas anuales en consonancia con ese plan a largo plazo.</li>
+        <li>Organizar asambleas de club en las que se dé participación e información a los socios.</li>
+        <li>Asegurar la comunicación fluida entre el presidente, la directiva, los presidentes de comité, los socios, el gobernador y sus asistentes.</li>
+        <li>Propiciar la continuidad en el liderazgo, planificando la sucesión y la formación de futuros líderes.</li>
+        <li>Enmendar el reglamento del club conforme al esquema vigente.</li>
+        <li>Fomentar el compañerismo mediante eventos sociales.</li>
+        <li>Garantizar que todo socio participe directamente en un proyecto o función del club.</li>
+        <li>Ofrecer formación permanente a los socios.</li>
+        <li>Establecer los comités que satisfagan las necesidades del club.</li>
+      </ul>
+
+      <div class="destacado">
+        <span class="et">Flexibilidad</span>
+        Todo club que desee probar un nuevo enfoque puede hacerlo enmendando su reglamento, en la medida en que lo permiten los Estatutos prescritos a los clubes. También puede continuar funcionando con los requisitos vigentes en cuanto a reuniones, asistencia, estructura y clases de socios. Conviene conversarlo con los socios para determinar si las opciones de flexibilidad ayudan a atender las necesidades del club.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 8 ============ -->
+  <details class="seccion" id="s8">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">8</span>
+      <h2>Modalidades de club: ciberclubes y clubes satélite</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>No todos los clubes rotarios se reúnen del mismo modo. Junto al club tradicional que se congrega en persona, Rotary reconoce otras modalidades que amplían las posibilidades de participación.</p>
+
+      <h3>Los ciberclubes (e-clubs)</h3>
+      <p>Los ciberclubes se reúnen <strong>en línea</strong> y no de forma presencial. Funcionan igual que los clubes tradicionales: se disfruta del compañerismo, se ejecutan proyectos de servicio y se realizan actividades de recaudación de fondos. Gozan de todos los derechos, privilegios y obligaciones característicos de la membresía en Rotary International. El <strong>Rotary e-Club de Puerto Rico y Las Américas</strong> es un ejemplo de esta modalidad, que exige a sus socios contar con los medios electrónicos y los conocimientos necesarios para participar con fluidez en las videoconferencias.</p>
+
+      <h3>Los clubes satélite</h3>
+      <p>Los clubes satélite funcionan como <strong>un club dentro de otro club</strong>. Sus socios son, a la vez, socios del club patrocinador; se reúnen por separado, pero operan de acuerdo con las reglas de un club tradicional. Constituyen una vía flexible para hacer crecer la membresía y llegar a nuevos grupos de la comunidad.</p>
+
+      <div class="nota">
+        <span class="et">Consejo de Legislación 2016</span>
+        El Consejo de Legislación de 2016 dio a los clubes mayor libertad para decidir cuándo, dónde y cómo reunirse, así como para fijar sus propios requisitos de asistencia. Esta flexibilidad reconoce la diversidad de los clubes de todo el mundo.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 9 ============ -->
+  <details class="seccion" id="s9">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">9</span>
+      <h2>Responsabilidades que conlleva la afiliación</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>Al afiliarse a un club rotario, el socio asume una serie de responsabilidades de carácter administrativo, financiero, ético y de servicio. La retribución que recibe depende, en buena medida, de su grado de dedicación personal a la organización.</p>
+
+      <h3>1. Asistencia y participación activa</h3>
+      <ul>
+        <li><strong>Asistencia a las reuniones.</strong> Se considera presente al socio que permanezca al menos el 60 % del tiempo de la reunión (los detalles se amplían en la sección 10).</li>
+        <li><strong>Participación en el servicio.</strong> Se espera que el socio se involucre activa y directamente en los proyectos, las funciones del club y las actividades comunitarias.</li>
+        <li><strong>Requisitos tecnológicos (e-clubs).</strong> En los ciberclubes, el socio debe contar con los medios electrónicos y los conocimientos necesarios para participar en las videoconferencias.</li>
+      </ul>
+
+      <h3>2. Obligaciones financieras</h3>
+      <ul>
+        <li><strong>Pago de cuotas.</strong> Todo socio debe abonar las cuotas ordinarias del club y las cuotas <em>per cápita</em> de Rotary International y del distrito dentro de los plazos establecidos. El impago tras el tiempo estipulado puede acarrear la baja, a criterio de la directiva.</li>
+        <li><strong>Suscripción a la revista oficial.</strong> Mientras dure la afiliación, es obligatorio suscribirse a la revista oficial de Rotary o a una revista regional aprobada por la Directiva de RI.</li>
+      </ul>
+
+      <h3>3. Conducta ética y profesional</h3>
+      <ul>
+        <li><strong>Elevadas normas de ética.</strong> Se espera que el rotario ponga en práctica el ideal de servicio —«Dar de sí antes de pensar en sí»— en su vida privada, pública y profesional, y que dignifique su ocupación como una oportunidad de servir.</li>
+        <li><strong>Aplicación de talentos.</strong> El socio aporta sus competencias y destrezas profesionales a los proyectos del club para atender las necesidades de la comunidad.</li>
+        <li><strong>La Prueba Cuádruple.</strong> Guía de conducta rotaria por excelencia (se desarrolla en la sección 11).</li>
+      </ul>
+
+      <h3>4. Cumplimiento normativo y compromiso</h3>
+      <ul>
+        <li><strong>Adopción de estatutos y reglamento.</strong> Al pagar sus cuotas, el socio se compromete a cumplir los estatutos y el reglamento del club, esté o no en posesión de una copia impresa.</li>
+        <li><strong>Salvaguarda de menores.</strong> Rotary se compromete a mantener un ambiente de máxima seguridad para los niños y jóvenes que participan en sus actividades. Todo socio tiene la responsabilidad de prevenir cualquier tipo de acoso o abuso físico, sexual o emocional.</li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 10 ============ -->
+  <details class="seccion" id="s10">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">10</span>
+      <h2>La reunión y la asistencia</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>La reunión del club es el suceso que, decisivamente, ha mantenido vivo el espíritu y la obra de Rotary. Es el ámbito que facilita la práctica del compañerismo, del cual deriva la amistad, que a su vez se constituye en el medio para alcanzar el servicio. De la calidad de las reuniones depende, en gran medida, que se incorporen nuevos socios y que permanezcan los que ya lo son.</p>
+
+      <div class="nota">
+        <span class="et">Importante</span>
+        Las reuniones ordinarias <strong>no son ámbitos de deliberación</strong>: no deben usarse para discutir los programas y las tareas del club. Esos asuntos se tratan en reuniones separadas de la junta directiva y de los comités.
+      </div>
+
+      <h3>¿Cuándo puede suspenderse una reunión?</h3>
+      <p>Por su importancia para la subsistencia de la obra rotaria, las reuniones, por regla general, nunca deben suspenderse, salvo contadas excepciones: si la fecha cae en día festivo; en caso de fallecimiento de un socio; ante una epidemia o desastre que afecte a la comunidad; ante un conflicto armado que ponga en peligro la vida de los socios; o por otras causas, hasta un máximo de cuatro reuniones por año rotario y no más de tres consecutivas. Toda suspensión debe notificarse debidamente a los socios.</p>
+
+      <h3>La regla de asistencia</h3>
+      <p>La asistencia regular es una de las principales obligaciones del rotario. Con carácter general, todo socio (salvo los honorarios) debe asistir al menos al <strong>50 % de las reuniones</strong>, y de ellas, al menos el <strong>30 % en su propio club</strong> durante el semestre. La asistencia se computa cuando el socio permanece al menos el <strong>60 % del tiempo</strong> de la reunión. Los gobernadores y sus asistentes están eximidos de esta obligación.</p>
+
+      <h3>Compensación de ausencias</h3>
+      <p>La ausencia se considera compensada si, dentro de los <strong>14 días anteriores o posteriores</strong> a la reunión, el socio:</p>
+      <ul>
+        <li>Asiste a la reunión de otro club rotario —incluido un club provisional o un ciberclub— en cualquier parte del mundo.</li>
+        <li>Asiste a una reunión de Rotaract, Interact, un Grupo de Fomento de la Comunidad o una Agrupación de Rotary.</li>
+        <li>Asiste a una Convención, Asamblea Internacional, Instituto de RI, Consejo de Legislación, o a una asamblea o conferencia del distrito.</li>
+        <li>Participa en funciones relacionadas con proyectos de servicio autorizados por la junta directiva.</li>
+        <li>Se encuentra viajando en cumplimiento de una misión oficial de RI a la hora de la reunión.</li>
+      </ul>
+
+      <h3>Justificación de ausencias</h3>
+      <p>La junta directiva puede justificar y dispensar la ausencia de un socio por motivos que considere buenos y suficientes. Existe además la <strong>«regla de los 85 años»</strong>: se dispensa de la obligación de asistir al socio cuya suma de edad y años de afiliación alcance 85 o más, siempre que haya sido rotario durante al menos 20 años y lo haya comunicado por escrito al secretario, con la aprobación de la directiva.</p>
+
+      <div class="nota">
+        <span class="et">Recuerda</span>
+        Desde el Consejo de Legislación de 2016, los clubes tienen libertad para modificar sus propios requisitos de asistencia. Conviene consultar el reglamento vigente del club.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 11 ============ -->
+  <details class="seccion" id="s11">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">11</span>
+      <h2>La Prueba Cuádruple y la conducta rotaria</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>Entre los principios rectores de Rotary, la <strong>Prueba Cuádruple</strong> ocupa un lugar destacado. Fue instituida en <strong>1932 por Herbert J. Taylor</strong> —quien más tarde llegaría a presidente de Rotary International— como un patrón sencillo para evaluar la rectitud de las decisiones. Es un criterio ético que todo socio aplica a lo que piensa, dice o hace.</p>
+
+      <blockquote class="cita">
+        <p>De lo que se piensa, se dice o se hace:</p>
+        <p>1.º ¿Es la <strong>verdad</strong>?</p>
+        <p>2.º ¿Es <strong>equitativo</strong> para todos los interesados?</p>
+        <p>3.º ¿Creará <strong>buena voluntad</strong> y mejores amistades?</p>
+        <p>4.º ¿Será <strong>beneficioso</strong> para todos los interesados?</p>
+        <cite>— La Prueba Cuádruple de Rotary (Herbert J. Taylor, 1932)</cite>
+      </blockquote>
+
+      <h3>Los lemas de Rotary</h3>
+      <p>La conducta rotaria se sintetiza también en sus dos lemas oficiales. El lema principal, <strong>«Dar de sí antes de pensar en sí»</strong>, resume el ideal de servicio; el segundo, <strong>«Se beneficia más quien mejor sirve»</strong>, recuerda que el servicio a los demás enriquece a quien lo presta.</p>
+
+      <div class="destacado">
+        <span class="et">Ética en acción</span>
+        La Prueba Cuádruple no es una declaración para enmarcar, sino una herramienta cotidiana. Aplicarla en la vida profesional y personal es una de las formas más concretas de vivir el Servicio a través de la Ocupación.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 12 ============ -->
+  <details class="seccion" id="s12">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">12</span>
+      <h2>Los comités de cónyuges y familiares</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>Aunque no constituyen un comité oficial en la estructura de Rotary, los <strong>comités de cónyuges y familiares</strong> prestan, en todo el mundo, importantes servicios para llevar a cabo la obra rotaria. Están integrados por los cónyuges y familiares de los socios, y su labor complementa y potencia la actividad del club.</p>
+
+      <p>Estos comités realizan un trabajo extraordinario a favor del club en su conjunto, y merecen todo el apoyo posible para continuar su labor. Involucrar a la familia en la vida del club es, además, una de las estrategias más eficaces para retener a los socios y transmitir los valores rotarios de una generación a la siguiente.</p>
+
+      <div class="nota">
+        <span class="et">Continuará</span>
+        En la próxima entrega ampliaremos la mirada más allá del club: exploraremos <em>el distrito rotario</em> —el gobernador, sus asistentes y los comités distritales— y, más adelante, <em>La Fundación Rotaria</em>, el brazo que convierte las contribuciones de los rotarios en proyectos que transforman vidas.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ FUENTES ============ -->
+  <section class="fuentes" aria-labelledby="fuentes-titulo">
+    <h2 id="fuentes-titulo"><span class="pico" aria-hidden="true"></span>Fuentes y para saber más</h2>
+    <p class="intro">Esta entrega es una adaptación divulgativa elaborada a partir de los documentos oficiales de Rotary International. Se recomienda a quien desee profundizar acudir a los materiales originales.</p>
+    <ol>
+      <li><span class="titulo">Manual de Procedimiento 2016 (035-ES).</span> Compendio de las políticas y los principios rectores de Rotary International, incluidos los Estatutos y el Reglamento de RI y los Estatutos prescritos a los clubes rotarios.</li>
+      <li><span class="titulo">Estatutos y Reglamento de Rotary International; Estatutos prescritos a los clubes rotarios.</span> En particular, el Artículo 9 (Composición de los clubes).</li>
+      <li><span class="titulo">Manual Rotario para Nuevos Socios,</span> de José Adolfo Herrera A., PDG del Distrito 4060 (12.ª impresión, 2018). Capítulo II: «El Club Rotario».</li>
+      <li><span class="titulo">Cómo ser un club dinámico: su plan de liderazgo (245-ES).</span> Guía de Rotary International sobre el Plan de Liderazgo del Club.</li>
+      <li><span class="titulo">Rotary International.</span> <a href="https://www.rotary.org/es" target="_blank" rel="noopener">rotary.org/es</a> — Localizador de clubes, recursos para socios y publicaciones oficiales.</li>
+    </ol>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="envoltorio">
+    <div class="lic">
+      <span class="cc-badge">CC BY-NC-SA 4.0</span>
+      <p style="margin:0;">
+        <strong>El club rotario.</strong> Obra de José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas. 2026.
+        Distribuida bajo licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener license">Creative Commons Atribución-NoComercial-CompartirIgual 4.0</a>.
+        Las marcas de Rotary pertenecen a Rotary International; este material es una adaptación divulgativa sin fines comerciales para uso de los socios.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<button id="arriba" type="button" aria-label="Volver al inicio de la página">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+  var secciones = Array.prototype.slice.call(document.querySelectorAll("details.seccion"));
+  var enlaces  = Array.prototype.slice.call(document.querySelectorAll(".indice .idx-link"));
+
+  /* Abrir / cerrar todo */
+  var abrir = document.getElementById("abrir-todo");
+  var cerrar = document.getElementById("cerrar-todo");
+  if(abrir) abrir.addEventListener("click", function(){ secciones.forEach(function(d){ d.open = true; }); });
+  if(cerrar) cerrar.addEventListener("click", function(){ secciones.forEach(function(d){ d.open = false; }); });
+
+  /* Clic en el índice: abrir la sección y desplazarse */
+  enlaces.forEach(function(a){
+    a.addEventListener("click", function(e){
+      var id = a.getAttribute("href").slice(1);
+      var destino = document.getElementById(id);
+      if(destino){
+        e.preventDefault();
+        destino.open = true;
+        destino.scrollIntoView({behavior:"smooth", block:"start"});
+        history.replaceState(null, "", "#"+id);
+        marcarActivo(id);
+      }
+    });
+  });
+
+  /* Si la URL trae un hash, abrir esa sección */
+  if(location.hash){
+    var ini = document.getElementById(location.hash.slice(1));
+    if(ini && ini.matches("details.seccion")){ ini.open = true; }
+  }
+
+  /* Resaltar en el índice la sección visible */
+  function marcarActivo(id){
+    enlaces.forEach(function(a){
+      a.classList.toggle("activo", a.getAttribute("href") === "#"+id);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(en){
+        if(en.isIntersecting){ marcarActivo(en.target.id); }
+      });
+    }, {rootMargin:"-45% 0px -50% 0px", threshold:0});
+    secciones.forEach(function(s){ obs.observe(s); });
+  }
+
+  /* Botón "volver arriba" */
+  var arriba = document.getElementById("arriba");
+  function alScroll(){
+    if(window.pageYOffset > 560){ arriba.classList.add("visible"); }
+    else { arriba.classList.remove("visible"); }
+  }
+  window.addEventListener("scroll", alScroll, {passive:true});
+  arriba.addEventListener("click", function(){ window.scrollTo({top:0, behavior:"smooth"}); });
+  alScroll();
+})();
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<!--
+  El distrito rotario — Guía divulgativa para socios que se inician (Cuarta entrega).
+  Autor: José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas.
+  Año: 2026. Licencia: Creative Commons CC BY-NC-SA 4.0.
+  Resumen: qué es un distrito rotario, el gobernador y su línea de sucesión, su elección y requisitos,
+  el vicegobernador, los asistentes del gobernador, los comités distritales, las reuniones y eventos del
+  distrito (PETS, Asamblea, Conferencia), el Consejo de Gobernadores y la comunicación mensual.
+  Fuentes: Manual de Procedimiento 2016 (Reglamento de RI, Art. 16) y el Manual Rotario para Nuevos Socios.
+-->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El distrito rotario</title>
+<meta name="description" content="Qué es un distrito rotario y cómo funciona: el gobernador y su línea de sucesión, su elección, los asistentes del gobernador, los comités distritales, las reuniones del distrito y el Consejo de Gobernadores.">
+<meta name="author" content="José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas">
+<meta name="license" content="CC BY-NC-SA 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --azul:#17458F;            /* Rotary royal blue */
+    --azul-osc:#0F2E5E;        /* deep navy — headings */
+    --azul-link:#1A5FA0;       /* links (AA on white) */
+    --oro:#F7A81B;             /* Rotary gold — accents only, never bg for white text */
+    --oro-osc:#8A5A00;         /* gold-ish text on light (AA) */
+    --crema:#FBFAF7;           /* page background */
+    --superficie:#FFFFFF;      /* cards */
+    --tinta:#20242B;           /* body text */
+    --tinta-sec:#4F5A6B;       /* secondary text (AA on light) */
+    --borde:#E4E0D6;           /* warm hairline */
+    --borde-frio:#D7DEE8;      /* cool hairline */
+    --azul-suave:#EEF3FA;      /* tinted surface */
+    --sombra:0 1px 3px rgba(15,46,94,.06), 0 6px 22px rgba(15,46,94,.07);
+    --radio:14px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--crema);
+    color:var(--tinta);
+    font-family:"Open Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:1.075rem;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:.001ms !important; transition-duration:.001ms !important;}
+  }
+
+  .envoltorio{max-width:920px; margin:0 auto; padding:0 22px;}
+
+  a{color:var(--azul-link);}
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:3px solid var(--oro);
+    outline-offset:2px;
+    border-radius:4px;
+  }
+
+  /* ---------- HERO ---------- */
+  header.hero{
+    background:
+      radial-gradient(120% 140% at 85% -20%, rgba(247,168,27,.16), transparent 55%),
+      linear-gradient(160deg, var(--azul-osc), var(--azul) 78%);
+    color:#fff;
+    border-bottom:5px solid var(--oro);
+  }
+  .hero .envoltorio{padding-top:46px; padding-bottom:42px;}
+  .eyebrow{
+    font-size:.8rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:#F4C778; margin:0 0 14px;
+  }
+  .hero h1{
+    font-family:"Zilla Slab",Georgia,serif;
+    font-weight:700; font-size:clamp(2rem,5.2vw,3.05rem); line-height:1.1;
+    margin:0 0 14px; letter-spacing:-.01em;
+  }
+  .hero .dek{
+    font-size:clamp(1.05rem,2.4vw,1.28rem); max-width:48ch;
+    color:#E7EEF7; margin:0 0 28px;
+  }
+
+  /* Signature: the rotary ribbon */
+  .ciclo{
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.22);
+    border-radius:999px;
+    padding:10px 18px; width:fit-content;
+  }
+  .ciclo svg{flex:0 0 auto;}
+  .ciclo .ciclo-txt{font-size:.95rem; line-height:1.3;}
+  .ciclo b{font-weight:700; color:#fff;}
+  .ciclo span{color:#D7E2F1;}
+  .ciclo .fecha{
+    font-family:"Zilla Slab",serif; font-weight:600; color:#FBD68B;
+    white-space:nowrap;
+  }
+
+  /* ---------- INTRO / ÍNDICE ---------- */
+  main{padding:40px 0 10px;}
+  .lede{
+    font-size:1.16rem; color:var(--tinta);
+    border-left:4px solid var(--oro); padding:2px 0 2px 18px; margin:0 0 34px;
+  }
+
+  .indice{
+    background:var(--superficie); border:1px solid var(--borde);
+    border-radius:var(--radio); box-shadow:var(--sombra);
+    padding:24px 26px 26px; margin-bottom:18px;
+  }
+  .indice h2{
+    font-family:"Zilla Slab",serif; font-size:1.05rem; text-transform:uppercase;
+    letter-spacing:.08em; color:var(--azul-osc); margin:0 0 16px;
+  }
+  .indice ol{list-style:none; counter-reset:idx; margin:0; padding:0;}
+  .indice li{counter-increment:idx; margin:0;}
+  .indice a.idx-link{
+    display:flex; align-items:center; gap:14px;
+    padding:9px 10px; border-radius:9px; text-decoration:none;
+    color:var(--tinta); border:1px solid transparent; transition:background .15s, border-color .15s;
+  }
+  .indice a.idx-link:hover{background:var(--azul-suave); border-color:var(--borde-frio);}
+  .indice a.idx-link.activo{background:var(--azul-suave); border-color:var(--azul);}
+  .indice a.idx-link::before{
+    content:counter(idx);
+    flex:0 0 auto;
+    width:30px; height:30px; border-radius:50%;
+    display:grid; place-items:center;
+    background:var(--azul); color:#fff; font-weight:700; font-size:.95rem;
+    font-family:"Zilla Slab",serif;
+  }
+  .indice a.idx-link.activo::before{background:var(--oro-osc);}
+
+  .controles{display:flex; gap:10px; margin:14px 0 26px; flex-wrap:wrap;}
+  .btn{
+    font-family:"Open Sans",sans-serif; font-size:.95rem; font-weight:600;
+    cursor:pointer; border-radius:9px; padding:9px 16px;
+    border:1px solid var(--azul); background:var(--superficie); color:var(--azul);
+    transition:background .15s,color .15s;
+  }
+  .btn:hover{background:var(--azul); color:#fff;}
+
+  /* ---------- SECCIONES (ACORDEÓN) ---------- */
+  details.seccion{
+    background:var(--superficie); border:1px solid var(--borde);
+    border-radius:var(--radio); box-shadow:var(--sombra);
+    margin:16px 0; overflow:hidden; scroll-margin-top:18px;
+  }
+  details.seccion[open]{border-color:var(--borde-frio);}
+  summary.cab{
+    list-style:none; cursor:pointer; user-select:none;
+    display:flex; align-items:center; gap:16px;
+    padding:18px 22px;
+  }
+  summary.cab::-webkit-details-marker{display:none;}
+  .num{
+    flex:0 0 auto; width:42px; height:42px; border-radius:50%;
+    display:grid; place-items:center;
+    background:linear-gradient(150deg,var(--azul),var(--azul-osc));
+    color:#fff; font-family:"Zilla Slab",serif; font-weight:700; font-size:1.25rem;
+  }
+  summary.cab h2{
+    font-family:"Zilla Slab",serif; font-weight:600; color:var(--azul-osc);
+    font-size:clamp(1.18rem,2.6vw,1.42rem); line-height:1.25; margin:0; flex:1;
+  }
+  .chevron{
+    flex:0 0 auto; color:var(--azul); transition:transform .2s ease;
+  }
+  details[open] summary.cab .chevron{transform:rotate(180deg);}
+  summary.cab:hover h2{color:var(--azul);}
+  details[open] summary.cab{border-bottom:1px solid var(--borde);}
+
+  .cuerpo{padding:6px 26px 26px;}
+  .cuerpo h3{
+    font-family:"Zilla Slab",serif; color:var(--azul); font-weight:600;
+    font-size:1.16rem; margin:26px 0 8px;
+  }
+  .cuerpo h3:first-child{margin-top:14px;}
+  .cuerpo p{margin:0 0 14px;}
+  .cuerpo ul{margin:0 0 16px; padding-left:0; list-style:none;}
+  .cuerpo ul li{
+    position:relative; padding-left:30px; margin:0 0 12px;
+  }
+  .cuerpo ul li::before{
+    content:""; position:absolute; left:6px; top:.62em;
+    width:9px; height:9px; border-radius:50%;
+    background:var(--oro); box-shadow:0 0 0 3px rgba(247,168,27,.2);
+  }
+  .cuerpo strong{color:var(--azul-osc);}
+
+  .nota{
+    background:var(--azul-suave); border:1px solid var(--borde-frio);
+    border-left:4px solid var(--azul);
+    border-radius:10px; padding:14px 18px; margin:18px 0;
+    font-size:1rem;
+  }
+  .nota .et{
+    display:inline-block; font-weight:700; color:var(--azul-osc);
+    text-transform:uppercase; letter-spacing:.06em; font-size:.78rem; margin-right:6px;
+  }
+  .destacado{
+    background:#FFF8EC; border:1px solid #F2D79A; border-left:4px solid var(--oro);
+    border-radius:10px; padding:14px 18px; margin:18px 0;
+  }
+  .destacado .et{
+    display:inline-block; font-weight:700; color:var(--oro-osc);
+    text-transform:uppercase; letter-spacing:.06em; font-size:.78rem; margin-right:6px;
+  }
+
+  /* ---------- CITAS ---------- */
+  blockquote.cita{
+    margin:20px 0; padding:16px 22px; background:var(--azul-suave);
+    border-left:4px solid var(--oro); border-radius:0 12px 12px 0;
+    font-size:1.06rem; color:var(--tinta);
+  }
+  blockquote.cita p{margin:0 0 8px; font-style:italic;}
+  blockquote.cita p:last-of-type{margin-bottom:0;}
+  blockquote.cita cite{
+    display:block; margin-top:8px; font-style:normal; font-weight:700;
+    color:var(--azul-osc); font-size:.9rem;
+  }
+
+  /* ---------- FIGURAS ---------- */
+  figure.figura{
+    margin:22px 0; background:var(--superficie);
+    border:1px solid var(--borde); border-radius:14px;
+    box-shadow:var(--sombra); overflow:hidden;
+  }
+  figure.figura img{
+    display:block; width:100%; height:auto; background:var(--azul-suave);
+  }
+  figure.figura figcaption{
+    padding:12px 18px; font-size:.93rem; color:var(--tinta-sec);
+    border-top:1px solid var(--borde);
+  }
+  figure.figura figcaption .fig-num{
+    font-family:"Zilla Slab",serif; font-weight:700; color:var(--azul-osc); margin-right:7px;
+  }
+  figure.figura figcaption .credito{
+    display:block; margin-top:3px; font-size:.8rem; font-style:italic; color:var(--tinta-sec);
+  }
+  .dos-figuras{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  .dos-figuras figure.figura{margin:22px 0 0;}
+  @media (max-width:560px){.dos-figuras{grid-template-columns:1fr;}}
+
+  /* ---------- VIDEO (FACHADA) ---------- */
+  .video-bloque{margin:24px 0;}
+  .video-bloque .v-titulo{
+    font-family:"Zilla Slab",serif; color:var(--azul); font-weight:600;
+    font-size:1.12rem; margin:0 0 10px;
+  }
+  .video-facade{
+    position:relative; display:block; width:100%; aspect-ratio:16/9;
+    border:1px solid var(--borde-frio); border-radius:14px; overflow:hidden;
+    background:linear-gradient(150deg,var(--azul-osc),var(--azul));
+    cursor:pointer; box-shadow:var(--sombra); padding:0;
+  }
+  .video-facade::after{content:""; position:absolute; inset:0; background:rgba(15,46,94,.22);}
+  .video-facade .play{
+    position:absolute; z-index:2; top:50%; left:50%; transform:translate(-50%,-50%);
+    width:74px; height:74px; border-radius:50%; background:rgba(255,255,255,.95);
+    display:grid; place-items:center; box-shadow:0 6px 20px rgba(0,0,0,.3);
+    transition:transform .15s, background .15s;
+  }
+  .video-facade:hover .play{transform:translate(-50%,-50%) scale(1.07); background:#fff;}
+  .video-facade .v-label{
+    position:absolute; z-index:2; left:16px; right:16px; bottom:14px;
+    color:#fff; font-weight:600; font-size:.98rem; text-align:left;
+    text-shadow:0 1px 5px rgba(0,0,0,.55);
+  }
+  .video-facade iframe{position:absolute; inset:0; width:100%; height:100%; border:0;}
+
+  .video-pendiente{
+    margin:24px 0; border:1.6px dashed var(--borde-frio); border-radius:14px;
+    background:var(--azul-suave); padding:22px 20px; text-align:center; color:var(--tinta-sec);
+  }
+  .video-pendiente .vp-ic{font-size:1.8rem; display:block; margin-bottom:6px;}
+  .video-pendiente b{color:var(--azul-osc);}
+
+  /* ---------- LÍNEA DE TIEMPO ---------- */
+  .linea-tiempo{list-style:none; margin:18px 0 6px; padding:0; position:relative;}
+  .linea-tiempo::before{
+    content:""; position:absolute; left:14px; top:6px; bottom:6px;
+    width:2px; background:var(--borde-frio);
+  }
+  .linea-tiempo li{position:relative; padding:0 0 18px 46px;}
+  .linea-tiempo li::before{
+    content:""; position:absolute; left:8px; top:3px;
+    width:14px; height:14px; border-radius:50%;
+    background:var(--oro); border:3px solid var(--superficie);
+    box-shadow:0 0 0 2px var(--oro);
+  }
+  .linea-tiempo .anio{
+    font-family:"Zilla Slab",serif; font-weight:700; color:var(--azul-osc);
+    font-size:1.05rem; margin-right:8px;
+  }
+
+  /* ---------- TABLA COMPARATIVA ---------- */
+  .tabla-scroll{overflow-x:auto; margin:14px 0 6px; border-radius:12px;}
+  .hint-desliza{display:none; font-size:.85rem; color:var(--tinta-sec); margin:0 0 8px;}
+  table.comparativa{
+    width:100%; min-width:560px; border-collapse:collapse;
+    background:var(--superficie); border:1px solid var(--borde-frio);
+    border-radius:12px; overflow:hidden; font-size:.98rem;
+  }
+  table.comparativa caption{
+    text-align:left; font-size:.9rem; color:var(--tinta-sec);
+    padding:0 0 10px; caption-side:top;
+  }
+  table.comparativa th[scope="col"]{
+    background:var(--azul); color:#fff; font-family:"Zilla Slab",serif;
+    font-weight:600; text-align:left; padding:13px 16px; vertical-align:middle;
+  }
+  table.comparativa th[scope="row"]{
+    background:var(--azul-suave); color:var(--azul-osc); font-weight:700;
+    text-align:left; padding:13px 16px; vertical-align:top;
+    width:24%; border-top:1px solid var(--borde-frio);
+  }
+  table.comparativa td{padding:13px 16px; vertical-align:top; border-top:1px solid var(--borde-frio);}
+  table.comparativa tbody tr:nth-child(even) td{background:#FAFBFD;}
+
+  /* ---------- FUENTES ---------- */
+  .fuentes{
+    background:var(--superficie); border:1px solid var(--borde);
+    border-radius:var(--radio); box-shadow:var(--sombra);
+    padding:24px 26px; margin:30px 0 10px;
+  }
+  .fuentes h2{
+    font-family:"Zilla Slab",serif; color:var(--azul-osc); font-size:1.35rem;
+    margin:0 0 6px; display:flex; align-items:center; gap:12px;
+  }
+  .fuentes h2 .pico{width:30px; height:4px; background:var(--oro); border-radius:3px;}
+  .fuentes p.intro{color:var(--tinta-sec); margin:0 0 16px; font-size:1rem;}
+  .fuentes ol{margin:0; padding-left:22px;}
+  .fuentes li{margin:0 0 9px;}
+  .fuentes li .titulo{color:var(--tinta);}
+  .fuentes li a{word-break:break-word; font-size:.92rem;}
+
+  /* ---------- PIE ---------- */
+  footer.pie{margin-top:30px; border-top:1px solid var(--borde); background:#fff;}
+  footer.pie .envoltorio{padding:26px 22px 40px; color:var(--tinta-sec); font-size:.9rem;}
+  footer.pie .lic{display:flex; align-items:flex-start; gap:12px; flex-wrap:wrap;}
+  footer.pie a{color:var(--azul-link);}
+  footer.pie .cc-badge{
+    flex:0 0 auto; font-weight:700; color:var(--azul-osc);
+    border:1px solid var(--borde-frio); border-radius:7px; padding:3px 9px; font-size:.82rem;
+  }
+
+  /* ---------- BOTÓN ARRIBA ---------- */
+  #arriba{
+    position:fixed; right:18px; bottom:18px; z-index:30;
+    width:48px; height:48px; border-radius:50%; border:none;
+    background:var(--azul); color:#fff; cursor:pointer;
+    box-shadow:0 6px 18px rgba(15,46,94,.28);
+    display:grid; place-items:center; opacity:0; pointer-events:none;
+    transition:opacity .2s, background .15s, transform .15s;
+  }
+  #arriba.visible{opacity:1; pointer-events:auto;}
+  #arriba:hover{background:var(--azul-osc); transform:translateY(-2px);}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:640px){
+    body{font-size:1.02rem;}
+    .hero .envoltorio{padding-top:34px; padding-bottom:32px;}
+    .cuerpo{padding:6px 18px 22px;}
+    summary.cab{padding:15px 16px; gap:12px;}
+    .num{width:36px; height:36px; font-size:1.1rem;}
+    .indice{padding:20px 18px;}
+    .hint-desliza{display:block;}
+  }
+
+  /* ---------- IMPRESIÓN ---------- */
+  @media print{
+    body{background:#fff; color:#000; font-size:11pt;}
+    header.hero{background:#fff !important; color:#000; border-bottom:2px solid #000;}
+    .eyebrow{color:#000;} .hero h1{color:#000;} .hero .dek{color:#000;} .ciclo{display:none;}
+    #arriba,.controles{display:none;}
+    details.seccion .cuerpo{display:block !important;}
+    details.seccion,.indice,.fuentes,figure.figura{box-shadow:none; border:1px solid #999; break-inside:avoid;}
+    .chevron{display:none;}
+    a{color:#000; text-decoration:underline;}
+  }
+
+  /* ---------- IMAGEN PENDIENTE (marcador para el editor) ---------- */
+  .figura-pendiente{
+    margin:22px 0; border:1.6px dashed var(--borde-frio); border-radius:14px;
+    background:var(--azul-suave); padding:22px 20px; text-align:center; color:var(--tinta-sec);
+  }
+  .figura-pendiente .fp-ic{font-size:1.7rem; display:block; margin-bottom:6px;}
+  .figura-pendiente b{color:var(--azul-osc);}
+  .figura-pendiente .fp-ruta{
+    display:inline-block; margin-top:6px; font-family:"Zilla Slab",serif;
+    font-size:.85rem; color:var(--oro-osc); word-break:break-all;
+  }
+</style>
+
+</head>
+<body>
+
+<header class="hero">
+  <div class="envoltorio">
+    <p class="eyebrow">Conoce Rotary · Cuarta entrega</p>
+    <h1>El distrito rotario</h1>
+    <p class="dek">El puente entre el club y el mundo rotario. Cómo se organiza un distrito, quién lo dirige y qué eventos mantienen unidos a sus clubes.</p>
+    <div class="ciclo">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+        <circle cx="17" cy="17" r="13" fill="none" stroke="#F7A81B" stroke-width="2.4" stroke-dasharray="62 20" stroke-linecap="round"/>
+        <path d="M27 9 l1.8 5.4 -5.6 -.9 z" fill="#F7A81B"/>
+      </svg>
+      <span class="ciclo-txt"><b>Varios clubes, un mismo territorio:</b><br>
+        <span>el distrito es</span> <span class="fecha">la familia rotaria más cercana al club</span></span>
+    </div>
+  </div>
+</header>
+
+<main class="envoltorio">
+
+  <p class="lede">Tras conocer el club rotario por dentro, esta cuarta entrega da un paso hacia afuera: el distrito, la estructura que agrupa a los clubes de un mismo territorio para apoyarse, capacitarse y crecer juntos. Comprender cómo funciona el distrito ayuda al nuevo socio a situar a su club dentro de la gran red mundial de Rotary.</p>
+
+  <nav class="indice" aria-label="Índice de la entrega">
+    <h2>En esta entrega</h2>
+    <ol>
+      <li><a class="idx-link" href="#s1">¿Qué es un distrito rotario?</a></li>
+      <li><a class="idx-link" href="#s2">El gobernador de distrito</a></li>
+      <li><a class="idx-link" href="#s3">La línea de sucesión: las denominaciones del gobernador</a></li>
+      <li><a class="idx-link" href="#s4">Cómo se elige al gobernador</a></li>
+      <li><a class="idx-link" href="#s5">El vicegobernador</a></li>
+      <li><a class="idx-link" href="#s6">Los asistentes del gobernador</a></li>
+      <li><a class="idx-link" href="#s7">Los comités distritales</a></li>
+      <li><a class="idx-link" href="#s8">Las reuniones y los eventos del distrito</a></li>
+      <li><a class="idx-link" href="#s9">El Consejo de Gobernadores</a></li>
+      <li><a class="idx-link" href="#s10">La comunicación mensual del gobernador</a></li>
+    </ol>
+  </nav>
+
+  <div class="controles">
+    <button class="btn" id="abrir-todo" type="button">Abrir todo</button>
+    <button class="btn" id="cerrar-todo" type="button">Cerrar todo</button>
+  </div>
+
+  <!-- ============ SECCIÓN 1 ============ -->
+  <details class="seccion" id="s1" open>
+    <summary class="cab">
+      <span class="num" aria-hidden="true">1</span>
+      <h2>¿Qué es un distrito rotario?</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>Un <strong>distrito rotario</strong> es un territorio geográfico en el cual, por razones administrativas, funcionan conjuntamente varios clubes rotarios. El distrito no es un fin en sí mismo: existe para <strong>asistir y fortalecer a los clubes</strong> que lo integran, facilitar su capacitación y coordinar los esfuerzos comunes. Cada distrito se identifica con un número, y el líder de cada uno es el gobernador de distrito.</p>
+
+      <div class="figura-pendiente">
+        <span class="fp-ic" aria-hidden="true">🖼️</span>
+        <b>Imagen sugerida:</b> Mapa o ilustración de un distrito: varios clubes (marcadores) agrupados dentro de un mismo territorio geográfico.
+        <span class="fp-ruta">rotary/image/distrito-mapa.jpg</span>
+      </div>
+
+      <h3>Cómo se forman los distritos</h3>
+      <p>La Directiva de Rotary International está autorizada a <strong>agrupar los clubes en distritos</strong> y a promulgar la lista de sus límites. La Directiva puede eliminar o modificar los límites de un distrito —por ejemplo, cuando tiene más de 100 clubes o menos de 1.100 rotarios—, siempre tras consultar con los gobernadores y los clubes afectados y darles la oportunidad de opinar. Al proponer cambios, se toman en cuenta las limitaciones geográficas, el potencial de crecimiento y factores como la cultura, los recursos económicos y el idioma.</p>
+
+      <div class="nota">
+        <span class="et">Para el nuevo socio</span>
+        Piensa en el distrito como la familia rotaria más cercana a tu club: el espacio donde los clubes vecinos se conocen, comparten buenas prácticas y emprenden proyectos que ninguno podría realizar en solitario.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 2 ============ -->
+  <details class="seccion" id="s2">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">2</span>
+      <h2>El gobernador de distrito</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>La administración de los clubes dentro de un distrito está bajo la supervisión directa del <strong>gobernador</strong>, quien es el <strong>único funcionario de Rotary International en ese distrito</strong>. Toma posesión de su cargo el <strong>1 de julio</strong> y lo ejerce hasta el <strong>30 de junio</strong> del año siguiente. Es propuesto por su distrito y elegido en la Convención de RI para servir durante un año.</p>
+
+      <p>Respetando siempre la autonomía de los clubes, el gobernador basa su gestión en la <strong>motivación, la persuasión y el ejercicio eficaz del liderazgo</strong>, no en la imposición.</p>
+
+      <div class="figura-pendiente">
+        <span class="fp-ic" aria-hidden="true">🖼️</span>
+        <b>Imagen sugerida:</b> Un gobernador de distrito en su visita oficial a un club, dirigiéndose a los socios (o entregando un reconocimiento).
+        <span class="fp-ruta">rotary/image/gobernador-visita.jpg</span>
+      </div>
+
+      <h3>Principales deberes del gobernador</h3>
+      <ul>
+        <li>Realizar al menos <strong>una visita oficial a cada club</strong> del distrito, en la que se analizan los programas del club para el período y se aporta asistencia y motivación.</li>
+        <li>Fomentar la creación de nuevos clubes y el fortalecimiento de los existentes.</li>
+        <li>Promover la participación en los programas de Rotary y de La Fundación Rotaria.</li>
+        <li>Publicar una <strong>comunicación mensual</strong> dirigida a los presidentes y secretarios de los clubes (véase la sección 10).</li>
+        <li>Supervisar que los clubes cumplan con los Estatutos y el Reglamento, y representar al presidente y a la Directiva de RI en el distrito.</li>
+      </ul>
+
+      <div class="nota">
+        <span class="et">Un dato</span>
+        Si a juicio del presidente de RI un gobernador no cumple los deberes de su cargo con la debida eficiencia, puede ser destituido, previa notificación y un plazo de 30 días para exponer sus razones. Quien es destituido no se considera ex gobernador de distrito.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 3 ============ -->
+  <details class="seccion" id="s3">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">3</span>
+      <h2>La línea de sucesión: las denominaciones del gobernador</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>El camino hacia la gobernación es largo y ordenado. Según la etapa del proceso en que se encuentre, la persona recibe una <strong>denominación distinta</strong>. Conviene conocerlas, porque aparecen con frecuencia en los documentos y las comunicaciones del distrito:</p>
+
+      <table class="comparativa">
+        <caption>Denominaciones del gobernador según la etapa del proceso.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Sigla</th>
+            <th scope="col">Denominación</th>
+            <th scope="col">En qué etapa se encuentra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">GND</th>
+            <td>Gobernador Nominado Designado</td>
+            <td>Escogido por el Comité de Propuestas del distrito, hasta que el distrito lo convierta en Gobernador Nominado (si no hay candidato contendiente).</td>
+          </tr>
+          <tr>
+            <th scope="row">GN</th>
+            <td>Gobernador Nominado</td>
+            <td>Elegido por el distrito, hasta su elección oficial en la Convención de Rotary International.</td>
+          </tr>
+          <tr>
+            <th scope="row">GE</th>
+            <td>Gobernador Electo</td>
+            <td>Elegido por la Convención de RI, hasta que asume el cargo. En esta etapa asiste a la Asamblea Internacional para capacitarse.</td>
+          </tr>
+          <tr>
+            <th scope="row">GD</th>
+            <td>Gobernador de Distrito</td>
+            <td>En ejercicio, desde que asume sus funciones el 1 de julio hasta el 30 de junio.</td>
+          </tr>
+          <tr>
+            <th scope="row">PDG</th>
+            <td>Pasado Gobernador de Distrito</td>
+            <td>Tras concluir su mandato. Pasa a integrar el Consejo de Gobernadores (véase la sección 9).</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="destacado">
+        <span class="et">En síntesis</span>
+        Un mismo rotario recorre estas etapas en orden: primero es designado y nominado en su distrito, luego elegido en la Convención, después se capacita como electo y, finalmente, gobierna un año antes de sumarse al valioso cuerpo de ex gobernadores.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 4 ============ -->
+  <details class="seccion" id="s4">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">4</span>
+      <h2>Cómo se elige al gobernador</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>Los clubes del distrito seleccionan al gobernador propuesto de manera digna y responsable, en concordancia con los principios de Rotary. El distrito debe hacerlo <strong>entre 36 y 24 meses antes</strong> de la fecha en que la persona asumirá el cargo. Se recomienda enfáticamente seleccionar y presentar a la persona mejor calificada.</p>
+
+      <h3>El camino, paso a paso</h3>
+      <ul class="linea-tiempo">
+        <li><span class="anio">36–24 meses antes</span>El Comité de Propuestas del distrito selecciona al gobernador propuesto; los clubes lo ratifican.</li>
+        <li><span class="anio">Convención de RI</span>Se elige oficialmente al gobernador, que pasa a ser Gobernador Electo.</li>
+        <li><span class="anio">Asamblea Internacional</span>El gobernador electo recibe su capacitación junto a los gobernadores electos de todo el mundo.</li>
+        <li><span class="anio">1 de julio</span>Asume el cargo y se convierte en Gobernador de Distrito en ejercicio.</li>
+        <li><span class="anio">30 de junio</span>Concluye su mandato y pasa a ser Pasado Gobernador de Distrito.</li>
+      </ul>
+
+      <div class="nota">
+        <span class="et">Nada de campañas</span>
+        Los rotarios que participen en campañas electorales, propaganda o solicitación de votos para un cargo electivo de RI pueden ser descalificados de la contienda. La elección de los líderes rotarios se rige por el mérito y el servicio, no por el proselitismo.
+      </div>
+
+      <h3>Requisitos para ser gobernador</h3>
+      <p>Para ocupar el cargo, entre otros requisitos, la persona debe:</p>
+      <ul>
+        <li>Haber sido socio de uno o más clubes rotarios durante un período mínimo de <strong>ocho años</strong> al momento de asumir.</li>
+        <li>Ser <strong>socio activo</strong> de un club en funcionamiento del distrito y estar al día en sus obligaciones.</li>
+        <li>Haber ejercido la <strong>presidencia de un club</strong> durante un período completo.</li>
+        <li>Estar calificado y contar con la capacidad física para cumplir con los compromisos del cargo.</li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 5 ============ -->
+  <details class="seccion" id="s5">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">5</span>
+      <h2>El vicegobernador</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>El Comité de Propuestas para Gobernador selecciona a un <strong>pasado gobernador</strong> para desempeñar el cargo de <strong>vicegobernador</strong>, cuya función es <strong>sustituir al gobernador en caso de incapacidad temporal o permanente</strong>.</p>
+
+      <p>Se recomienda a los distritos seleccionar al vicegobernador mediante el mismo sistema establecido para elegir al gobernador. Si no se recibe ninguna propuesta, el gobernador electo podrá designar a un pasado gobernador en calidad de vicegobernador.</p>
+
+      <div class="nota">
+        <span class="et">No confundir</span>
+        El vicegobernador cubre una vacante o una ausencia del gobernador. No debe confundirse con los <strong>asistentes del gobernador</strong>, que cumplen una función muy distinta (véase la sección 6).
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 6 ============ -->
+  <details class="seccion" id="s6">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">6</span>
+      <h2>Los asistentes del gobernador</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>El <strong>Plan de Liderazgo Distrital</strong> creó el cargo de <strong>asistente del gobernador</strong>. Los asistentes son representantes del gobernador ante un <strong>grupo determinado de clubes</strong>, encargados de realizar las tareas administrativas y de información que el gobernador les señale. Su labor permite que el gobernador atienda con mayor cercanía a todos los clubes del distrito.</p>
+
+      <div class="destacado">
+        <span class="et">Una aclaración importante</span>
+        Bajo ningún concepto se les debe llamar «vicegobernadores»: esa denominación corresponde a otra figura, con otra connotación. Oficialmente son <strong>asistentes del gobernador</strong>.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 7 ============ -->
+  <details class="seccion" id="s7">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">7</span>
+      <h2>Los comités distritales</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>Cada distrito se organiza funcionalmente de acuerdo con sus propias características y estrategias. No obstante, Rotary International establece que deben constituirse, al menos, los siguientes comités distritales, cada uno con un ámbito de responsabilidad definido:</p>
+      <ul>
+        <li><strong>Desarrollo del Cuadro Social.</strong> Impulsa la captación y la retención de socios en todo el distrito.</li>
+        <li><strong>Extensión.</strong> Promueve la creación de nuevos clubes.</li>
+        <li><strong>Capacitación.</strong> Organiza la formación de los líderes de los clubes y del distrito.</li>
+        <li><strong>Finanzas.</strong> Administra los recursos económicos del distrito.</li>
+        <li><strong>Conferencia de Distrito.</strong> Prepara la reunión anual del distrito.</li>
+        <li><strong>Programas Distritales.</strong> Coordina Rotaract, Interact, RYLA y otros programas.</li>
+        <li><strong>Relaciones Públicas.</strong> Proyecta la imagen del distrito y de Rotary.</li>
+        <li><strong>La Fundación Rotaria.</strong> Promueve las contribuciones y los programas de La Fundación.</li>
+        <li><strong>Proyectos de Servicio.</strong> Apoya y coordina los proyectos de los clubes.</li>
+        <li><strong>Promoción de la Convención de RI.</strong> Motiva la participación en la Convención mundial.</li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 8 ============ -->
+  <details class="seccion" id="s8">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">8</span>
+      <h2>Las reuniones y los eventos del distrito</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>A lo largo del año rotario, el distrito celebra diversas reuniones de capacitación y compañerismo. Las principales son:</p>
+      <ul>
+        <li><strong>El Seminario de Capacitación del Equipo Distrital.</strong> Prepara al equipo que acompañará al gobernador durante su año.</li>
+        <li><strong>El Seminario de Capacitación para Presidentes Electos (PETS).</strong> Forma a los futuros presidentes de club antes de que asuman.</li>
+        <li><strong>La Asamblea de Distrito.</strong> Capacitación dirigida a los dirigentes entrantes de todos los clubes.</li>
+        <li><strong>Los seminarios distritales</strong> de Desarrollo del Cuadro Social, de La Fundación Rotaria, de Imagen Pública y de Capacitación para el Liderazgo.</li>
+        <li><strong>El RYLA</strong> y las <strong>Conferencias Rotaract e Interact,</strong> orientados a los programas juveniles.</li>
+      </ul>
+
+      <div class="figura-pendiente">
+        <span class="fp-ic" aria-hidden="true">🖼️</span>
+        <b>Imagen sugerida:</b> Fotografía de una Conferencia de Distrito: salón con socios reunidos, banderas y ambiente de compañerismo.
+        <span class="fp-ruta">rotary/image/conferencia-distrito.jpg</span>
+      </div>
+
+      <h3>La Conferencia de Distrito</h3>
+      <p>La <strong>Conferencia de Distrito</strong> es la motivadora reunión anual que pone de relieve las actividades del distrito y de los clubes que lo integran. Es un acontecimiento familiar que combina el compañerismo con las sesiones de capacitación y permite a los rotarios participar más directamente en el delineamiento del futuro de su distrito. Se exhorta a todos los rotarios a asistir.</p>
+
+      <div class="nota">
+        <span class="et">Además</span>
+        Los distritos pueden organizar foros, talleres y jornadas de capacitación sobre temas específicos: seminarios para socios nuevos, encuentros de las Nuevas Generaciones, talleres de proyectos de servicio, entre muchos otros.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 9 ============ -->
+  <details class="seccion" id="s9">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">9</span>
+      <h2>El Consejo de Gobernadores</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>El <strong>Consejo de Gobernadores</strong> es un órgano consultivo al servicio de la gobernación. Está integrado por <strong>todos los ex gobernadores del distrito</strong> que continúen siendo socios de un club rotario. Su experiencia constituye una valiosa fuente de orientación para el gobernador en ejercicio.</p>
+
+      <h3>¿Cuándo se reúne?</h3>
+      <ul>
+        <li>Cuando el gobernador electo regresa de la Asamblea Internacional.</li>
+        <li>Durante la Conferencia de Distrito.</li>
+        <li>Cuando exista un asunto relacionado con violaciones a los Estatutos y el Reglamento.</li>
+        <li>Siempre que lo considere pertinente el gobernador en ejercicio.</li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- ============ SECCIÓN 10 ============ -->
+  <details class="seccion" id="s10">
+    <summary class="cab">
+      <span class="num" aria-hidden="true">10</span>
+      <h2>La comunicación mensual del gobernador</h2>
+      <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </summary>
+    <div class="cuerpo">
+      <p>El gobernador debe remitir una <strong>comunicación mensual</strong> a los presidentes y secretarios de los clubes del distrito. Es una herramienta clave, pues suministra a los líderes de los clubes noticias y recordatorios sobre el distrito y sobre Rotary International. Puede tener el formato de un boletín electrónico, un mensaje en video o un correo con el enlace al sitio web del distrito, y conviene enviarla también a los asistentes del gobernador, los ex gobernadores y los clubes Rotaract e Interact.</p>
+
+      <h3>Propósitos de la comunicación</h3>
+      <ul>
+        <li>Mantener informados a los líderes sobre temas importantes, como el Plan Estratégico de Rotary.</li>
+        <li>Diseminar las metas del distrito y publicar los plazos de sus eventos.</li>
+        <li>Incluir información sobre RI, La Fundación Rotaria y los programas del distrito.</li>
+        <li>Resaltar las actividades de los clubes, como la formación de nuevos clubes y los nombres de los socios nuevos.</li>
+        <li>Dar a conocer las mejores prácticas y motivar a los clubes a alcanzar sus metas.</li>
+        <li>Reconocer a los comités, a los rotarios y a los programas distritales por sus servicios y aportaciones.</li>
+      </ul>
+
+      <div class="nota">
+        <span class="et">Continuará</span>
+        En la próxima entrega subiremos un peldaño más: <em>Rotary International</em> —la asociación mundial de clubes—, con su Junta Directiva, la Convención, el Consejo de Legislación, el nombre y los emblemas, y las revistas oficiales.
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ FUENTES ============ -->
+  <section class="fuentes" aria-labelledby="fuentes-titulo">
+    <h2 id="fuentes-titulo"><span class="pico" aria-hidden="true"></span>Fuentes y para saber más</h2>
+    <p class="intro">Esta entrega es una adaptación divulgativa elaborada a partir de los documentos oficiales de Rotary International. Se recomienda a quien desee profundizar acudir a los materiales originales.</p>
+    <ol>
+      <li><span class="titulo">Manual de Procedimiento 2016 (035-ES).</span> En particular, el Reglamento de RI, Artículo 16 (Distritos): formación de distritos, condiciones y deberes del gobernador, PETS, Conferencia y Asamblea de distrito.</li>
+      <li><span class="titulo">Manual Rotario para Nuevos Socios,</span> de José Adolfo Herrera A., PDG del Distrito 4060 (12.ª impresión, 2018). Capítulo III: «El Distrito Rotario».</li>
+      <li><span class="titulo">Manuales de referencia distritales:</span> Manual de la Conferencia del Distrito, Manual de la Asamblea de Distrito, Manual del Seminario para Presidentes Electos (PETS) y Manual de Capacitación del Equipo Distrital.</li>
+      <li><span class="titulo">Rotary International.</span> <a href="https://www.rotary.org/es" target="_blank" rel="noopener">rotary.org/es</a> — recursos para líderes de distrito y el Plan de Liderazgo Distrital.</li>
+    </ol>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="envoltorio">
+    <div class="lic">
+      <span class="cc-badge">CC BY-NC-SA 4.0</span>
+      <p style="margin:0;">
+        <strong>El distrito rotario.</strong> Obra de José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas. 2026.
+        Distribuida bajo licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener license">Creative Commons Atribución-NoComercial-CompartirIgual 4.0</a>.
+        Las marcas de Rotary pertenecen a Rotary International; este material es una adaptación divulgativa sin fines comerciales para uso de los socios.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<button id="arriba" type="button" aria-label="Volver al inicio de la página">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+  var secciones = Array.prototype.slice.call(document.querySelectorAll("details.seccion"));
+  var enlaces  = Array.prototype.slice.call(document.querySelectorAll(".indice .idx-link"));
+
+  /* Abrir / cerrar todo */
+  var abrir = document.getElementById("abrir-todo");
+  var cerrar = document.getElementById("cerrar-todo");
+  if(abrir) abrir.addEventListener("click", function(){ secciones.forEach(function(d){ d.open = true; }); });
+  if(cerrar) cerrar.addEventListener("click", function(){ secciones.forEach(function(d){ d.open = false; }); });
+
+  /* Clic en el índice: abrir la sección y desplazarse */
+  enlaces.forEach(function(a){
+    a.addEventListener("click", function(e){
+      var id = a.getAttribute("href").slice(1);
+      var destino = document.getElementById(id);
+      if(destino){
+        e.preventDefault();
+        destino.open = true;
+        destino.scrollIntoView({behavior:"smooth", block:"start"});
+        history.replaceState(null, "", "#"+id);
+        marcarActivo(id);
+      }
+    });
+  });
+
+  /* Si la URL trae un hash, abrir esa sección */
+  if(location.hash){
+    var ini = document.getElementById(location.hash.slice(1));
+    if(ini && ini.matches("details.seccion")){ ini.open = true; }
+  }
+
+  /* Resaltar en el índice la sección visible */
+  function marcarActivo(id){
+    enlaces.forEach(function(a){
+      a.classList.toggle("activo", a.getAttribute("href") === "#"+id);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(en){
+        if(en.isIntersecting){ marcarActivo(en.target.id); }
+      });
+    }, {rootMargin:"-45% 0px -50% 0px", threshold:0});
+    secciones.forEach(function(s){ obs.observe(s); });
+  }
+
+  /* Botón "volver arriba" */
+  var arriba = document.getElementById("arriba");
+  function alScroll(){
+    if(window.pageYOffset > 560){ arriba.classList.add("visible"); }
+    else { arriba.classList.remove("visible"); }
+  }
+  window.addEventListener("scroll", alScroll, {passive:true});
+  arriba.addEventListener("click", function(){ window.scrollTo({top:0, behavior:"smooth"}); });
+  alScroll();
+})();
+</script>
+
+
+</body>
+</html>
