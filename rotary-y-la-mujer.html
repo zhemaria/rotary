@@ -1,0 +1,1352 @@
+<!doctype html>
+<!--
+  Conoce Rotary - Entrega X: Rotary y la mujer.
+  Guia divulgativa para socios que se inician.
+  Autor: Jose M. Fernandez, Webmaster, Rotary e-Club de Puerto Rico y Las Americas.
+  Anio: 2026. Licencia: Creative Commons CC BY-NC-SA 4.0.
+  Resumen: de la exclusion historica al liderazgo actual. El caso Duarte y el fallo de la Corte Suprema
+  de EE. UU. (1987), la decision del Consejo de Legislacion de 1989, las primeras mujeres en cada cargo
+  (Sylvia Whitlock, Mimi Altman) y Jennifer Jones, primera presidenta de Rotary International (2022-23).
+  Datos contrastados en Rotary International y la RGHF.
+-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotary y la mujer</title>
+    <meta
+      name="description"
+      content="La incorporación de las mujeres a Rotary: el caso Duarte y el fallo de la Corte Suprema de EE. UU. (1987), la decisión mundial de 1989, las primeras mujeres en cada cargo y Jennifer Jones, primera presidenta de RI." />
+    <meta name="author" content="José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas" />
+    <meta name="license" content="CC BY-NC-SA 4.0" />
+    <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --azul: #17458f; /* Rotary royal blue */
+        --azul-osc: #0f2e5e; /* deep navy — headings */
+        --azul-link: #1a5fa0; /* links (AA on white) */
+        --oro: #f7a81b; /* Rotary gold — accents only, never bg for white text */
+        --oro-osc: #8a5a00; /* gold-ish text on light (AA) */
+        --crema: #fbfaf7; /* page background */
+        --superficie: #ffffff; /* cards */
+        --tinta: #20242b; /* body text */
+        --tinta-sec: #4f5a6b; /* secondary text (AA on light) */
+        --borde: #e4e0d6; /* warm hairline */
+        --borde-frio: #d7dee8; /* cool hairline */
+        --azul-suave: #eef3fa; /* tinted surface */
+        --sombra: 0 1px 3px rgba(15, 46, 94, 0.06), 0 6px 22px rgba(15, 46, 94, 0.07);
+        --radio: 14px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--crema);
+        color: var(--tinta);
+        font-family:
+          'Open Sans',
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          sans-serif;
+        font-size: 1.075rem;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        * {
+          animation-duration: 0.001ms !important;
+          transition-duration: 0.001ms !important;
+        }
+      }
+
+      .envoltorio {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 0 22px;
+      }
+
+      a {
+        color: var(--azul-link);
+      }
+      a:focus-visible,
+      button:focus-visible,
+      summary:focus-visible {
+        outline: 3px solid var(--oro);
+        outline-offset: 2px;
+        border-radius: 4px;
+      }
+
+      /* ---------- HERO ---------- */
+      header.hero {
+        background: radial-gradient(120% 140% at 85% -20%, rgba(247, 168, 27, 0.16), transparent 55%), linear-gradient(160deg, var(--azul-osc), var(--azul) 78%);
+        color: #fff;
+        border-bottom: 5px solid var(--oro);
+      }
+      .hero .envoltorio {
+        padding-top: 46px;
+        padding-bottom: 42px;
+      }
+      .eyebrow {
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #f4c778;
+        margin: 0 0 14px;
+      }
+      .hero h1 {
+        font-family: 'Zilla Slab', Georgia, serif;
+        font-weight: 700;
+        font-size: clamp(2rem, 5.2vw, 3.05rem);
+        line-height: 1.1;
+        margin: 0 0 14px;
+        letter-spacing: -0.01em;
+      }
+      .hero .dek {
+        font-size: clamp(1.05rem, 2.4vw, 1.28rem);
+        max-width: 48ch;
+        color: #e7eef7;
+        margin: 0 0 28px;
+      }
+
+      /* Signature: the rotary ribbon */
+      .ciclo {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex-wrap: wrap;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 999px;
+        padding: 10px 18px;
+        width: fit-content;
+      }
+      .ciclo svg {
+        flex: 0 0 auto;
+      }
+      .ciclo .ciclo-txt {
+        font-size: 0.95rem;
+        line-height: 1.3;
+      }
+      .ciclo b {
+        font-weight: 700;
+        color: #fff;
+      }
+      .ciclo span {
+        color: #d7e2f1;
+      }
+      .ciclo .fecha {
+        font-family: 'Zilla Slab', serif;
+        font-weight: 600;
+        color: #fbd68b;
+        white-space: nowrap;
+      }
+
+      /* ---------- INTRO / ÍNDICE ---------- */
+      main {
+        padding: 40px 0 10px;
+      }
+      .lede {
+        font-size: 1.16rem;
+        color: var(--tinta);
+        border-left: 4px solid var(--oro);
+        padding: 2px 0 2px 18px;
+        margin: 0 0 34px;
+      }
+
+      .indice {
+        background: var(--superficie);
+        border: 1px solid var(--borde);
+        border-radius: var(--radio);
+        box-shadow: var(--sombra);
+        padding: 24px 26px 26px;
+        margin-bottom: 18px;
+      }
+      .indice h2 {
+        font-family: 'Zilla Slab', serif;
+        font-size: 1.05rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--azul-osc);
+        margin: 0 0 16px;
+      }
+      .indice ol {
+        list-style: none;
+        counter-reset: idx;
+        margin: 0;
+        padding: 0;
+      }
+      .indice li {
+        counter-increment: idx;
+        margin: 0;
+      }
+      .indice a.idx-link {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 9px 10px;
+        border-radius: 9px;
+        text-decoration: none;
+        color: var(--tinta);
+        border: 1px solid transparent;
+        transition:
+          background 0.15s,
+          border-color 0.15s;
+      }
+      .indice a.idx-link:hover {
+        background: var(--azul-suave);
+        border-color: var(--borde-frio);
+      }
+      .indice a.idx-link.activo {
+        background: var(--azul-suave);
+        border-color: var(--azul);
+      }
+      .indice a.idx-link::before {
+        content: counter(idx);
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: var(--azul);
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.95rem;
+        font-family: 'Zilla Slab', serif;
+      }
+      .indice a.idx-link.activo::before {
+        background: var(--oro-osc);
+      }
+
+      .controles {
+        display: flex;
+        gap: 10px;
+        margin: 14px 0 26px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 9px;
+        padding: 9px 16px;
+        border: 1px solid var(--azul);
+        background: var(--superficie);
+        color: var(--azul);
+        transition:
+          background 0.15s,
+          color 0.15s;
+      }
+      .btn:hover {
+        background: var(--azul);
+        color: #fff;
+      }
+
+      /* ---------- SECCIONES (ACORDEÓN) ---------- */
+      details.seccion {
+        background: var(--superficie);
+        border: 1px solid var(--borde);
+        border-radius: var(--radio);
+        box-shadow: var(--sombra);
+        margin: 16px 0;
+        overflow: hidden;
+        scroll-margin-top: 18px;
+      }
+      details.seccion[open] {
+        border-color: var(--borde-frio);
+      }
+      summary.cab {
+        list-style: none;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 18px 22px;
+      }
+      summary.cab::-webkit-details-marker {
+        display: none;
+      }
+      .num {
+        flex: 0 0 auto;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(150deg, var(--azul), var(--azul-osc));
+        color: #fff;
+        font-family: 'Zilla Slab', serif;
+        font-weight: 700;
+        font-size: 1.25rem;
+      }
+      summary.cab h2 {
+        font-family: 'Zilla Slab', serif;
+        font-weight: 600;
+        color: var(--azul-osc);
+        font-size: clamp(1.18rem, 2.6vw, 1.42rem);
+        line-height: 1.25;
+        margin: 0;
+        flex: 1;
+      }
+      .chevron {
+        flex: 0 0 auto;
+        color: var(--azul);
+        transition: transform 0.2s ease;
+      }
+      details[open] summary.cab .chevron {
+        transform: rotate(180deg);
+      }
+      summary.cab:hover h2 {
+        color: var(--azul);
+      }
+      details[open] summary.cab {
+        border-bottom: 1px solid var(--borde);
+      }
+
+      .cuerpo {
+        padding: 6px 26px 26px;
+      }
+      .cuerpo h3 {
+        font-family: 'Zilla Slab', serif;
+        color: var(--azul);
+        font-weight: 600;
+        font-size: 1.16rem;
+        margin: 26px 0 8px;
+      }
+      .cuerpo h3:first-child {
+        margin-top: 14px;
+      }
+      .cuerpo p {
+        margin: 0 0 14px;
+      }
+      .cuerpo ul {
+        margin: 0 0 16px;
+        padding-left: 0;
+        list-style: none;
+      }
+      .cuerpo ul li {
+        position: relative;
+        padding-left: 30px;
+        margin: 0 0 12px;
+      }
+      .cuerpo ul li::before {
+        content: '';
+        position: absolute;
+        left: 6px;
+        top: 0.62em;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: var(--oro);
+        box-shadow: 0 0 0 3px rgba(247, 168, 27, 0.2);
+      }
+      .cuerpo strong {
+        color: var(--azul-osc);
+      }
+
+      .nota {
+        background: var(--azul-suave);
+        border: 1px solid var(--borde-frio);
+        border-left: 4px solid var(--azul);
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin: 18px 0;
+        font-size: 1rem;
+      }
+      .nota .et {
+        display: inline-block;
+        font-weight: 700;
+        color: var(--azul-osc);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 0.78rem;
+        margin-right: 6px;
+      }
+      .destacado {
+        background: #fff8ec;
+        border: 1px solid #f2d79a;
+        border-left: 4px solid var(--oro);
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin: 18px 0;
+      }
+      .destacado .et {
+        display: inline-block;
+        font-weight: 700;
+        color: var(--oro-osc);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 0.78rem;
+        margin-right: 6px;
+      }
+
+      /* ---------- CITAS ---------- */
+      blockquote.cita {
+        margin: 20px 0;
+        padding: 16px 22px;
+        background: var(--azul-suave);
+        border-left: 4px solid var(--oro);
+        border-radius: 0 12px 12px 0;
+        font-size: 1.06rem;
+        color: var(--tinta);
+      }
+      blockquote.cita p {
+        margin: 0 0 8px;
+        font-style: italic;
+      }
+      blockquote.cita p:last-of-type {
+        margin-bottom: 0;
+      }
+      blockquote.cita cite {
+        display: block;
+        margin-top: 8px;
+        font-style: normal;
+        font-weight: 700;
+        color: var(--azul-osc);
+        font-size: 0.9rem;
+      }
+
+      /* ---------- FIGURAS ---------- */
+      figure.figura {
+        margin: 22px 0;
+        background: var(--superficie);
+        border: 1px solid var(--borde);
+        border-radius: 14px;
+        box-shadow: var(--sombra);
+        overflow: hidden;
+      }
+      figure.figura img {
+        display: block;
+        width: 100%;
+        height: auto;
+        background: var(--azul-suave);
+      }
+      figure.figura figcaption {
+        padding: 12px 18px;
+        font-size: 0.93rem;
+        color: var(--tinta-sec);
+        border-top: 1px solid var(--borde);
+      }
+      figure.figura figcaption .fig-num {
+        font-family: 'Zilla Slab', serif;
+        font-weight: 700;
+        color: var(--azul-osc);
+        margin-right: 7px;
+      }
+      figure.figura figcaption .credito {
+        display: block;
+        margin-top: 3px;
+        font-size: 0.8rem;
+        font-style: italic;
+        color: var(--tinta-sec);
+      }
+      .dos-figuras {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .dos-figuras figure.figura {
+        margin: 22px 0 0;
+      }
+      @media (max-width: 560px) {
+        .dos-figuras {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ---------- VIDEO (FACHADA) ---------- */
+      .video-bloque {
+        margin: 24px 0;
+      }
+      .video-bloque .v-titulo {
+        font-family: 'Zilla Slab', serif;
+        color: var(--azul);
+        font-weight: 600;
+        font-size: 1.12rem;
+        margin: 0 0 10px;
+      }
+      .video-facade {
+        position: relative;
+        display: block;
+        width: 100%;
+        aspect-ratio: 16/9;
+        border: 1px solid var(--borde-frio);
+        border-radius: 14px;
+        overflow: hidden;
+        background: linear-gradient(150deg, var(--azul-osc), var(--azul));
+        cursor: pointer;
+        box-shadow: var(--sombra);
+        padding: 0;
+      }
+      .video-facade::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(15, 46, 94, 0.22);
+      }
+      .video-facade .play {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.95);
+        display: grid;
+        place-items: center;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        transition:
+          transform 0.15s,
+          background 0.15s;
+      }
+      .video-facade:hover .play {
+        transform: translate(-50%, -50%) scale(1.07);
+        background: #fff;
+      }
+      .video-facade .v-label {
+        position: absolute;
+        z-index: 2;
+        left: 16px;
+        right: 16px;
+        bottom: 14px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.98rem;
+        text-align: left;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.55);
+      }
+      .video-facade iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .video-pendiente {
+        margin: 24px 0;
+        border: 1.6px dashed var(--borde-frio);
+        border-radius: 14px;
+        background: var(--azul-suave);
+        padding: 22px 20px;
+        text-align: center;
+        color: var(--tinta-sec);
+      }
+      .video-pendiente .vp-ic {
+        font-size: 1.8rem;
+        display: block;
+        margin-bottom: 6px;
+      }
+      .video-pendiente b {
+        color: var(--azul-osc);
+      }
+
+      /* ---------- LÍNEA DE TIEMPO ---------- */
+      .linea-tiempo {
+        list-style: none;
+        margin: 18px 0 6px;
+        padding: 0;
+        position: relative;
+      }
+      .linea-tiempo::before {
+        content: '';
+        position: absolute;
+        left: 14px;
+        top: 6px;
+        bottom: 6px;
+        width: 2px;
+        background: var(--borde-frio);
+      }
+      .linea-tiempo li {
+        position: relative;
+        padding: 0 0 18px 46px;
+      }
+      .linea-tiempo li::before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        top: 3px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: var(--oro);
+        border: 3px solid var(--superficie);
+        box-shadow: 0 0 0 2px var(--oro);
+      }
+      .linea-tiempo .anio {
+        font-family: 'Zilla Slab', serif;
+        font-weight: 700;
+        color: var(--azul-osc);
+        font-size: 1.05rem;
+        margin-right: 8px;
+      }
+
+      /* ---------- TABLA COMPARATIVA ---------- */
+      .tabla-scroll {
+        overflow-x: auto;
+        margin: 14px 0 6px;
+        border-radius: 12px;
+      }
+      .hint-desliza {
+        display: none;
+        font-size: 0.85rem;
+        color: var(--tinta-sec);
+        margin: 0 0 8px;
+      }
+      table.comparativa {
+        width: 100%;
+        min-width: 560px;
+        border-collapse: collapse;
+        background: var(--superficie);
+        border: 1px solid var(--borde-frio);
+        border-radius: 12px;
+        overflow: hidden;
+        font-size: 0.98rem;
+      }
+      table.comparativa caption {
+        text-align: left;
+        font-size: 0.9rem;
+        color: var(--tinta-sec);
+        padding: 0 0 10px;
+        caption-side: top;
+      }
+      table.comparativa th[scope='col'] {
+        background: var(--azul);
+        color: #fff;
+        font-family: 'Zilla Slab', serif;
+        font-weight: 600;
+        text-align: left;
+        padding: 13px 16px;
+        vertical-align: middle;
+      }
+      table.comparativa th[scope='row'] {
+        background: var(--azul-suave);
+        color: var(--azul-osc);
+        font-weight: 700;
+        text-align: left;
+        padding: 13px 16px;
+        vertical-align: top;
+        width: 24%;
+        border-top: 1px solid var(--borde-frio);
+      }
+      table.comparativa td {
+        padding: 13px 16px;
+        vertical-align: top;
+        border-top: 1px solid var(--borde-frio);
+      }
+      table.comparativa tbody tr:nth-child(even) td {
+        background: #fafbfd;
+      }
+
+      /* ---------- FUENTES ---------- */
+      .fuentes {
+        background: var(--superficie);
+        border: 1px solid var(--borde);
+        border-radius: var(--radio);
+        box-shadow: var(--sombra);
+        padding: 24px 26px;
+        margin: 30px 0 10px;
+      }
+      .fuentes h2 {
+        font-family: 'Zilla Slab', serif;
+        color: var(--azul-osc);
+        font-size: 1.35rem;
+        margin: 0 0 6px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .fuentes h2 .pico {
+        width: 30px;
+        height: 4px;
+        background: var(--oro);
+        border-radius: 3px;
+      }
+      .fuentes p.intro {
+        color: var(--tinta-sec);
+        margin: 0 0 16px;
+        font-size: 1rem;
+      }
+      .fuentes ol {
+        margin: 0;
+        padding-left: 22px;
+      }
+      .fuentes li {
+        margin: 0 0 9px;
+      }
+      .fuentes li .titulo {
+        color: var(--tinta);
+      }
+      .fuentes li a {
+        word-break: break-word;
+        font-size: 0.92rem;
+      }
+
+      /* ---------- PIE ---------- */
+      footer.pie {
+        margin-top: 30px;
+        border-top: 1px solid var(--borde);
+        background: #fff;
+      }
+      footer.pie .envoltorio {
+        padding: 26px 22px 40px;
+        color: var(--tinta-sec);
+        font-size: 0.9rem;
+      }
+      footer.pie .lic {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      footer.pie a {
+        color: var(--azul-link);
+      }
+      footer.pie .cc-badge {
+        flex: 0 0 auto;
+        font-weight: 700;
+        color: var(--azul-osc);
+        border: 1px solid var(--borde-frio);
+        border-radius: 7px;
+        padding: 3px 9px;
+        font-size: 0.82rem;
+      }
+
+      /* ---------- BOTÓN ARRIBA ---------- */
+      #arriba {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 30;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        background: var(--azul);
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 0 6px 18px rgba(15, 46, 94, 0.28);
+        display: grid;
+        place-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition:
+          opacity 0.2s,
+          background 0.15s,
+          transform 0.15s;
+      }
+      #arriba.visible {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      #arriba:hover {
+        background: var(--azul-osc);
+        transform: translateY(-2px);
+      }
+
+      /* ---------- RESPONSIVE ---------- */
+      @media (max-width: 640px) {
+        body {
+          font-size: 1.02rem;
+        }
+        .hero .envoltorio {
+          padding-top: 34px;
+          padding-bottom: 32px;
+        }
+        .cuerpo {
+          padding: 6px 18px 22px;
+        }
+        summary.cab {
+          padding: 15px 16px;
+          gap: 12px;
+        }
+        .num {
+          width: 36px;
+          height: 36px;
+          font-size: 1.1rem;
+        }
+        .indice {
+          padding: 20px 18px;
+        }
+        .hint-desliza {
+          display: block;
+        }
+      }
+
+      /* ---------- IMPRESIÓN ---------- */
+      @media print {
+        body {
+          background: #fff;
+          color: #000;
+          font-size: 11pt;
+        }
+        header.hero {
+          background: #fff !important;
+          color: #000;
+          border-bottom: 2px solid #000;
+        }
+        .eyebrow {
+          color: #000;
+        }
+        .hero h1 {
+          color: #000;
+        }
+        .hero .dek {
+          color: #000;
+        }
+        .ciclo {
+          display: none;
+        }
+        #arriba,
+        .controles {
+          display: none;
+        }
+        details.seccion .cuerpo {
+          display: block !important;
+        }
+        details.seccion,
+        .indice,
+        .fuentes,
+        figure.figura {
+          box-shadow: none;
+          border: 1px solid #999;
+          break-inside: avoid;
+        }
+        .chevron {
+          display: none;
+        }
+        a {
+          color: #000;
+          text-decoration: underline;
+        }
+      }
+
+      /* ---------- IMAGEN SUGERIDA (marcador para el editor) ---------- */
+      .figura-pendiente {
+        margin: 22px 0;
+        border: 1.6px dashed var(--borde-frio);
+        border-radius: 14px;
+        background: var(--azul-suave);
+        padding: 22px 20px;
+        text-align: center;
+        color: var(--tinta-sec);
+      }
+      .figura-pendiente .fp-ic {
+        font-size: 1.7rem;
+        display: block;
+        margin-bottom: 6px;
+      }
+      .figura-pendiente b {
+        color: var(--azul-osc);
+      }
+      .figura-pendiente .fp-ruta {
+        display: inline-block;
+        margin-top: 6px;
+        font-family: 'Zilla Slab', serif;
+        font-size: 0.85rem;
+        color: var(--oro-osc);
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="envoltorio">
+        <p class="eyebrow">Conoce Rotary · Décima entrega</p>
+        <h1>Rotary y la mujer</h1>
+        <p class="dek">
+          De una puerta cerrada durante décadas a la presidencia mundial de la organización. La historia de cómo las mujeres pasaron de la exclusión al liderazgo es también la historia de un Rotary
+          capaz de renovarse.
+        </p>
+        <div class="ciclo">
+          <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+            <circle cx="17" cy="17" r="13" fill="none" stroke="#F7A81B" stroke-width="2.4" stroke-dasharray="62 20" stroke-linecap="round" />
+            <path d="M27 9 l1.8 5.4 -5.6 -.9 z" fill="#F7A81B" />
+          </svg>
+          <span class="ciclo-txt">
+            <b>De la exclusión al liderazgo:</b>
+            <br />
+            <span>de Duarte, en 1987, a la primera</span>
+            <span class="fecha">presidenta de RI</span>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="envoltorio">
+      <p class="lede">
+        Durante la mayor parte de su historia, Rotary fue una organización exclusivamente masculina. Que hoy una mujer pueda presidir Rotary International —y que millones lo hagan en sus clubes y
+        distritos— es fruto de una lucha larga, de una batalla judicial y de una decisión valiente. Esta entrega, que cierra nuestra serie de iniciación, recorre ese camino: del caso Duarte al
+        liderazgo femenino de nuestros días.
+      </p>
+
+      <nav class="indice" aria-label="Índice de la entrega">
+        <h2>En esta entrega</h2>
+        <ol>
+          <li><a class="idx-link" href="#s1">Una puerta que tardó en abrirse</a></li>
+          <li><a class="idx-link" href="#s2">El caso Duarte (1977-1987)</a></li>
+          <li><a class="idx-link" href="#s3">1989: la decisión que cambió Rotary</a></li>
+          <li><a class="idx-link" href="#s4">Las pioneras: las primeras en cada cargo</a></li>
+          <li><a class="idx-link" href="#s5">Jennifer Jones: la primera presidenta de RI</a></li>
+          <li><a class="idx-link" href="#s6">La mujer en Rotary hoy</a></li>
+          <li><a class="idx-link" href="#s7">Cronología y cierre de la serie</a></li>
+        </ol>
+      </nav>
+
+      <div class="controles">
+        <button class="btn" id="abrir-todo" type="button">Abrir todo</button>
+        <button class="btn" id="cerrar-todo" type="button">Cerrar todo</button>
+      </div>
+
+      <!-- ============ SECCIÓN 1 ============ -->
+      <details class="seccion" id="s1" open>
+        <summary class="cab">
+          <span class="num" aria-hidden="true">1</span>
+          <h2>Una puerta que tardó en abrirse</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>
+            Desde su fundación en 1905 y hasta 1989, los Estatutos de Rotary International reservaban la condición de socio a los
+            <strong>hombres</strong>
+            . Las mujeres no estaban, sin embargo, ausentes de la vida rotaria: podían asistir a las reuniones, pronunciar discursos, recibir distinciones e incluso llevar el distintivo rotario.
+          </p>
+
+          <p>
+            Su participación se canalizaba, además, a través de organizaciones vinculadas. En 1924 nació en el Reino Unido
+            <strong>Inner Wheel</strong>
+            , una asociación de mujeres relacionadas con Rotary que llegaría a ser una de las mayores organizaciones femeninas de servicio del mundo; en Norteamérica, a las esposas de los rotarios se
+            las llamaba afectuosamente «Rotary Anns». Y las jóvenes podían integrarse en Interact y Rotaract. Pero la
+            <strong>membresía plena</strong>
+            permanecía cerrada.
+          </p>
+
+          <div class="nota">
+            <span class="et">El contexto</span>
+            Aquella exclusión respondía a las normas sociales de comienzos del siglo XX. Cambiarla exigiría, décadas después, la determinación de un club dispuesto a llevar el asunto hasta la más alta
+            instancia judicial.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 2 ============ -->
+      <details class="seccion" id="s2">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">2</span>
+          <h2>El caso Duarte (1977-1987)</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>
+            En
+            <strong>1977</strong>
+            , el Rotary Club de Duarte, en California, admitió a tres mujeres como socias activas. La respuesta de la Junta Directiva de RI no se hizo esperar: en
+            <strong>1978</strong>
+            le retiró la carta constitutiva por infringir los Estatutos.
+          </p>
+
+          <p>
+            El club —rebautizado provisionalmente «Ex-Rotary Club de Duarte»— acudió a los tribunales. Alegó que Rotary, por su carácter de establecimiento con fines cívicos y de negocios, quedaba
+            sujeto a la
+            <strong>Ley de Derechos Civiles Unruh</strong>
+            de California, que prohíbe la discriminación por sexo. El pleito fue largo: un primer tribunal dio la razón a RI, pero el Tribunal de Apelaciones de California revocó esa decisión en 1986.
+          </p>
+
+          <h3>La Corte Suprema de EE. UU.</h3>
+          <p>
+            Rotary International llevó el caso hasta la Corte Suprema de los Estados Unidos. El
+            <strong>4 de mayo de 1987</strong>
+            , en el caso
+            <em>Board of Directors, Rotary International v. Rotary Club of Duarte</em>
+            , la Corte falló por
+            <strong>unanimidad (7-0)</strong>
+            : aplicar la ley californiana para exigir la admisión de mujeres no vulneraba la libertad de asociación amparada por la Primera Enmienda. Los clubes rotarios, señaló, tienen un carácter en
+            parte público y una finalidad que va más allá de la mera intimidad asociativa.
+          </p>
+
+          <div class="destacado">
+            <span class="et">Once años de firmeza</span>
+            El club de Duarte sostuvo su decisión durante más de una década, a través de instancia tras instancia, hasta obtener una sentencia que abriría las puertas de Rotary a las mujeres en los
+            Estados Unidos.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 3 ============ -->
+      <details class="seccion" id="s3">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">3</span>
+          <h2>1989: la decisión que cambió Rotary</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>
+            Tras la sentencia, RI declaró que cualquier club de los Estados Unidos podía admitir a mujeres cualificadas, y en 1988 reconoció el mismo derecho a los clubes de Canadá, amparados por una
+            ley semejante. El paso decisivo, sin embargo, fue mundial.
+          </p>
+
+          <p>
+            En su primera reunión posterior al fallo, en
+            <strong>1989</strong>
+            , el
+            <strong>Consejo de Legislación</strong>
+            votó eliminar de los Estatutos de RI la exigencia de que la membresía se limitara a los hombres. Con ello,
+            <strong>las mujeres fueron admitidas en los clubes rotarios de todo el mundo</strong>
+            . Uno de los promotores de la medida —Frank J. Devlyn, más tarde presidente de RI— recordó a los delegados que el mundo de 1989 era muy distinto del de 1905, y que Rotary debía adaptarse a
+            un mundo en cambio.
+          </p>
+
+          <div class="nota">
+            <span class="et">Una respuesta contundente</span>
+            La acogida fue inmediata: para junio de 1990, el número de mujeres rotarias ya superaba las veinte mil. Aquel voto de 1989 sigue considerándose un momento decisivo en la historia de
+            Rotary.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 4 ============ -->
+      <details class="seccion" id="s4">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">4</span>
+          <h2>Las pioneras: las primeras en cada cargo</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>Abierta la puerta, las mujeres empezaron a ocupar, una tras otra, responsabilidades que hasta entonces les habían estado vedadas.</p>
+
+          <figure class="figura">
+            <img
+              src="https://zhemaria.github.io/rotary/image/sylvia-whitlock.png
+"
+              alt="Dra. Sylvia Whitlock, primera mujer que presidió un club rotario" />
+            <figcaption>
+              <span class="fig-num">Figura 1.</span>
+              Dra. Sylvia Whitlock, primera mujer que presidió un club rotario
+            </figcaption>
+          </figure>
+
+          <h3>Sylvia Whitlock, primera presidenta de un club</h3>
+          <p>
+            En junio de
+            <strong>1987</strong>
+            , la
+            <strong>Dra. Sylvia Whitlock</strong>
+            , del Rotary Club de Duarte, se convirtió en la primera mujer en presidir un club rotario en la historia de la organización. Educadora de larga trayectoria y directora de una escuela
+            primaria en Duarte, encarnó el triunfo de aquel club pionero.
+          </p>
+
+          <h3>Mimi Altman, primera gobernadora de distrito</h3>
+          <p>
+            El 1 de julio de
+            <strong>1995</strong>
+            ,
+            <strong>Mimi Altman</strong>
+            , del club de Deerfield (Illinois), asumió como la primera mujer
+            <strong>gobernadora de distrito</strong>
+            . En los años siguientes, otras mujeres accederían a la Junta Directiva de RI como
+            <strong>directoras</strong>
+            y a la
+            <strong>vicepresidencia</strong>
+            de la organización.
+          </p>
+
+          <div class="nota">
+            <span class="et">Un ascenso sostenido</span>
+            Cada «primera» abría el camino a muchas otras. En poco más de una generación, la presencia femenina se extendió desde la mesa del club hasta los órganos de gobierno mundial de Rotary.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 5 ============ -->
+      <details class="seccion" id="s5">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">5</span>
+          <h2>Jennifer Jones: la primera presidenta de RI</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <figure class="figura">
+            <img
+              src="https://zhemaria.github.io/rotary/image/jennifer-jones.jpg
+"
+              alt="Jennifer E. Jones, primera mujer presidenta de Rotary International." />
+            <figcaption>
+              <span class="fig-num">Figura 2.</span>
+              Jennifer E. Jones, primera mujer presidenta de Rotary International.
+            </figcaption>
+          </figure>
+
+          <p>
+            El techo de cristal más alto cayó en el período
+            <strong>2022-2023</strong>
+            , cuando
+            <strong>Jennifer E. Jones</strong>
+            —del Rotary Club de Windsor-Roseland, en Ontario (Canadá)— asumió como la
+            <strong>primera mujer presidenta de Rotary International</strong>
+            , ciento quince años después de la fundación del movimiento. Tomó posesión el 1 de julio de 2022.
+          </p>
+
+          <p>
+            Socia de Rotary desde 1997 y fundadora de una empresa de comunicación, Jones había servido antes como
+            <strong>vicepresidenta y directora de RI</strong>
+            y como fiduciaria de La Fundación Rotaria. Fue, además, una de las artífices de la renovación de la imagen pública de Rotary, al presidir el grupo asesor de la iniciativa de
+            fortalecimiento de la marca. Bajo el lema
+            <strong>«Imagine Rotary»</strong>
+            , impulsó la innovación, la captación de socios más jóvenes y la equidad de género.
+          </p>
+
+          <div class="destacado">
+            <span class="et">Un símbolo y un mandato</span>
+            Su elección fue a la vez un símbolo y un compromiso: demostrar que el liderazgo de Rotary está abierto a personas de toda edad, género y procedencia, y que la diversidad empieza por la
+            cúpula.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 6 ============ -->
+      <details class="seccion" id="s6">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">6</span>
+          <h2>La mujer en Rotary hoy</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>
+            La incorporación de las mujeres no solo corrigió una injusticia: enriqueció a Rotary con talento, perspectivas y liderazgo. Hoy las mujeres presiden clubes, gobiernan distritos y ocupan
+            los más altos cargos de la organización.
+          </p>
+
+          <p>
+            Rotary International se ha fijado metas concretas para seguir avanzando: que las mujeres representen una proporción creciente de la membresía —un objetivo ya alcanzado en más de cien
+            países— y que el liderazgo refleje esa diversidad. En
+            <strong>Rotaract</strong>
+            , de hecho, cerca de la mitad de los miembros son mujeres, lo que anticipa el rostro del Rotary del futuro.
+          </p>
+
+          <div class="nota">
+            <span class="et">En una generación</span>
+            De la exclusión total en 1989 al liderazgo mundial en 2022, el cambio ha sido profundo y veloz. La plena participación de las mujeres es hoy indispensable para la vitalidad del movimiento.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 7 ============ -->
+      <details class="seccion" id="s7">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">7</span>
+          <h2>Cronología y cierre de la serie</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <ul class="linea-tiempo">
+            <li>
+              <span class="anio">1905</span>
+              Rotary nace en Chicago como una organización integrada solo por hombres.
+            </li>
+            <li>
+              <span class="anio">1924</span>
+              Se funda Inner Wheel, asociación de mujeres vinculadas a Rotary.
+            </li>
+            <li>
+              <span class="anio">1977-78</span>
+              El Rotary Club de Duarte (California) admite a tres mujeres; RI le retira la carta constitutiva.
+            </li>
+            <li>
+              <span class="anio">1987</span>
+              El 4 de mayo, la Corte Suprema de EE. UU. falla a favor de Duarte. En junio, Sylvia Whitlock es la primera mujer que preside un club.
+            </li>
+            <li>
+              <span class="anio">1989</span>
+              El Consejo de Legislación elimina la exclusión: las mujeres ingresan en los clubes de todo el mundo.
+            </li>
+            <li>
+              <span class="anio">1995</span>
+              Mimi Altman se convierte en la primera mujer gobernadora de distrito.
+            </li>
+            <li>
+              <span class="anio">2022-23</span>
+              Jennifer Jones es la primera mujer presidenta de Rotary International.
+            </li>
+          </ul>
+
+          <div class="destacado">
+            <span class="et">Fin de la serie «Conoce Rotary»</span>
+            Con esta entrega concluye nuestra serie de iniciación para nuevos socios. A lo largo de once entregas hemos recorrido la historia, la estructura, los programas, el protocolo y los valores
+            de Rotary. Que este conocimiento sea el punto de partida de un servicio largo y fecundo. Bienvenido, bienvenida, a la familia rotaria.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ FUENTES ============ -->
+      <section class="fuentes" aria-labelledby="fuentes-titulo">
+        <h2 id="fuentes-titulo">
+          <span class="pico" aria-hidden="true"></span>
+          Fuentes y para saber más
+        </h2>
+        <p class="intro">Esta entrega es una adaptación divulgativa contrastada en fuentes de Rotary International, la Rotary Global History Fellowship y documentación jurídica.</p>
+        <ol>
+          <li>
+            <span class="titulo">Rotary International — Historia de la mujer en Rotary.</span>
+            <a href="https://www.rotary.org/es/history-women-rotary" target="_blank" rel="noopener">rotary.org — mujeres en Rotary</a>
+          </li>
+          <li>
+            <span class="titulo">
+              Rotary Global History Fellowship (RGHF) —
+              <em>Women and Rotary</em>
+              .
+            </span>
+            <a href="https://rghf.org/women-and-rotary/" target="_blank" rel="noopener">rghf.org</a>
+          </li>
+          <li>
+            <span class="titulo">
+              <em>Board of Directors, Rotary International v. Rotary Club of Duarte,</em>
+              481 U.S. 537 (1987).
+            </span>
+            Sentencia de la Corte Suprema de los Estados Unidos.
+          </li>
+          <li>
+            <span class="titulo">Rotary International — Jennifer E. Jones, primera mujer presidenta de RI.</span>
+            <a href="https://www.rotary.org/es" target="_blank" rel="noopener">rotary.org</a>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="envoltorio">
+        <div class="lic">
+          <span class="cc-badge">CC BY-NC-SA 4.0</span>
+          <p style="margin: 0">
+            <strong>Rotary y la mujer.</strong>
+            Obra de José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas. 2026. Distribuida bajo licencia
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener license">Creative Commons Atribución-NoComercial-CompartirIgual 4.0</a>
+            . Las marcas de Rotary pertenecen a Rotary International; este material es una adaptación divulgativa sin fines comerciales para uso de los socios.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button id="arriba" type="button" aria-label="Volver al inicio de la página">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script>
+      (function () {
+        'use strict';
+        var secciones = Array.prototype.slice.call(document.querySelectorAll('details.seccion'));
+        var enlaces = Array.prototype.slice.call(document.querySelectorAll('.indice .idx-link'));
+
+        /* Abrir / cerrar todo */
+        var abrir = document.getElementById('abrir-todo');
+        var cerrar = document.getElementById('cerrar-todo');
+        if (abrir)
+          abrir.addEventListener('click', function () {
+            secciones.forEach(function (d) {
+              d.open = true;
+            });
+          });
+        if (cerrar)
+          cerrar.addEventListener('click', function () {
+            secciones.forEach(function (d) {
+              d.open = false;
+            });
+          });
+
+        /* Clic en el índice: abrir la sección y desplazarse */
+        enlaces.forEach(function (a) {
+          a.addEventListener('click', function (e) {
+            var id = a.getAttribute('href').slice(1);
+            var destino = document.getElementById(id);
+            if (destino) {
+              e.preventDefault();
+              destino.open = true;
+              destino.scrollIntoView({behavior: 'smooth', block: 'start'});
+              history.replaceState(null, '', '#' + id);
+              marcarActivo(id);
+            }
+          });
+        });
+
+        /* Si la URL trae un hash, abrir esa sección */
+        if (location.hash) {
+          var ini = document.getElementById(location.hash.slice(1));
+          if (ini && ini.matches('details.seccion')) {
+            ini.open = true;
+          }
+        }
+
+        /* Resaltar en el índice la sección visible */
+        function marcarActivo(id) {
+          enlaces.forEach(function (a) {
+            a.classList.toggle('activo', a.getAttribute('href') === '#' + id);
+          });
+        }
+        if ('IntersectionObserver' in window) {
+          var obs = new IntersectionObserver(
+            function (entradas) {
+              entradas.forEach(function (en) {
+                if (en.isIntersecting) {
+                  marcarActivo(en.target.id);
+                }
+              });
+            },
+            {rootMargin: '-45% 0px -50% 0px', threshold: 0}
+          );
+          secciones.forEach(function (s) {
+            obs.observe(s);
+          });
+        }
+
+        /* Botón "volver arriba" */
+        var arriba = document.getElementById('arriba');
+        function alScroll() {
+          if (window.pageYOffset > 560) {
+            arriba.classList.add('visible');
+          } else {
+            arriba.classList.remove('visible');
+          }
+        }
+        window.addEventListener('scroll', alScroll, {passive: true});
+        arriba.addEventListener('click', function () {
+          window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        alScroll();
+      })();
+    </script>
+  </body>
+</html>
