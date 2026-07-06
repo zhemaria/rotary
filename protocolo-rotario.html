@@ -1,0 +1,1747 @@
+<!doctype html>
+<!--
+  Conoce Rotary - Entrega IX: El protocolo rotario, en la reunion presencial y en la sesion virtual.
+  Guia divulgativa para socios que se inician.
+  Autor: Jose M. Fernandez, Webmaster, Rotary e-Club de Puerto Rico y Las Americas.
+  Anio: 2026. Licencia: Creative Commons CC BY-NC-SA 4.0.
+  Resumen: fundamentos del protocolo y el ceremonial rotario -el MaCeRo, las banderas, los himnos,
+  el orden de prelacion y el desarrollo de la reunion- con un apartado dedicado a la etiqueta de la
+  sesion rotaria virtual. Adaptacion divulgativa basada en el Manual de Procedimiento de RI, los
+  Estatutos de Rotary International y los manuales distritales de protocolo (Distritos 4945 y 4320).
+-->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El protocolo rotario: reunión presencial y sesión virtual</title>
+    <meta
+      name="description"
+      content="El protocolo rotario explicado para socios nuevos: el MaCeRo, las banderas, los himnos, el orden de prelación y el desarrollo de la reunión, con una guía de etiqueta para la sesión rotaria virtual." />
+    <meta name="author" content="José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas" />
+    <meta name="license" content="CC BY-NC-SA 4.0" />
+    <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --azul: #17458f; /* Rotary royal blue */
+        --azul-osc: #0f2e5e; /* deep navy — headings */
+        --azul-link: #1a5fa0; /* links (AA on white) */
+        --oro: #f7a81b; /* Rotary gold — accents only, never bg for white text */
+        --oro-osc: #8a5a00; /* gold-ish text on light (AA) */
+        --crema: #fbfaf7; /* page background */
+        --superficie: #ffffff; /* cards */
+        --tinta: #20242b; /* body text */
+        --tinta-sec: #4f5a6b; /* secondary text (AA on light) */
+        --borde: #e4e0d6; /* warm hairline */
+        --borde-frio: #d7dee8; /* cool hairline */
+        --azul-suave: #eef3fa; /* tinted surface */
+        --sombra: 0 1px 3px rgba(15, 46, 94, 0.06), 0 6px 22px rgba(15, 46, 94, 0.07);
+        --radio: 14px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--crema);
+        color: var(--tinta);
+        font-family:
+          'Open Sans',
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          sans-serif;
+        font-size: 1.075rem;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        * {
+          animation-duration: 0.001ms !important;
+          transition-duration: 0.001ms !important;
+        }
+      }
+
+      .envoltorio {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 0 22px;
+      }
+
+      a {
+        color: var(--azul-link);
+      }
+      a:focus-visible,
+      button:focus-visible,
+      summary:focus-visible {
+        outline: 3px solid var(--oro);
+        outline-offset: 2px;
+        border-radius: 4px;
+      }
+
+      /* ---------- HERO ---------- */
+      header.hero {
+        background: radial-gradient(120% 140% at 85% -20%, rgba(247, 168, 27, 0.16), transparent 55%), linear-gradient(160deg, var(--azul-osc), var(--azul) 78%);
+        color: #fff;
+        border-bottom: 5px solid var(--oro);
+      }
+      .hero .envoltorio {
+        padding-top: 46px;
+        padding-bottom: 42px;
+      }
+      .eyebrow {
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #f4c778;
+        margin: 0 0 14px;
+      }
+      .hero h1 {
+        font-family: 'Zilla Slab', Georgia, serif;
+        font-weight: 700;
+        font-size: clamp(2rem, 5.2vw, 3.05rem);
+        line-height: 1.1;
+        margin: 0 0 14px;
+        letter-spacing: -0.01em;
+      }
+      .hero .dek {
+        font-size: clamp(1.05rem, 2.4vw, 1.28rem);
+        max-width: 48ch;
+        color: #e7eef7;
+        margin: 0 0 28px;
+      }
+
+      /* Signature: the rotary ribbon */
+      .ciclo {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex-wrap: wrap;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 999px;
+        padding: 10px 18px;
+        width: fit-content;
+      }
+      .ciclo svg {
+        flex: 0 0 auto;
+      }
+      .ciclo .ciclo-txt {
+        font-size: 0.95rem;
+        line-height: 1.3;
+      }
+      .ciclo b {
+        font-weight: 700;
+        color: #fff;
+      }
+      .ciclo span {
+        color: #d7e2f1;
+      }
+      .ciclo .fecha {
+        font-family: 'Zilla Slab', serif;
+        font-weight: 600;
+        color: #fbd68b;
+        white-space: nowrap;
+      }
+
+      /* ---------- INTRO / ÍNDICE ---------- */
+      main {
+        padding: 40px 0 10px;
+      }
+      .lede {
+        font-size: 1.16rem;
+        color: var(--tinta);
+        border-left: 4px solid var(--oro);
+        padding: 2px 0 2px 18px;
+        margin: 0 0 34px;
+      }
+
+      .indice {
+        background: var(--superficie);
+        border: 1px solid var(--borde);
+        border-radius: var(--radio);
+        box-shadow: var(--sombra);
+        padding: 24px 26px 26px;
+        margin-bottom: 18px;
+      }
+      .indice h2 {
+        font-family: 'Zilla Slab', serif;
+        font-size: 1.05rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--azul-osc);
+        margin: 0 0 16px;
+      }
+      .indice ol {
+        list-style: none;
+        counter-reset: idx;
+        margin: 0;
+        padding: 0;
+      }
+      .indice li {
+        counter-increment: idx;
+        margin: 0;
+      }
+      .indice a.idx-link {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 9px 10px;
+        border-radius: 9px;
+        text-decoration: none;
+        color: var(--tinta);
+        border: 1px solid transparent;
+        transition:
+          background 0.15s,
+          border-color 0.15s;
+      }
+      .indice a.idx-link:hover {
+        background: var(--azul-suave);
+        border-color: var(--borde-frio);
+      }
+      .indice a.idx-link.activo {
+        background: var(--azul-suave);
+        border-color: var(--azul);
+      }
+      .indice a.idx-link::before {
+        content: counter(idx);
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: var(--azul);
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.95rem;
+        font-family: 'Zilla Slab', serif;
+      }
+      .indice a.idx-link.activo::before {
+        background: var(--oro-osc);
+      }
+
+      .controles {
+        display: flex;
+        gap: 10px;
+        margin: 14px 0 26px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 9px;
+        padding: 9px 16px;
+        border: 1px solid var(--azul);
+        background: var(--superficie);
+        color: var(--azul);
+        transition:
+          background 0.15s,
+          color 0.15s;
+      }
+      .btn:hover {
+        background: var(--azul);
+        color: #fff;
+      }
+
+      /* ---------- SECCIONES (ACORDEÓN) ---------- */
+      details.seccion {
+        background: var(--superficie);
+        border: 1px solid var(--borde);
+        border-radius: var(--radio);
+        box-shadow: var(--sombra);
+        margin: 16px 0;
+        overflow: hidden;
+        scroll-margin-top: 18px;
+      }
+      details.seccion[open] {
+        border-color: var(--borde-frio);
+      }
+      summary.cab {
+        list-style: none;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 18px 22px;
+      }
+      summary.cab::-webkit-details-marker {
+        display: none;
+      }
+      .num {
+        flex: 0 0 auto;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(150deg, var(--azul), var(--azul-osc));
+        color: #fff;
+        font-family: 'Zilla Slab', serif;
+        font-weight: 700;
+        font-size: 1.25rem;
+      }
+      summary.cab h2 {
+        font-family: 'Zilla Slab', serif;
+        font-weight: 600;
+        color: var(--azul-osc);
+        font-size: clamp(1.18rem, 2.6vw, 1.42rem);
+        line-height: 1.25;
+        margin: 0;
+        flex: 1;
+      }
+      .chevron {
+        flex: 0 0 auto;
+        color: var(--azul);
+        transition: transform 0.2s ease;
+      }
+      details[open] summary.cab .chevron {
+        transform: rotate(180deg);
+      }
+      summary.cab:hover h2 {
+        color: var(--azul);
+      }
+      details[open] summary.cab {
+        border-bottom: 1px solid var(--borde);
+      }
+
+      .cuerpo {
+        padding: 6px 26px 26px;
+      }
+      .cuerpo h3 {
+        font-family: 'Zilla Slab', serif;
+        color: var(--azul);
+        font-weight: 600;
+        font-size: 1.16rem;
+        margin: 26px 0 8px;
+      }
+      .cuerpo h3:first-child {
+        margin-top: 14px;
+      }
+      .cuerpo p {
+        margin: 0 0 14px;
+      }
+      .cuerpo ul {
+        margin: 0 0 16px;
+        padding-left: 0;
+        list-style: none;
+      }
+      .cuerpo ul li {
+        position: relative;
+        padding-left: 30px;
+        margin: 0 0 12px;
+      }
+      .cuerpo ul li::before {
+        content: '';
+        position: absolute;
+        left: 6px;
+        top: 0.62em;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: var(--oro);
+        box-shadow: 0 0 0 3px rgba(247, 168, 27, 0.2);
+      }
+      .cuerpo strong {
+        color: var(--azul-osc);
+      }
+
+      .nota {
+        background: var(--azul-suave);
+        border: 1px solid var(--borde-frio);
+        border-left: 4px solid var(--azul);
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin: 18px 0;
+        font-size: 1rem;
+      }
+      .nota .et {
+        display: inline-block;
+        font-weight: 700;
+        color: var(--azul-osc);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 0.78rem;
+        margin-right: 6px;
+      }
+      .destacado {
+        background: #fff8ec;
+        border: 1px solid #f2d79a;
+        border-left: 4px solid var(--oro);
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin: 18px 0;
+      }
+      .destacado .et {
+        display: inline-block;
+        font-weight: 700;
+        color: var(--oro-osc);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 0.78rem;
+        margin-right: 6px;
+      }
+
+      /* ---------- CITAS ---------- */
+      blockquote.cita {
+        margin: 20px 0;
+        padding: 16px 22px;
+        background: var(--azul-suave);
+        border-left: 4px solid var(--oro);
+        border-radius: 0 12px 12px 0;
+        font-size: 1.06rem;
+        color: var(--tinta);
+      }
+      blockquote.cita p {
+        margin: 0 0 8px;
+        font-style: italic;
+      }
+      blockquote.cita p:last-of-type {
+        margin-bottom: 0;
+      }
+      blockquote.cita cite {
+        display: block;
+        margin-top: 8px;
+        font-style: normal;
+        font-weight: 700;
+        color: var(--azul-osc);
+        font-size: 0.9rem;
+      }
+
+      /* ---------- FIGURAS ---------- */
+      figure.figura {
+        margin: 22px 0;
+        background: var(--superficie);
+        border: 1px solid var(--borde);
+        border-radius: 14px;
+        box-shadow: var(--sombra);
+        overflow: hidden;
+      }
+      figure.figura img {
+        display: block;
+        width: 100%;
+        height: auto;
+        background: var(--azul-suave);
+      }
+      figure.figura figcaption {
+        padding: 12px 18px;
+        font-size: 0.93rem;
+        color: var(--tinta-sec);
+        border-top: 1px solid var(--borde);
+      }
+      figure.figura figcaption .fig-num {
+        font-family: 'Zilla Slab', serif;
+        font-weight: 700;
+        color: var(--azul-osc);
+        margin-right: 7px;
+      }
+      figure.figura figcaption .credito {
+        display: block;
+        margin-top: 3px;
+        font-size: 0.8rem;
+        font-style: italic;
+        color: var(--tinta-sec);
+      }
+      .dos-figuras {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .dos-figuras figure.figura {
+        margin: 22px 0 0;
+      }
+      @media (max-width: 560px) {
+        .dos-figuras {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ---------- VIDEO (FACHADA) ---------- */
+      .video-bloque {
+        margin: 24px 0;
+      }
+      .video-bloque .v-titulo {
+        font-family: 'Zilla Slab', serif;
+        color: var(--azul);
+        font-weight: 600;
+        font-size: 1.12rem;
+        margin: 0 0 10px;
+      }
+      .video-facade {
+        position: relative;
+        display: block;
+        width: 100%;
+        aspect-ratio: 16/9;
+        border: 1px solid var(--borde-frio);
+        border-radius: 14px;
+        overflow: hidden;
+        background: linear-gradient(150deg, var(--azul-osc), var(--azul));
+        cursor: pointer;
+        box-shadow: var(--sombra);
+        padding: 0;
+      }
+      .video-facade::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(15, 46, 94, 0.22);
+      }
+      .video-facade .play {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.95);
+        display: grid;
+        place-items: center;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        transition:
+          transform 0.15s,
+          background 0.15s;
+      }
+      .video-facade:hover .play {
+        transform: translate(-50%, -50%) scale(1.07);
+        background: #fff;
+      }
+      .video-facade .v-label {
+        position: absolute;
+        z-index: 2;
+        left: 16px;
+        right: 16px;
+        bottom: 14px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.98rem;
+        text-align: left;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.55);
+      }
+      .video-facade iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .video-pendiente {
+        margin: 24px 0;
+        border: 1.6px dashed var(--borde-frio);
+        border-radius: 14px;
+        background: var(--azul-suave);
+        padding: 22px 20px;
+        text-align: center;
+        color: var(--tinta-sec);
+      }
+      .video-pendiente .vp-ic {
+        font-size: 1.8rem;
+        display: block;
+        margin-bottom: 6px;
+      }
+      .video-pendiente b {
+        color: var(--azul-osc);
+      }
+
+      /* ---------- LÍNEA DE TIEMPO ---------- */
+      .linea-tiempo {
+        list-style: none;
+        margin: 18px 0 6px;
+        padding: 0;
+        position: relative;
+      }
+      .linea-tiempo::before {
+        content: '';
+        position: absolute;
+        left: 14px;
+        top: 6px;
+        bottom: 6px;
+        width: 2px;
+        background: var(--borde-frio);
+      }
+      .linea-tiempo li {
+        position: relative;
+        padding: 0 0 18px 46px;
+      }
+      .linea-tiempo li::before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        top: 3px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: var(--oro);
+        border: 3px solid var(--superficie);
+        box-shadow: 0 0 0 2px var(--oro);
+      }
+      .linea-tiempo .anio {
+        font-family: 'Zilla Slab', serif;
+        font-weight: 700;
+        color: var(--azul-osc);
+        font-size: 1.05rem;
+        margin-right: 8px;
+      }
+
+      /* ---------- TABLA COMPARATIVA ---------- */
+      .tabla-scroll {
+        overflow-x: auto;
+        margin: 14px 0 6px;
+        border-radius: 12px;
+      }
+      .hint-desliza {
+        display: none;
+        font-size: 0.85rem;
+        color: var(--tinta-sec);
+        margin: 0 0 8px;
+      }
+      table.comparativa {
+        width: 100%;
+        min-width: 560px;
+        border-collapse: collapse;
+        background: var(--superficie);
+        border: 1px solid var(--borde-frio);
+        border-radius: 12px;
+        overflow: hidden;
+        font-size: 0.98rem;
+      }
+      table.comparativa caption {
+        text-align: left;
+        font-size: 0.9rem;
+        color: var(--tinta-sec);
+        padding: 0 0 10px;
+        caption-side: top;
+      }
+      table.comparativa th[scope='col'] {
+        background: var(--azul);
+        color: #fff;
+        font-family: 'Zilla Slab', serif;
+        font-weight: 600;
+        text-align: left;
+        padding: 13px 16px;
+        vertical-align: middle;
+      }
+      table.comparativa th[scope='row'] {
+        background: var(--azul-suave);
+        color: var(--azul-osc);
+        font-weight: 700;
+        text-align: left;
+        padding: 13px 16px;
+        vertical-align: top;
+        width: 24%;
+        border-top: 1px solid var(--borde-frio);
+      }
+      table.comparativa td {
+        padding: 13px 16px;
+        vertical-align: top;
+        border-top: 1px solid var(--borde-frio);
+      }
+      table.comparativa tbody tr:nth-child(even) td {
+        background: #fafbfd;
+      }
+
+      /* ---------- FUENTES ---------- */
+      .fuentes {
+        background: var(--superficie);
+        border: 1px solid var(--borde);
+        border-radius: var(--radio);
+        box-shadow: var(--sombra);
+        padding: 24px 26px;
+        margin: 30px 0 10px;
+      }
+      .fuentes h2 {
+        font-family: 'Zilla Slab', serif;
+        color: var(--azul-osc);
+        font-size: 1.35rem;
+        margin: 0 0 6px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .fuentes h2 .pico {
+        width: 30px;
+        height: 4px;
+        background: var(--oro);
+        border-radius: 3px;
+      }
+      .fuentes p.intro {
+        color: var(--tinta-sec);
+        margin: 0 0 16px;
+        font-size: 1rem;
+      }
+      .fuentes ol {
+        margin: 0;
+        padding-left: 22px;
+      }
+      .fuentes li {
+        margin: 0 0 9px;
+      }
+      .fuentes li .titulo {
+        color: var(--tinta);
+      }
+      .fuentes li a {
+        word-break: break-word;
+        font-size: 0.92rem;
+      }
+
+      /* ---------- PIE ---------- */
+      footer.pie {
+        margin-top: 30px;
+        border-top: 1px solid var(--borde);
+        background: #fff;
+      }
+      footer.pie .envoltorio {
+        padding: 26px 22px 40px;
+        color: var(--tinta-sec);
+        font-size: 0.9rem;
+      }
+      footer.pie .lic {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      footer.pie a {
+        color: var(--azul-link);
+      }
+      footer.pie .cc-badge {
+        flex: 0 0 auto;
+        font-weight: 700;
+        color: var(--azul-osc);
+        border: 1px solid var(--borde-frio);
+        border-radius: 7px;
+        padding: 3px 9px;
+        font-size: 0.82rem;
+      }
+
+      /* ---------- BOTÓN ARRIBA ---------- */
+      #arriba {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 30;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        background: var(--azul);
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 0 6px 18px rgba(15, 46, 94, 0.28);
+        display: grid;
+        place-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition:
+          opacity 0.2s,
+          background 0.15s,
+          transform 0.15s;
+      }
+      #arriba.visible {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      #arriba:hover {
+        background: var(--azul-osc);
+        transform: translateY(-2px);
+      }
+
+      /* ---------- RESPONSIVE ---------- */
+      @media (max-width: 640px) {
+        body {
+          font-size: 1.02rem;
+        }
+        .hero .envoltorio {
+          padding-top: 34px;
+          padding-bottom: 32px;
+        }
+        .cuerpo {
+          padding: 6px 18px 22px;
+        }
+        summary.cab {
+          padding: 15px 16px;
+          gap: 12px;
+        }
+        .num {
+          width: 36px;
+          height: 36px;
+          font-size: 1.1rem;
+        }
+        .indice {
+          padding: 20px 18px;
+        }
+        .hint-desliza {
+          display: block;
+        }
+      }
+
+      /* ---------- IMPRESIÓN ---------- */
+      @media print {
+        body {
+          background: #fff;
+          color: #000;
+          font-size: 11pt;
+        }
+        header.hero {
+          background: #fff !important;
+          color: #000;
+          border-bottom: 2px solid #000;
+        }
+        .eyebrow {
+          color: #000;
+        }
+        .hero h1 {
+          color: #000;
+        }
+        .hero .dek {
+          color: #000;
+        }
+        .ciclo {
+          display: none;
+        }
+        #arriba,
+        .controles {
+          display: none;
+        }
+        details.seccion .cuerpo {
+          display: block !important;
+        }
+        details.seccion,
+        .indice,
+        .fuentes,
+        figure.figura {
+          box-shadow: none;
+          border: 1px solid #999;
+          break-inside: avoid;
+        }
+        .chevron {
+          display: none;
+        }
+        a {
+          color: #000;
+          text-decoration: underline;
+        }
+      }
+
+      /* ---------- IMAGEN SUGERIDA (marcador para el editor) ---------- */
+      .figura-pendiente {
+        margin: 22px 0;
+        border: 1.6px dashed var(--borde-frio);
+        border-radius: 14px;
+        background: var(--azul-suave);
+        padding: 22px 20px;
+        text-align: center;
+        color: var(--tinta-sec);
+      }
+      .figura-pendiente .fp-ic {
+        font-size: 1.7rem;
+        display: block;
+        margin-bottom: 6px;
+      }
+      .figura-pendiente b {
+        color: var(--azul-osc);
+      }
+      .figura-pendiente .fp-ruta {
+        display: inline-block;
+        margin-top: 6px;
+        font-family: 'Zilla Slab', serif;
+        font-size: 0.85rem;
+        color: var(--oro-osc);
+        word-break: break-all;
+      }
+      /* Diagrama SVG dentro de una figura */
+      figure.figura svg.diagrama {
+        display: block;
+        width: 100%;
+        height: auto;
+        background: var(--azul-suave);
+        padding: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="envoltorio">
+        <p class="eyebrow">Conoce Rotary · Novena entrega</p>
+        <h1>El protocolo rotario</h1>
+        <p class="dek">Un mismo respeto, dos escenarios: la reunión presencial y la sesión virtual. Conocer el protocolo no vuelve rígida la reunión; la vuelve previsible, ordenada y acogedora.</p>
+        <div class="ciclo">
+          <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true" focusable="false">
+            <circle cx="17" cy="17" r="13" fill="none" stroke="#F7A81B" stroke-width="2.4" stroke-dasharray="62 20" stroke-linecap="round" />
+            <path d="M27 9 l1.8 5.4 -5.6 -.9 z" fill="#F7A81B" />
+          </svg>
+          <span class="ciclo-txt">
+            <b>Del ceremonial a la pantalla:</b>
+            <br />
+            <span>las banderas, la campana y la cortesía</span>
+            <span class="fecha">en persona y en línea</span>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="envoltorio">
+      <p class="lede">
+        Cada reunión rotaria es, en el fondo, una pequeña ceremonia. Detrás de su sencillez aparente hay un conjunto de formas —el protocolo— que ordena la sesión, honra los símbolos y hace que todos,
+        socios y visitantes, se sientan bien recibidos. Esta entrega reúne lo esencial del protocolo rotario en dos escenarios complementarios: la
+        <strong>reunión presencial</strong>
+        (secciones 1 a 8) y la
+        <strong>sesión virtual</strong>
+        (sección 9), cada vez más habitual en los clubes y, muy en particular, en los e-Clubs.
+      </p>
+
+      <nav class="indice" aria-label="Índice de la entrega">
+        <h2>En esta entrega</h2>
+        <ol>
+          <li><a class="idx-link" href="#s1">¿Qué es el protocolo? Ceremonial, etiqueta y precedencia</a></li>
+          <li><a class="idx-link" href="#s2">El MaCeRo: anfitrión y guardián del protocolo</a></li>
+          <li><a class="idx-link" href="#s3">Los elementos de la reunión rotaria</a></li>
+          <li><a class="idx-link" href="#s4">Las banderas: ubicación, izamiento y arrío</a></li>
+          <li><a class="idx-link" href="#s5">Himnos patrios y homenajes</a></li>
+          <li><a class="idx-link" href="#s6">El orden de prelación</a></li>
+          <li><a class="idx-link" href="#s7">La reunión presencial paso a paso</a></li>
+          <li><a class="idx-link" href="#s8">Ceremonias: nuevos socios y cambio de autoridades</a></li>
+          <li><a class="idx-link" href="#s9">Protocolo en la sesión rotaria virtual</a></li>
+        </ol>
+      </nav>
+
+      <div class="controles">
+        <button class="btn" id="abrir-todo" type="button">Abrir todo</button>
+        <button class="btn" id="cerrar-todo" type="button">Cerrar todo</button>
+      </div>
+
+      <!-- ============ SECCIÓN 1 ============ -->
+      <details class="seccion" id="s1" open>
+        <summary class="cab">
+          <span class="num" aria-hidden="true">1</span>
+          <h2>¿Qué es el protocolo? Ceremonial, etiqueta y precedencia</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>Conviene empezar por distinguir cuatro términos que a menudo se confunden y que, sin embargo, describen realidades distintas y complementarias.</p>
+          <ul>
+            <li>
+              <strong>Ceremonial:</strong>
+              el conjunto de formalidades que ordena un acto público o solemne. Coordina los aspectos formales de la organización de un evento y establece las pautas de comportamiento de quienes
+              intervienen.
+            </li>
+            <li>
+              <strong>Protocolo:</strong>
+              la regla concreta que se aplica en el desarrollo de cada acto para satisfacer las exigencias del ceremonial. Si el ceremonial es el conjunto de las formas, el protocolo es la norma
+              particular que dice cómo se aplican en cada caso.
+            </li>
+            <li>
+              <strong>Etiqueta:</strong>
+              las reglas de comportamiento, trato y estilo que se observan en actos formales, e incluye las normas de vestimenta.
+            </li>
+            <li>
+              <strong>Precedencia:</strong>
+              la prioridad o preferencia por la que una persona ocupa un lugar antes que otra, en virtud de su cargo, grado o investidura.
+            </li>
+          </ul>
+
+          <p>
+            El protocolo rotario aplica estas nociones a la vida del club. No es un lujo ni una rigidez heredada, sino una herramienta de comunicación al servicio del objetivo de Rotary: propicia
+            relaciones humanas e institucionales en un marco de respeto, tolerancia y paz. Bien entendido, evita los errores involuntarios de decoro, prelación o cortesía y da a cada reunión una
+            imagen de organización cuidada.
+          </p>
+
+          <div class="destacado">
+            <span class="et">Una idea clave</span>
+            Al contrario de lo que suele suponerse, cumplir el protocolo no hace las reuniones más tiesas, sino más relajadas: al seguir una guía previsible se evita herir susceptibilidades y todos
+            saben qué esperar en cada momento.
+          </div>
+
+          <p>
+            El protocolo existe desde los orígenes de las relaciones humanas y se ha incorporado a la vida social moderna como un elemento básico de la educación cívica. En Rotary, que se reúne semana
+            tras semana en más de treinta y tres mil comunidades, conocer estas pautas básicas ayuda a que la identidad de la institución se exprese de modo uniforme en todos sus clubes.
+          </p>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 2 ============ -->
+      <details class="seccion" id="s2">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">2</span>
+          <h2>El MaCeRo: anfitrión y guardián del protocolo</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>
+            En muchos clubes de habla hispana, la persona encargada del protocolo recibe el título de
+            <strong>MaCeRo</strong>
+            , contracción de
+            <em>Maestro de Ceremonias Rotario</em>
+            ; en otros distritos se le llama
+            <strong>Jefe de Protocolo</strong>
+            . Es el anfitrión de la reunión —el «dueño de casa»— y su desempeño distingue al club: por su responsabilidad y prestigio se le considera un funcionario de rango comparable al del
+            secretario o el tesorero.
+          </p>
+
+          <figure class="figura">
+            <img
+              src="https://zhemaria.github.io/rotary/image/macero-bienvenida.png
+"
+              alt="El MaCeRo recibiendo cordialmente a los invitados en la puerta del salón, antes de conducirlos a la mesa" />
+            <figcaption>
+              <span class="fig-num">Figura 1.</span>
+              el MaCeRo recibiendo cordialmente a los invitados en la puerta del salón, antes de conducirlos a la mesa.
+            </figcaption>
+          </figure>
+
+          <h3>Un oficio con historia</h3>
+          <p>
+            Rotary International no prescribe en detalle los deberes del MaCeRo, pero la tradición los remonta a los mismos orígenes del movimiento. En la reunión fundacional de 1905, el ingeniero
+            Gustavus «Gus» Loehr fue el anfitrión: recordó a cada invitado el lugar y la hora, preparó las sillas, cuidó la iluminación, recibió a cada uno en la puerta y los presentó entre sí. Por
+            eso suele decirse que Gus Loehr fue, sin saberlo, el primer «macero» de Rotary.
+          </p>
+
+          <h3>Qué hace y qué no hace</h3>
+          <p>
+            El MaCeRo cuida el confort del lugar, atiende a socios y visitantes, mantiene el orden y vela por el cumplimiento del protocolo desde el principio hasta el fin de la reunión. No es, sin
+            embargo, un mayordomo ni el mesero que atiende las mesas: su autoridad y su conocimiento del ceremonial van mucho más allá. Es, en palabras del oficio, «la tarjeta de presentación» del
+            club.
+          </p>
+
+          <div class="nota">
+            <span class="et">Un principio del oficio</span>
+            Una máxima resume el papel del anfitrión rotario: se recibe a las personas según se las presenta y se las despide según se las trata. De ahí que la cortesía del MaCeRo no sea un detalle
+            menor, sino la primera imagen que el club ofrece de sí mismo.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 3 ============ -->
+      <details class="seccion" id="s3">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">3</span>
+          <h2>Los elementos de la reunión rotaria</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>
+            Una reunión rotaria bien montada dispone de un conjunto de atributos que expresan la presencia de las autoridades del club y crean el ambiente de solemnidad amable que caracteriza a
+            Rotary. Algunos son obligatorios; otros, optativos.
+          </p>
+
+          <figure class="figura">
+            <img
+              src="https://zhemaria.github.io/rotary/image/mesa-cabecera.png
+"
+              alt="Vista de la mesa cabecera montada, con la campana,  el mazo , el pabellón de mesa y la rueda rotaria al fondo." />
+            <figcaption>
+              <span class="fig-num">Figura 2.</span>
+              Vista de la mesa cabecera montada, con la campana, el mazo , el pabellón de mesa y la rueda rotaria al fondo.
+            </figcaption>
+          </figure>
+
+          <p class="hint-desliza">Desliza horizontalmente para ver toda la tabla.</p>
+          <div class="tabla-scroll">
+            <table class="comparativa">
+              <caption>Elementos habituales de una reunión rotaria y su ubicación.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Elemento</th>
+                  <th scope="col">Carácter</th>
+                  <th scope="col">Ubicación habitual</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Rueda rotaria</th>
+                  <td>Obligatorio</td>
+                  <td>Detrás de la mesa cabecera, sobre el centro, indicando la presencia de las autoridades.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Campana y mazo</th>
+                  <td>Obligatorio</td>
+                  <td>En el centro de la mesa cabecera, en el sitio del presidente. El mazo simboliza la autoridad de mando.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pabellones de izamiento</th>
+                  <td>Obligatorio</td>
+                  <td>Nacional, provincial o estatal, local, rotario y de clubes juveniles, dispuestos por orden protocolar (véase la sección 4).</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pabellón de mesa</th>
+                  <td>Optativo</td>
+                  <td>Banderín nacional en el centro de la mesa cabecera, frente al presidente. Es ornamental y permanece siempre izado.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Atril</th>
+                  <td>Optativo</td>
+                  <td>A un costado de la cabecera, para las intervenciones de socios e invitados.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cuadro de Paul Harris</th>
+                  <td>Optativo</td>
+                  <td>En algún lugar visible del salón.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Banner del período</th>
+                  <td>Optativo</td>
+                  <td>Con los datos del presidente de RI, el gobernador y el presidente del club; al fondo de la sala.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Manual de Procedimiento de RI</th>
+                  <td>Obligatorio</td>
+                  <td>En poder del presidente, a disposición de los socios para cualquier consulta.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="nota">
+            <span class="et">Responsabilidad del MaCeRo</span>
+            Además de estos atributos, el MaCeRo cuida la presentación de las mesas —mantelería, vajilla, copas, arreglos florales— y comprueba que la iluminación, el sonido y la temperatura sean
+            adecuados antes de que llegue el primer invitado.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 4 ============ -->
+      <details class="seccion" id="s4">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">4</span>
+          <h2>Las banderas: ubicación, izamiento y arrío</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>
+            La bandera nacional es el mayor símbolo de la patria y merece la máxima veneración; de ahí que su tratamiento sea el corazón del protocolo rotario. Las reglas que siguen son universales en
+            su espíritu; los símbolos concretos (bandera provincial, estatal o municipal) se adaptan a cada país.
+          </p>
+
+          <h3>Orden de precedencia</h3>
+          <p>La bandera nacional ocupa siempre el primer lugar. Las demás la secundan en este orden:</p>
+          <ul>
+            <li>Bandera nacional del país anfitrión.</li>
+            <li>Bandera nacional de un Estado extranjero (si hay un visitante o representante diplomático extranjero, su bandera secunda de inmediato a la nacional).</li>
+            <li>Bandera del Estado o provincia.</li>
+            <li>Bandera del municipio, si la hubiera.</li>
+            <li>Bandera rotaria.</li>
+            <li>Banderas de los programas juveniles: Rotaract, Interact y Futuract, si el club los patrocina y sus miembros están presentes.</li>
+          </ul>
+
+          <h3>Cómo se ubican en la cabecera</h3>
+          <p>
+            Cuando las banderas van en mástiles, se colocan por norma general en el área central, detrás de las autoridades. Con la bandera nacional al centro y un número impar de banderas, a su
+            <strong>derecha</strong>
+            —mirando desde la cabecera hacia el auditorio— se dispone la que sigue en precedencia, y a su izquierda, la siguiente. Conviene recordar que la derecha de quien preside es la izquierda de
+            quien observa desde el público.
+          </p>
+
+          <figure class="figura">
+            <svg
+              class="diagrama"
+              viewBox="0 0 620 300"
+              role="img"
+              aria-label="Diagrama del orden de tres banderas en la cabecera, vistas desde el auditorio: a la izquierda del observador, la bandera que sigue en precedencia; al centro, la bandera nacional; a la derecha del observador, la bandera rotaria.">
+              <title>Orden de las banderas en la cabecera (número impar)</title>
+              <desc>
+                Tres mástiles. En el centro, la bandera nacional (primer lugar de precedencia). A la derecha de la nacional, mirando desde la cabecera hacia el auditorio, la bandera que sigue en
+                precedencia, que desde el público aparece a la izquierda. La bandera rotaria queda al otro lado.
+              </desc>
+              <!-- mastiles -->
+              <line x1="130" y1="60" x2="130" y2="235" stroke="#8A5A00" stroke-width="4" />
+              <line x1="310" y1="45" x2="310" y2="235" stroke="#8A5A00" stroke-width="4" />
+              <line x1="490" y1="60" x2="490" y2="235" stroke="#8A5A00" stroke-width="4" />
+              <!-- bandera izquierda del observador: siguiente en precedencia -->
+              <rect x="130" y="62" width="86" height="56" fill="#6B7B90" stroke="#4F5A6B" stroke-width="1.5" />
+              <!-- bandera central: nacional (mas alta) -->
+              <rect x="310" y="47" width="92" height="60" fill="#17458F" stroke="#0F2E5E" stroke-width="1.5" />
+              <!-- bandera derecha del observador: rotaria -->
+              <rect x="490" y="62" width="86" height="56" fill="#F7A81B" stroke="#8A5A00" stroke-width="1.5" />
+              <circle cx="533" cy="90" r="13" fill="none" stroke="#0F2E5E" stroke-width="3" />
+              <!-- etiquetas -->
+              <text x="173" y="150" text-anchor="middle" font-family="Zilla Slab, serif" font-size="16" fill="#20242B">Sigue en</text>
+              <text x="173" y="170" text-anchor="middle" font-family="Zilla Slab, serif" font-size="16" fill="#20242B">precedencia</text>
+              <text x="356" y="150" text-anchor="middle" font-family="Zilla Slab, serif" font-size="17" font-weight="700" fill="#0F2E5E">Bandera</text>
+              <text x="356" y="171" text-anchor="middle" font-family="Zilla Slab, serif" font-size="17" font-weight="700" fill="#0F2E5E">nacional</text>
+              <text x="533" y="150" text-anchor="middle" font-family="Zilla Slab, serif" font-size="16" fill="#20242B">Bandera</text>
+              <text x="533" y="170" text-anchor="middle" font-family="Zilla Slab, serif" font-size="16" fill="#20242B">rotaria</text>
+              <!-- eje auditorio -->
+              <text x="310" y="215" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="13" fill="#4F5A6B">Vista desde el auditorio</text>
+              <line x1="120" y1="255" x2="500" y2="255" stroke="#D7DEE8" stroke-width="2" />
+              <text x="310" y="278" text-anchor="middle" font-family="Open Sans, sans-serif" font-size="13" fill="#4F5A6B">Auditorio</text>
+            </svg>
+            <figcaption>
+              <span class="fig-num">Figura 3.</span>
+              Orden de tres banderas en la cabecera, con número impar. La nacional ocupa el centro; a su derecha (izquierda del observador) va la que sigue en precedencia.
+            </figcaption>
+          </figure>
+
+          <p>
+            Otra disposición admitida es colocar los mástiles a la derecha de la cabecera, a 45°: allí la bandera nacional se sitúa en el extremo derecho y las demás se ordenan hacia el interior.
+            Adoptado uno u otro criterio al iniciar el año rotario, el club lo mantiene durante todo el ciclo.
+          </p>
+
+          <h3>Izamiento y arrío</h3>
+          <p>La ceremonia sigue reglas precisas:</p>
+          <ul>
+            <li>
+              La bandera extranjera solo la iza quien tenga esa nacionalidad; la bandera rotaria, un rotario; la de Rotaract, un rotaractiano, y así sucesivamente (salvo ausencia de una persona en tal
+              condición).
+            </li>
+            <li>
+              El izamiento se hace en silencio, con todos de pie. Se aplaude en el momento en que la bandera nacional llega al tope del mástil; las demás llegan un instante después, cerrando la
+              rotaria.
+            </li>
+            <li>En el arrío, la nacional es la primera en descender —sin que toque el suelo— y la rotaria, la última. El arrío no se aplaude en ningún caso.</li>
+          </ul>
+
+          <div class="nota">
+            <span class="et">Media asta</span>
+            Para izar a media asta —solo por orden de la autoridad ejecutiva competente— la bandera se lleva primero hasta el tope y luego se arría hasta la mitad del mástil. Para arriarla desde media
+            asta, se repite el gesto a la inversa: primero al tope, después hasta la base. Simbólicamente, una bandera a media asta está «más alta de lo acostumbrado».
+          </div>
+
+          <div class="destacado">
+            <span class="et">Al terminar</span>
+            Las banderas nunca permanecen izadas después de la reunión ni «hasta la próxima». Deben arriarse antes de que el presidente dé el último toque de campana que pone fin a la sesión.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 5 ============ -->
+      <details class="seccion" id="s5">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">5</span>
+          <h2>Himnos patrios y homenajes</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>
+            La ejecución del himno se realiza inmediatamente después del izamiento de las banderas, con todos los asistentes de pie y en sus lugares. Se entona primero el himno nacional del país
+            anfitrión y, si corresponde, los demás por estricto orden alfabético del nombre del país. En ningún caso se altera este orden.
+          </p>
+
+          <ul>
+            <li>El himno nacional no debe cantarse con las banderas arriadas.</li>
+            <li>Mientras dura su ejecución, no debe haber desplazamientos de personas por el lugar.</li>
+            <li>Cuando hay un representante extranjero, tras el himno nacional puede interpretarse el del país visitante.</li>
+          </ul>
+
+          <div class="nota">
+            <span class="et">Cuándo corresponde</span>
+            No en toda reunión se entona el himno nacional. Se reserva para ceremonias y actos de carácter patriótico o de real magnitud; no corresponde, por ejemplo, en aniversarios o en reuniones
+            ordinarias de cambio de autoridades. Cada club evalúa los fundamentos del acto para decidirlo.
+          </div>
+
+          <h3>Homenajes y minuto de silencio</h3>
+          <p>
+            Cuando se prevé un homenaje que requiere «un minuto de silencio», se efectúa de inmediato, a continuación del izamiento de las banderas; si además se han entonado himnos, el homenaje se
+            realiza justo después de estos.
+          </p>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 6 ============ -->
+      <details class="seccion" id="s6">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">6</span>
+          <h2>El orden de prelación</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>
+            La
+            <strong>prelación</strong>
+            es el orden de precedencia entre los funcionarios rotarios. Rotary International establece una lista oficial extensa (más de treinta categorías) que se aplica en presentaciones,
+            ubicaciones, saludos y publicaciones. A efectos de la vida del club, basta con conocer su cabecera y su lógica; la lista completa figura en el Manual de Procedimiento y en los manuales
+            distritales de protocolo.
+          </p>
+
+          <p class="hint-desliza">Desliza horizontalmente para ver toda la tabla.</p>
+          <div class="tabla-scroll">
+            <table class="comparativa">
+              <caption>Orden de prelación de los funcionarios rotarios (versión resumida).</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Orden</th>
+                  <th scope="col">Funcionario</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Presidente de RI (o su representante)</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Ex presidentes de RI (por orden de antigüedad)</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Presidente electo de RI</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Vicepresidente y tesorero de RI</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Directores de RI</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Presidente y fiduciarios de La Fundación Rotaria</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Secretario general de RI</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Gobernadores de distrito</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Ex gobernadores de distrito (por antigüedad)</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Gobernadores electos y propuestos</td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>Presidentes de los clubes</td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>Rotarios (por antigüedad), rotaractianos e interactianos</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>La cabecera de la reunión</h3>
+          <p>El presidente del club es el anfitrión y ocupa siempre el centro de la mesa cabecera, con la campana y el mazo a su alcance. A partir de ahí:</p>
+          <ul>
+            <li>
+              La autoridad de mayor jerarquía —civil, militar, eclesiástica o rotaria— se ubica
+              <strong>inmediatamente a la derecha</strong>
+              de quien preside.
+            </li>
+            <li>El resto de las autoridades se distribuye de derecha a izquierda por orden de proximidad jerárquica.</li>
+            <li>
+              El orador de la noche se sitúa a la
+              <strong>izquierda</strong>
+              de quien preside; si es el invitado especial del acto, a su derecha.
+            </li>
+            <li>Cuando asisten cónyuges y se los ubica en la cabecera, guardan el mismo orden jerárquico que corresponde a la autoridad que acompañan.</li>
+          </ul>
+
+          <div class="nota">
+            <span class="et">La derecha, lugar de honor</span>
+            En protocolo, la derecha de quien preside es el lugar de honor. Por eso, para asignar cualquier puesto, primero se fija quién ocupa el centro; ese punto se convierte en la base a partir de
+            la cual se ordenan los demás lugares.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 7 ============ -->
+      <details class="seccion" id="s7">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">7</span>
+          <h2>La reunión presencial paso a paso</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>Rotary no improvisa: sus sesiones siguen un programa establecido. Una reunión dinámica, interesante y productiva requiere planificación, participación y orden.</p>
+
+          <figure class="figura">
+            <img
+              src="https://zhemaria.github.io/rotary/image/reunion-presencial.png
+"
+              alt="Una reunión rotaria en desarrollo, con el orador de pie en el atril y las banderas al fondo." />
+            <figcaption>
+              <span class="fig-num">Figura 4.</span>
+              Una reunión rotaria en desarrollo, con el orador de pie en el atril y las banderas al fondo.
+            </figcaption>
+          </figure>
+
+          <h3>Puntualidad</h3>
+          <p>
+            La puntualidad refleja educación y consideración por los demás. Iniciar tarde, esperando a socios o al orador, falta al respeto a quienes sí llegaron a tiempo. La duración prudente de una
+            reunión se estima entre 90 y 120 minutos.
+          </p>
+          <blockquote class="cita">
+            <p>«Antes de la hora no es la hora; después de la hora no es la hora; la hora es la hora.»</p>
+            <cite>— Máxima atribuida a Napoleón, citada en los manuales de protocolo rotario</cite>
+          </blockquote>
+
+          <h3>El toque de campana</h3>
+          <p>
+            El toque de campana significa «toque de atención». Es muy importante que, hasta no lograr silencio total, no se dé comienzo a la intervención de quien va a hablar. Manejar bien este
+            momento exige liderazgo por parte de quien preside.
+          </p>
+
+          <h3>El uso de la palabra</h3>
+          <p>
+            Es recomendable que las intervenciones se hagan de pie y, en lo posible, desde el atril; el secretario, el tesorero y el MaCeRo también se dirigen a los presentes desde allí, mientras que
+            el presidente lo hace desde su sitio de cabecera. Los informes de secretaría y de los comités deben ser sobrios, concisos y de fácil comprensión para las visitas no rotarias. Si un socio
+            se apasiona con un tema conflictivo, quien preside lo pone en suspenso para que las partes lo reconcilien fuera de la mesa rotaria.
+          </p>
+
+          <h3>Vestimenta y comportamiento</h3>
+          <p>
+            Se recomienda una indumentaria correcta, acorde a la calidad de la reunión y a la estación. El comportamiento debe ser amigable, armonioso y respetuoso; la conducta ante las visitas —y en
+            especial ante socios nuevos o propuestos— siempre tiene consecuencias en la imagen del club.
+          </p>
+
+          <h3>Los oradores y el cierre</h3>
+          <p>
+            Si intervienen varios oradores, lo hacen en orden decreciente de jerarquía. Al terminar, el presidente agradece la presencia de las visitas según el orden de prelación y anuncia el fin de
+            la reunión, poniéndose de pie e invitando a entonar el himno rotario.
+          </p>
+
+          <div class="nota">
+            <span class="et">Si hay que retirarse antes</span>
+            Cuando un socio o un visitante debe abandonar la reunión antes de que concluya, se acerca a la presidencia, solicita la venia y se retira con discreción. Ese saludo se entiende extensivo a
+            todos los presentes.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 8 ============ -->
+      <details class="seccion" id="s8">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">8</span>
+          <h2>Ceremonias: nuevos socios y cambio de autoridades</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>
+            Toda ceremonia se trata con la seriedad y la formalidad que merece el acto. Conviene preparar un libreto específico para cada ocasión, ensayarlo con los participantes y cuidar dos detalles
+            que nunca deben fallar: pronunciar correctamente los nombres propios y tener a mano, en orden, los diplomas, medallas o insignias que se entregarán.
+          </p>
+
+          <h3>Incorporación de nuevos socios</h3>
+          <p>
+            La ceremonia de ingreso se celebra en una reunión especial, a la que se invita a todos los socios, a los cónyuges y —de ser posible— a la familia del nuevo rotario. Tras la lectura del
+            acta que aprueba su ingreso, el presidente y el padrino o mentor dan la bienvenida al ingresante y, como gesto central, le colocan el
+            <strong>pin rotario</strong>
+            en la solapa. Compartir ese momento con las familias hace la vida del club más cálida y significativa.
+          </p>
+
+          <div class="destacado">
+            <span class="et">No hay un guion único</span>
+            Rotary International recomienda componentes para la «incorporación de nuevos socios», pero no impone una ceremonia universal. Cada club adapta su libreto; lo esencial es que la investidura
+            quede marcada con solemnidad y afecto.
+          </div>
+
+          <h3>Cambio de autoridades</h3>
+          <p>
+            La renovación anual de la directiva se celebra con una reunión de homenaje a los funcionarios que asumen y de reconocimiento a los salientes. En ella, el nuevo presidente pronuncia el
+            juramento del cargo, se entrega al presidente saliente la insignia de expresidente y, como símbolo de la transmisión del mando, el saliente hace entrega del
+            <strong>mazo rotario</strong>
+            al presidente entrante.
+          </p>
+        </div>
+      </details>
+
+      <!-- ============ SECCIÓN 9 ============ -->
+      <details class="seccion" id="s9">
+        <summary class="cab">
+          <span class="num" aria-hidden="true">9</span>
+          <h2>Protocolo en la sesión rotaria virtual</h2>
+          <svg class="chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="cuerpo">
+          <p>
+            La videoconferencia es hoy parte natural de la vida rotaria: es la forma habitual de reunión de los e-Clubs y complementa a los clubes presenciales en las sesiones híbridas. El protocolo
+            no desaparece en línea; se traslada. La sesión virtual
+            <strong>representa lo mismo</strong>
+            que la presencial, y por eso la actitud respetuosa y el cuidado de las formas se mantienen en todo momento.
+          </p>
+
+          <figure class="figura">
+            <img
+              src="https://zhemaria.github.io/rotary/image/sesion-virtual.png
+"
+              alt="Una reunión virtual desarrollada a través de la plataforma Zoom." />
+            <figcaption>
+              <span class="fig-num">Figura 4.</span>
+              Una reunión virtual desarrollada a través de la plataforma Zoom.
+            </figcaption>
+          </figure>
+
+          <h3>Prepárate con tiempo</h3>
+          <p>
+            Ten listo el dispositivo al menos
+            <strong>quince minutos antes</strong>
+            de la sesión para probar el audio y el video. Asegúrate de activar las opciones de «unirse al audio» e «iniciar video»: sin ellas no será posible verte ni escucharte.
+          </p>
+
+          <h3>Imagen: luz, cámara y encuadre</h3>
+          <ul>
+            <li>
+              <strong>Iluminación:</strong>
+              ubícate en una habitación bien iluminada y procura que la luz te dé de frente, no por detrás.
+            </li>
+            <li>
+              <strong>Cámara y postura:</strong>
+              coloca la cámara a la altura del rostro y mira hacia ella; si la tienes muy abajo, no se verán bien tus expresiones. En tableta o teléfono, usa el formato horizontal y deja el
+              dispositivo fijo.
+            </li>
+            <li>
+              <strong>Entorno:</strong>
+              elige un espacio ordenado, sin exceso de objetos que distraigan, y un lugar donde el ruido exterior se disimule.
+            </li>
+          </ul>
+
+          <h3>Apariencia y actitud</h3>
+          <p>La vestimenta y la conducta deben ser las mismas que en una sesión presencial: la sesión virtual es una reunión rotaria, no una excepción a las buenas formas.</p>
+
+          <h3>Audio: la cortesía del micrófono</h3>
+          <p>
+            Solo se te escuchará si activas el micrófono al hablar. Recuerda
+            <strong>silenciarlo al terminar</strong>
+            tu intervención, para poder escuchar con claridad al siguiente participante. Esta disciplina cumple, en línea, la misma función que el toque de campana en la sala: mantener el orden de la
+            palabra.
+          </p>
+
+          <h3>El protocolo rotario, adaptado a la pantalla</h3>
+          <p>Los símbolos y las formas se conservan, con los medios de la plataforma:</p>
+
+          <p class="hint-desliza">Desliza horizontalmente para ver toda la tabla.</p>
+          <div class="tabla-scroll">
+            <table class="comparativa">
+              <caption>Cómo se traslada el protocolo de la sala a la sesión virtual.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Elemento</th>
+                  <th scope="col">En la reunión presencial</th>
+                  <th scope="col">En la sesión virtual</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Símbolos rotarios</th>
+                  <td>Rueda, banderas y emblema en la cabecera.</td>
+                  <td>Rueda y emblema visibles como fondo virtual o compartidos en pantalla al abrir la sesión.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Toque de atención</th>
+                  <td>Campana del presidente.</td>
+                  <td>Señal del presidente y disciplina de micrófonos silenciados.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Orden de la palabra</th>
+                  <td>El MaCeRo y el presidente conceden el turno.</td>
+                  <td>Función de «levantar la mano» o el chat; el presidente concede el turno.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Recepción de visitas</th>
+                  <td>El MaCeRo recibe y presenta a cada invitado.</td>
+                  <td>El presidente o el MaCeRo saludan y presentan a cada invitado al incorporarse.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Orden de prelación</th>
+                  <td>Ubicación en la cabecera por jerarquía.</td>
+                  <td>Orden de presentación y de uso de la palabra por jerarquía.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="nota">
+            <span class="et">Antes de conectarte</span>
+            Espacio adecuado y ordenado · buena iluminación de frente · cámara a la altura del rostro · dispositivo fijo y en horizontal · audio y video probados quince minutos antes · vestimenta
+            correcta · micrófono silenciado salvo al hablar.
+          </div>
+
+          <div class="destacado">
+            <span class="et">Y ahora sí</span>
+            Con estos cuidados, la sesión rotaria virtual conserva toda la dignidad de una reunión presencial. El respeto por las formas —en la sala o en la pantalla— es una manera concreta de honrar
+            a Rotary y a quienes comparten la mesa, física o digital.
+          </div>
+
+          <div class="nota">
+            <span class="et">Continuará</span>
+            En la próxima entrega abordaremos
+            <em>Rotary y la mujer</em>
+            : la incorporación de las mujeres a los clubes, su liderazgo creciente y el aporte que hoy resulta indispensable para el movimiento.
+          </div>
+        </div>
+      </details>
+
+      <!-- ============ FUENTES ============ -->
+      <section class="fuentes" aria-labelledby="fuentes-titulo">
+        <h2 id="fuentes-titulo">
+          <span class="pico" aria-hidden="true"></span>
+          Fuentes y para saber más
+        </h2>
+        <p class="intro">
+          Esta entrega es una adaptación divulgativa elaborada a partir de documentos rotarios de referencia. Para el detalle normativo, se recomienda acudir a los materiales originales.
+        </p>
+        <ol>
+          <li>
+            <span class="titulo">Rotary International — Manual de Procedimiento.</span>
+            Documento de referencia sobre la organización y el funcionamiento de los clubes y distritos.
+          </li>
+          <li>
+            <span class="titulo">Estatutos y Reglamento de Rotary International (2016).</span>
+            Marco normativo del que derivan el objetivo, los funcionarios y el orden de prelación.
+          </li>
+          <li>
+            <span class="titulo">Manual Distrital de Protocolo y Ceremonial — Distrito Binacional 4945 (Argentina-Uruguay),</span>
+            de Javier E. Battistoni Luetich, actualizado al período 2016-2017.
+          </li>
+          <li>
+            <span class="titulo">Manual de Macería y Protocolo — Rotary Club Olmué, Distrito 4320 (Chile),</span>
+            de Ángel J. Rivera (2013).
+          </li>
+          <li>
+            <span class="titulo">Folleto «Protocolo y etiqueta en sesión rotaria virtual».</span>
+            Recomendaciones de conducta para reuniones por videoconferencia.
+          </li>
+          <li>
+            <span class="titulo">Rotary International.</span>
+            <a href="https://www.rotary.org/es" target="_blank" rel="noopener">rotary.org/es</a>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="envoltorio">
+        <div class="lic">
+          <span class="cc-badge">CC BY-NC-SA 4.0</span>
+          <p style="margin: 0">
+            <strong>El protocolo rotario: reunión presencial y sesión virtual.</strong>
+            Obra de José M. Fernández, Webmaster, Rotary e-Club de Puerto Rico y Las Américas. 2026. Distribuida bajo licencia
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener license">Creative Commons Atribución-NoComercial-CompartirIgual 4.0</a>
+            . Las marcas de Rotary pertenecen a Rotary International; este material es una adaptación divulgativa sin fines comerciales para uso de los socios.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button id="arriba" type="button" aria-label="Volver al inicio de la página">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+
+    <script>
+      (function () {
+        'use strict';
+        var secciones = Array.prototype.slice.call(document.querySelectorAll('details.seccion'));
+        var enlaces = Array.prototype.slice.call(document.querySelectorAll('.indice .idx-link'));
+
+        /* Abrir / cerrar todo */
+        var abrir = document.getElementById('abrir-todo');
+        var cerrar = document.getElementById('cerrar-todo');
+        if (abrir)
+          abrir.addEventListener('click', function () {
+            secciones.forEach(function (d) {
+              d.open = true;
+            });
+          });
+        if (cerrar)
+          cerrar.addEventListener('click', function () {
+            secciones.forEach(function (d) {
+              d.open = false;
+            });
+          });
+
+        /* Clic en el índice: abrir la sección y desplazarse */
+        enlaces.forEach(function (a) {
+          a.addEventListener('click', function (e) {
+            var id = a.getAttribute('href').slice(1);
+            var destino = document.getElementById(id);
+            if (destino) {
+              e.preventDefault();
+              destino.open = true;
+              destino.scrollIntoView({behavior: 'smooth', block: 'start'});
+              history.replaceState(null, '', '#' + id);
+              marcarActivo(id);
+            }
+          });
+        });
+
+        /* Si la URL trae un hash, abrir esa sección */
+        if (location.hash) {
+          var ini = document.getElementById(location.hash.slice(1));
+          if (ini && ini.matches('details.seccion')) {
+            ini.open = true;
+          }
+        }
+
+        /* Resaltar en el índice la sección visible */
+        function marcarActivo(id) {
+          enlaces.forEach(function (a) {
+            a.classList.toggle('activo', a.getAttribute('href') === '#' + id);
+          });
+        }
+        if ('IntersectionObserver' in window) {
+          var obs = new IntersectionObserver(
+            function (entradas) {
+              entradas.forEach(function (en) {
+                if (en.isIntersecting) {
+                  marcarActivo(en.target.id);
+                }
+              });
+            },
+            {rootMargin: '-45% 0px -50% 0px', threshold: 0}
+          );
+          secciones.forEach(function (s) {
+            obs.observe(s);
+          });
+        }
+
+        /* Botón "volver arriba" */
+        var arriba = document.getElementById('arriba');
+        function alScroll() {
+          if (window.pageYOffset > 560) {
+            arriba.classList.add('visible');
+          } else {
+            arriba.classList.remove('visible');
+          }
+        }
+        window.addEventListener('scroll', alScroll, {passive: true});
+        arriba.addEventListener('click', function () {
+          window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        alScroll();
+      })();
+    </script>
+  </body>
+</html>
